@@ -1,0 +1,503 @@
+[gd_scene load_steps=29 format=2]
+
+[ext_resource path="res://props/trees/tree/tree_2_1.tscn" type="PackedScene" id=1]
+[ext_resource path="res://props/lamp_post/lamp_post.tscn" type="PackedScene" id=2]
+[ext_resource path="res://props/cabin/cabin_1.tscn" type="PackedScene" id=3]
+[ext_resource path="res://npc/npc_bravo/npc_bravo.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/other/white-64x64.png" type="Texture" id=5]
+[ext_resource path="res://npc/npc_jessy/npc_jessy.tscn" type="PackedScene" id=6]
+[ext_resource path="res://npc/npc_bella/npc_bella.tscn" type="PackedScene" id=7]
+[ext_resource path="res://npc/npc_dina/npc_dina.tscn" type="PackedScene" id=8]
+[ext_resource path="res://tilesets/village_fence.tres" type="TileSet" id=9]
+[ext_resource path="res://npc/npc_linda/npc_linda.tscn" type="PackedScene" id=10]
+[ext_resource path="res://props/cabin/cabin_2.tscn" type="PackedScene" id=11]
+[ext_resource path="res://npc/npc_mac/npc_mac.tscn" type="PackedScene" id=12]
+[ext_resource path="res://npc/npc_jacob/npc_jacob.tscn" type="PackedScene" id=13]
+[ext_resource path="res://npc/npc_ethan/npc_ethan.tscn" type="PackedScene" id=14]
+[ext_resource path="res://props/village/off_screen_village.tscn" type="PackedScene" id=15]
+[ext_resource path="res://npc/npc_sophia/npc_sophia.tscn" type="PackedScene" id=16]
+[ext_resource path="res://npc/npc_null_2.tscn" type="PackedScene" id=17]
+[ext_resource path="res://npc/npc_null_1.tscn" type="PackedScene" id=18]
+[ext_resource path="res://npc/npc_null_3.tscn" type="PackedScene" id=19]
+[ext_resource path="res://npc/npc_thomas/npc_thomas.tscn" type="PackedScene" id=20]
+[ext_resource path="res://npc/npc_tang/npc_tang.tscn" type="PackedScene" id=21]
+[ext_resource path="res://props/grass/grass_1/grass_1.tscn" type="PackedScene" id=22]
+[ext_resource path="res://npc/pet_npc/cat_npc.tscn" type="PackedScene" id=23]
+[ext_resource path="res://props/village/cat_npc_move.gd" type="Script" id=24]
+
+[sub_resource type="OccluderPolygon2D" id=1]
+polygon = PoolVector2Array( 64, 0, -64, 0, -64, -80, 64, -80 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 2536, 1688 )
+
+[sub_resource type="CircleShape2D" id=3]
+radius = 24.0832
+
+[sub_resource type="Curve2D" id=4]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 436, 134, 0, 0, 0, 0, 486, -308, 0, 0, 0, 0, -90, -342, 0, 0, 0, 0, -292, -56, 0, 0, 0, 0, -130, 100, 0, 0, 0, 0, 436, 134 )
+}
+
+[node name="village" type="YSort"]
+
+[node name="off_screen_village" parent="." instance=ExtResource( 15 )]
+position = Vector2( -480, 144 )
+z_index = 20
+
+[node name="tree" type="YSort" parent="."]
+
+[node name="tree_2_1" parent="tree" instance=ExtResource( 1 )]
+position = Vector2( -1296, -1296 )
+
+[node name="tree_2_2" parent="tree" instance=ExtResource( 1 )]
+position = Vector2( -728, -1200 )
+
+[node name="tree_2_3" parent="tree" instance=ExtResource( 1 )]
+position = Vector2( 544, -1368 )
+
+[node name="tree_2_4" parent="tree" instance=ExtResource( 1 )]
+position = Vector2( 1472, -1088 )
+
+[node name="tree_2_5" parent="tree" instance=ExtResource( 1 )]
+position = Vector2( 1440, 576 )
+
+[node name="tree_2_14" parent="tree" instance=ExtResource( 1 )]
+position = Vector2( 1608, 328 )
+
+[node name="tree_2_15" parent="tree" instance=ExtResource( 1 )]
+position = Vector2( 1296, -520 )
+
+[node name="tree_2_16" parent="tree" instance=ExtResource( 1 )]
+position = Vector2( 1168, 56 )
+
+[node name="tree_2_17" parent="tree" instance=ExtResource( 1 )]
+position = Vector2( 1120, 1432 )
+
+[node name="tree_2_18" parent="tree" instance=ExtResource( 1 )]
+position = Vector2( 272, 1264 )
+
+[node name="tree_2_19" parent="tree" instance=ExtResource( 1 )]
+position = Vector2( -480, 1056 )
+
+[node name="tree_2_20" parent="tree" instance=ExtResource( 1 )]
+position = Vector2( -2184, 1272 )
+
+[node name="tree_2_6" parent="tree" instance=ExtResource( 1 )]
+position = Vector2( 432, 1072 )
+
+[node name="tree_2_21" parent="tree" instance=ExtResource( 1 )]
+position = Vector2( 88, 208 )
+
+[node name="tree_2_22" parent="tree" instance=ExtResource( 1 )]
+position = Vector2( -1680, -456 )
+
+[node name="tree_2_23" parent="tree" instance=ExtResource( 1 )]
+position = Vector2( -2016, 400 )
+
+[node name="tree_2_7" parent="tree" instance=ExtResource( 1 )]
+position = Vector2( -1064, 984 )
+
+[node name="tree_2_8" parent="tree" instance=ExtResource( 1 )]
+position = Vector2( 704, 1392 )
+
+[node name="tree_2_9" parent="tree" instance=ExtResource( 1 )]
+position = Vector2( -2808, 280 )
+
+[node name="tree_2_10" parent="tree" instance=ExtResource( 1 )]
+position = Vector2( -2488, -304 )
+
+[node name="tree_2_11" parent="tree" instance=ExtResource( 1 )]
+position = Vector2( -2392, -1128 )
+
+[node name="tree_2_12" parent="tree" instance=ExtResource( 1 )]
+position = Vector2( -2624, -1032 )
+
+[node name="tree_2_13" parent="tree" instance=ExtResource( 1 )]
+position = Vector2( -2152, -1112 )
+
+[node name="fence" type="TileMap" parent="."]
+tile_set = ExtResource( 9 )
+cell_y_sort = true
+format = 1
+tile_data = PoolIntArray( -983078, 0, 0, -983077, 0, 0, -983076, 0, 0, -983075, 0, 0, -983074, 0, 0, -983073, 0, 0, -983072, 0, 0, -983071, 0, 0, -983070, 0, 0, -983069, 0, 0, -983068, 0, 0, -983067, 0, 0, -983066, 0, 0, -983065, 0, 0, -983064, 0, 0, -983063, 0, 0, -983062, 0, 0, -983061, 0, 0, -983055, 0, 0, -983054, 0, 0, -983053, 0, 0, -983052, 0, 0, -983051, 0, 0, -983050, 0, 0, -983049, 0, 0, -983048, 0, 0, -983047, 0, 0, -983046, 0, 0, -983045, 0, 0, -983044, 0, 0, -983043, 0, 0, -983042, 0, 0, -983041, 0, 0, -1048576, 0, 0, -1048575, 0, 0, -1048574, 0, 0, -1048573, 0, 0, -1048572, 0, 0, -1048571, 0, 0, -1048570, 0, 0, -1048569, 0, 0, -1048568, 0, 0, -1048567, 0, 0, -1048566, 0, 0, -1048565, 0, 0, -1048564, 0, 0, -1048563, 0, 0, -917542, 1, 0, -983027, 1, 0, -852006, 1, 0, -917491, 1, 0, -786470, 1, 0, -851955, 1, 0, -720934, 1, 0, -786419, 1, 0, -655398, 1, 0, -720883, 1, 0, -589862, 1, 0, -655347, 1, 0, -589811, 1, 0, -524275, 1, 0, -458739, 1, 0, -262182, 1, 0, -196646, 1, 0, -131110, 1, 0, -65574, 1, 0, -38, 1, 0, -65523, 1, 0, 65498, 1, 0, 13, 1, 0, 131034, 1, 0, 65549, 1, 0, 196570, 1, 0, 131085, 1, 0, 262106, 1, 0, 196621, 1, 0, 327642, 1, 0, 262157, 1, 0, 393178, 1, 0, 327693, 1, 0, 458714, 1, 0, 393229, 1, 0, 524250, 1, 0, 458765, 1, 0, 589786, 1, 0, 524301, 1, 0, 655322, 1, 0, 589837, 1, 0, 720858, 0, 0, 720859, 0, 0, 720860, 0, 0, 720861, 0, 0, 720862, 0, 0, 720863, 0, 0, 720864, 0, 0, 720865, 0, 0, 720866, 0, 0, 720867, 0, 0, 720868, 0, 0, 720869, 0, 0, 720870, 0, 0, 720871, 0, 0, 720872, 0, 0, 720873, 0, 0, 720874, 0, 0, 720875, 0, 0, 720876, 0, 0, 720877, 0, 0, 720878, 0, 0, 720879, 0, 0, 720880, 0, 0, 720885, 0, 0, 720886, 0, 0, 720887, 0, 0, 720888, 0, 0, 720889, 0, 0, 720890, 0, 0, 720891, 0, 0, 720892, 0, 0, 720893, 0, 0, 720894, 0, 0, 720895, 0, 0, 655360, 0, 0, 655361, 0, 0, 655362, 0, 0, 655363, 0, 0, 655364, 0, 0, 655365, 0, 0, 655366, 0, 0, 655367, 0, 0, 655368, 0, 0, 655369, 0, 0, 655370, 0, 0, 655371, 0, 0, 655372, 0, 0, 655373, 0, 0 )
+
+[node name="Polygon2D" type="Polygon2D" parent="fence"]
+z_index = -1
+color = Color( 0, 0, 0, 0.196078 )
+polygon = PoolVector2Array( -2432, -1016, -1280, -1016, -1272, -1008, -1272, -992, -1280, -984, -2432, -984, -2440, -992, -2440, -1008 )
+
+[node name="Polygon2D2" type="Polygon2D" parent="fence"]
+z_index = -1
+color = Color( 0, 0, 0, 0.196078 )
+polygon = PoolVector2Array( -960, -1016, 896, -1016, 904, -1008, 904, -992, 896, -984, -960, -984, -968, -992, -968, -1008 )
+
+[node name="Polygon2D3" type="Polygon2D" parent="fence"]
+color = Color( 0, 0, 0, 0.196078 )
+polygon = PoolVector2Array( -2432, 648, -960, 648, -952, 656, -952, 672, -960, 680, -2432, 680, -2440, 672, -2440, 656 )
+
+[node name="Polygon2D4" type="Polygon2D" parent="fence"]
+color = Color( 0, 0, 0, 0.196078 )
+polygon = PoolVector2Array( -704, 648, 896, 648, 904, 656, 904, 672, 896, 680, -704, 680, -712, 672, -712, 656 )
+
+[node name="Polygon2D5" type="Polygon2D" parent="fence"]
+z_index = -1
+color = Color( 0, 0, 0, 0.196078 )
+polygon = PoolVector2Array( 880, -64, 880, 608, 872, 616, 856, 616, 848, 608, 848, -64 )
+
+[node name="Polygon2D6" type="Polygon2D" parent="fence"]
+z_index = -1
+color = Color( 0, 0, 0, 0.196078 )
+polygon = PoolVector2Array( 848, -984, 848, -416, 856, -408, 872, -408, 880, -416, 880, -984 )
+
+[node name="Polygon2D7" type="Polygon2D" parent="fence"]
+z_index = -1
+color = Color( 0, 0, 0, 0.196078 )
+polygon = PoolVector2Array( -2416, -984, -2416, -608, -2408, -600, -2392, -600, -2384, -608, -2384, -984 )
+
+[node name="Polygon2D8" type="Polygon2D" parent="fence"]
+z_index = -1
+color = Color( 0, 0, 0, 0.196078 )
+polygon = PoolVector2Array( -2416, -328, -2384, -328, -2384, 648, -2416, 648 )
+
+[node name="cabin_1" parent="." instance=ExtResource( 3 )]
+position = Vector2( -992, -296 )
+
+[node name="cabin_2" parent="." instance=ExtResource( 11 )]
+position = Vector2( 424, -656 )
+
+[node name="clock_tower" type="Node2D" parent="."]
+visible = false
+
+[node name="graphics" type="Node2D" parent="clock_tower"]
+
+[node name="Polygon2D" type="Polygon2D" parent="clock_tower/graphics"]
+color = Color( 0.439216, 0.403922, 0.372549, 1 )
+polygon = PoolVector2Array( 64, 0, -64, 0, -64, -320, -88, -320, -88, -448, -72, -448, -72, -464, -64, -464, -64, -448, -40, -448, -40, -480, 0, -552, 40, -480, 40, -448, 64, -448, 64, -464, 72, -464, 72, -448, 88, -448, 88, -320, 64, -320.332 )
+
+[node name="Polygon2D2" type="Polygon2D" parent="clock_tower/graphics"]
+color = Color( 0.215686, 0.215686, 0.215686, 1 )
+polygon = PoolVector2Array( -32, 0, -32, -64, -24, -72, -24, -72, 0, -80, 24, -72, 32, -64, 32, 0 )
+
+[node name="Sprite" type="Sprite" parent="clock_tower/graphics"]
+position = Vector2( 9.53674e-07, -384 )
+scale = Vector2( 1.46875, 1.46875 )
+texture = ExtResource( 5 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="clock_tower"]
+occluder = SubResource( 1 )
+
+[node name="village_area" type="Area2D" parent="."]
+collision_layer = 65536
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="village_area"]
+self_modulate = Color( 1, 1, 1, 0.117647 )
+position = Vector2( -712, -104 )
+shape = SubResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="lamp_post" parent="." instance=ExtResource( 2 )]
+position = Vector2( -1848, 256 )
+
+[node name="lamp_post2" parent="." instance=ExtResource( 2 )]
+position = Vector2( -1840, -600 )
+
+[node name="lamp_post3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 128, 470 )
+
+[node name="npc_jessy" parent="." instance=ExtResource( 6 )]
+position = Vector2( -392, 56 )
+
+[node name="npc_bella" parent="." instance=ExtResource( 7 )]
+position = Vector2( -632, 56 )
+
+[node name="npc_dina" parent="." instance=ExtResource( 8 )]
+position = Vector2( -856, -16 )
+
+[node name="npc_bravo" parent="." instance=ExtResource( 4 )]
+position = Vector2( -1360, 312 )
+
+[node name="npc_linda" parent="." instance=ExtResource( 10 )]
+position = Vector2( 92, -246 )
+
+[node name="npc_mac" parent="." instance=ExtResource( 12 )]
+position = Vector2( -128, 328 )
+
+[node name="npc_jacob" parent="." instance=ExtResource( 13 )]
+position = Vector2( -256, -688 )
+
+[node name="npc_ethan" parent="." instance=ExtResource( 14 )]
+position = Vector2( -1120, -720 )
+
+[node name="npc_sophia" parent="." instance=ExtResource( 16 )]
+position = Vector2( -1920, -208 )
+
+[node name="npc_null_1" parent="." instance=ExtResource( 18 )]
+position = Vector2( -424, -328 )
+
+[node name="npc_null_2" parent="." instance=ExtResource( 17 )]
+position = Vector2( -320, -328 )
+
+[node name="npc_null_3" parent="." instance=ExtResource( 19 )]
+position = Vector2( -216, -328 )
+
+[node name="npc_thomas" parent="." instance=ExtResource( 20 )]
+position = Vector2( 458, -52 )
+
+[node name="npc_tang" parent="." instance=ExtResource( 21 )]
+position = Vector2( -2264, -192 )
+
+[node name="grass" type="YSort" parent="."]
+
+[node name="grass_1_1" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( -920, 376 )
+
+[node name="grass_1_52" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( -1390, 394 )
+
+[node name="grass_1_57" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( -1346, 346 )
+
+[node name="grass_1_58" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( -1428, 344 )
+
+[node name="grass_1_53" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( -1298, 302 )
+
+[node name="grass_1_54" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( -1466, 278 )
+
+[node name="grass_1_55" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( -1670, 422 )
+
+[node name="grass_1_56" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( -1066, 230 )
+
+[node name="grass_1_7" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( -1216, -32 )
+
+[node name="grass_1_8" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( -1152, -8 )
+
+[node name="grass_1_9" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( -1648, -168 )
+
+[node name="grass_1_50" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( -1696, -400 )
+
+[node name="grass_1_51" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( -1632, -424 )
+
+[node name="grass_1_10" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( -1736, -112 )
+
+[node name="grass_1_11" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( -1608, -96 )
+
+[node name="grass_1_12" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( -632, -704 )
+
+[node name="grass_1_13" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( -568, -672 )
+
+[node name="grass_1_22" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( 832, -296 )
+
+[node name="grass_1_23" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( 760, -224 )
+
+[node name="grass_1_24" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( 928, -200 )
+
+[node name="grass_1_25" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( 1032, -1024 )
+
+[node name="grass_1_26" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( 888, -1136 )
+
+[node name="grass_1_27" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( 632, -1224 )
+
+[node name="grass_1_14" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( -640, -640 )
+
+[node name="grass_1_15" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( -1240, -912 )
+
+[node name="grass_1_16" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( -1320, -936 )
+
+[node name="grass_1_17" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( -1200, -984 )
+
+[node name="grass_1_18" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( -2544, -1016 )
+
+[node name="grass_1_19" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( -2624, -848 )
+
+[node name="grass_1_20" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( -2680, -792 )
+
+[node name="grass_1_21" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( -2784, -840 )
+
+[node name="grass_1_2" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( -856, 408 )
+
+[node name="grass_1_3" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( -920, 456 )
+
+[node name="grass_1_40" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( -2176, 528 )
+
+[node name="grass_1_41" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( -2624, 528 )
+
+[node name="grass_1_42" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( -2680, 696 )
+
+[node name="grass_1_43" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( -2536, 768 )
+
+[node name="grass_1_44" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( -1832, 704 )
+
+[node name="grass_1_4" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( -648, 488 )
+
+[node name="grass_1_5" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( -592, 512 )
+
+[node name="grass_1_6" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( -536, 544 )
+
+[node name="grass_1_28" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( 792, 856 )
+
+[node name="grass_1_29" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( 984, 792 )
+
+[node name="grass_1_30" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( 1080, 488 )
+
+[node name="grass_1_31" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( 1152, 472 )
+
+[node name="grass_1_32" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( 1080, 392 )
+
+[node name="grass_1_33" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( 768, 496 )
+
+[node name="grass_1_34" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( 688, 536 )
+
+[node name="grass_1_35" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( -96, -104 )
+
+[node name="grass_1_36" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( -192, -96 )
+
+[node name="grass_1_37" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( -288, -104 )
+
+[node name="grass_1_38" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( -96, -208 )
+
+[node name="grass_1_39" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( 104, -128 )
+
+[node name="grass_1_45" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( 128, 256 )
+
+[node name="grass_1_46" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( 32, 192 )
+
+[node name="grass_1_47" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( 56, 256 )
+
+[node name="grass_1_48" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( 184, 136 )
+
+[node name="grass_1_49" parent="grass" instance=ExtResource( 22 )]
+position = Vector2( -1984, 440 )
+
+[node name="patrol" type="YSort" parent="."]
+
+[node name="patrol1" type="KinematicBody2D" parent="patrol"]
+position = Vector2( -2614, 122 )
+collision_layer = 4
+collision_mask = 3
+
+[node name="graphic" type="Node2D" parent="patrol/patrol1"]
+
+[node name="body" type="Polygon2D" parent="patrol/patrol1/graphic"]
+color = Color( 0.282353, 0.337255, 0.313726, 1 )
+polygon = PoolVector2Array( 16, 0, -16, 0, -26, -6, -20, -78, -14, -86, 18, -86, 26, -80, 28, -6 )
+
+[node name="Polygon2D" type="Polygon2D" parent="patrol/patrol1/graphic"]
+color = Color( 0.207843, 0.164706, 0.164706, 1 )
+polygon = PoolVector2Array( -10, -88, -14, 0, 10, 0, 4, -88 )
+
+[node name="head" type="Polygon2D" parent="patrol/patrol1/graphic"]
+color = Color( 0.768627, 0.682353, 0.560784, 1 )
+polygon = PoolVector2Array( -16, -104, -12, -78, 0, -74, 14, -78, 18, -104 )
+
+[node name="hair" type="Polygon2D" parent="patrol/patrol1/graphic"]
+color = Color( 0, 0, 0, 1 )
+polygon = PoolVector2Array( 12, -74, 2, -96, -20, -100, -22, -110, 6, -120, 24, -102, 20, -74 )
+
+[node name="eye" type="Polygon2D" parent="patrol/patrol1/graphic"]
+color = Color( 0, 0, 0, 1 )
+polygon = PoolVector2Array( -10, -94, -10, -92, -6, -92, -6, -94 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="patrol/patrol1"]
+position = Vector2( 0, -24 )
+shape = SubResource( 3 )
+
+[node name="cat_npc_moving" type="Node2D" parent="patrol"]
+
+[node name="Path2D" type="Path2D" parent="patrol/cat_npc_moving"]
+position = Vector2( -380, 286 )
+curve = SubResource( 4 )
+script = ExtResource( 24 )
+
+[node name="PathFollow2D" type="PathFollow2D" parent="patrol/cat_npc_moving/Path2D"]
+position = Vector2( 436, 134 )
+rotation = -0.968508
+rotate = false
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="patrol/cat_npc_moving/Path2D/PathFollow2D"]
+remote_path = NodePath("../../../cat_npc")
+update_rotation = false
+
+[node name="cat_npc" parent="patrol/cat_npc_moving" instance=ExtResource( 23 )]
+position = Vector2( 56, 420 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="patrol/cat_npc_moving"]
+
+[node name="cat_npc_moving2" type="Node2D" parent="patrol"]
+position = Vector2( -1508, -730 )
+
+[node name="Path2D" type="Path2D" parent="patrol/cat_npc_moving2"]
+position = Vector2( -380, 286 )
+curve = SubResource( 4 )
+script = ExtResource( 24 )
+
+[node name="PathFollow2D" type="PathFollow2D" parent="patrol/cat_npc_moving2/Path2D"]
+position = Vector2( 436, 134 )
+rotation = -0.968508
+rotate = false
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="patrol/cat_npc_moving2/Path2D/PathFollow2D"]
+remote_path = NodePath("../../../cat_npc")
+update_rotation = false
+
+[node name="cat_npc" parent="patrol/cat_npc_moving2" instance=ExtResource( 23 )]
+position = Vector2( 56, 420 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="patrol/cat_npc_moving2"]

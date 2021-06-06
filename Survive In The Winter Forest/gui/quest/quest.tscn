@@ -1,0 +1,726 @@
+[gd_scene load_steps=25 format=2]
+
+[ext_resource path="res://gui/quest/quest.gd" type="Script" id=1]
+[ext_resource path="res://assets/fonts/supermarket.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://assets/other/white_circle_64x64.png" type="Texture" id=3]
+[ext_resource path="res://assets/icons/white-cancel-icon_24x24.png" type="Texture" id=4]
+[ext_resource path="res://assets/fonts/FC Galaxy Italic.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://assets/other/white-64x64.png" type="Texture" id=6]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0, 0, 0, 0.784314 )
+border_width_top = 40
+border_color = Color( 0.945098, 0.819608, 0.266667, 1 )
+shadow_size = 32
+
+[sub_resource type="DynamicFont" id=2]
+size = 30
+extra_spacing_top = 8
+extra_spacing_char = 4
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.196078, 0.196078, 0.196078, 1 )
+border_width_top = 40
+
+[sub_resource type="DynamicFont" id=4]
+size = 24
+extra_spacing_top = 8
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.27451, 0.27451, 0.27451, 1 )
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="DynamicFont" id=6]
+size = 20
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 20
+extra_spacing_top = 8
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxFlat" id=8]
+bg_color = Color( 0.196078, 0.196078, 0.196078, 1 )
+border_width_top = 40
+
+[sub_resource type="DynamicFont" id=9]
+size = 24
+extra_spacing_top = 8
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=10]
+size = 24
+extra_spacing_top = 16
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=11]
+size = 32
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxFlat" id=12]
+bg_color = Color( 0.117647, 0.117647, 0.117647, 1 )
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="DynamicFont" id=13]
+size = 20
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=14]
+size = 20
+extra_spacing_top = 8
+font_data = ExtResource( 2 )
+
+[sub_resource type="Gradient" id=15]
+offsets = PoolRealArray( 0, 0.3, 1 )
+colors = PoolColorArray( 0.945098, 0.819608, 0.266667, 1, 0.223529, 0.215686, 0.121569, 1, 0, 0, 0, 1 )
+
+[sub_resource type="GradientTexture" id=16]
+gradient = SubResource( 15 )
+
+[sub_resource type="StyleBoxTexture" id=17]
+texture = SubResource( 16 )
+region_rect = Rect2( 0, 0, 2048, 1 )
+
+[sub_resource type="DynamicFont" id=18]
+size = 52
+outline_size = 1
+extra_spacing_char = 4
+font_data = ExtResource( 5 )
+
+[node name="quest" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -496.0
+margin_top = -284.0
+margin_right = 496.0
+margin_bottom = 212.0
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel"]
+margin_left = 16.0
+margin_right = 100.0
+margin_bottom = 40.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "QUEST"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="close_button" type="TextureButton" parent="Panel"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -40.0
+margin_top = 4.0
+margin_right = 24.0
+margin_bottom = 68.0
+rect_scale = Vector2( 0.5, 0.5 )
+texture_normal = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="Panel/close_button"]
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = 12.0
+margin_top = 12.0
+margin_right = 52.0
+margin_bottom = 52.0
+texture = ExtResource( 4 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="quest_list" type="Panel" parent="Panel"]
+margin_left = 48.0
+margin_top = 64.0
+margin_right = 504.0
+margin_bottom = 472.0
+custom_styles/panel = SubResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/quest_list"]
+margin_right = 456.0
+margin_bottom = 40.0
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "เควสทั้งหมด"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Panel/quest_list"]
+margin_left = 24.0
+margin_top = 56.0
+margin_right = 440.0
+margin_bottom = 392.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GridContainer" type="GridContainer" parent="Panel/quest_list/ScrollContainer"]
+margin_right = 400.0
+margin_bottom = 608.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="quest_001" type="Panel" parent="Panel/quest_list/ScrollContainer/GridContainer"]
+margin_right = 400.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 400, 64 )
+custom_styles/panel = SubResource( 5 )
+
+[node name="quest_001_button" type="Button" parent="Panel/quest_list/ScrollContainer/GridContainer/quest_001"]
+margin_left = 304.0
+margin_top = 16.0
+margin_right = 388.0
+margin_bottom = 48.0
+custom_fonts/font = SubResource( 6 )
+text = "รายละเอียด"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/quest_list/ScrollContainer/GridContainer/quest_001"]
+margin_left = 16.0
+margin_right = 288.0
+margin_bottom = 64.0
+custom_fonts/font = SubResource( 7 )
+text = "0. าฟาห่กสาดาำสกาหก"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="quest_002" type="Panel" parent="Panel/quest_list/ScrollContainer/GridContainer"]
+margin_top = 68.0
+margin_right = 400.0
+margin_bottom = 132.0
+rect_min_size = Vector2( 400, 64 )
+custom_styles/panel = SubResource( 5 )
+
+[node name="quest_002_button" type="Button" parent="Panel/quest_list/ScrollContainer/GridContainer/quest_002"]
+margin_left = 304.0
+margin_top = 16.0
+margin_right = 388.0
+margin_bottom = 48.0
+custom_fonts/font = SubResource( 6 )
+text = "รายละเอียด"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/quest_list/ScrollContainer/GridContainer/quest_002"]
+margin_left = 16.0
+margin_right = 288.0
+margin_bottom = 64.0
+custom_fonts/font = SubResource( 7 )
+text = "0. าฟาห่กสาดาำสกาหก"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="quest_003" type="Panel" parent="Panel/quest_list/ScrollContainer/GridContainer"]
+margin_top = 136.0
+margin_right = 400.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 400, 64 )
+custom_styles/panel = SubResource( 5 )
+
+[node name="quest_003_button" type="Button" parent="Panel/quest_list/ScrollContainer/GridContainer/quest_003"]
+margin_left = 304.0
+margin_top = 16.0
+margin_right = 388.0
+margin_bottom = 48.0
+custom_fonts/font = SubResource( 6 )
+text = "รายละเอียด"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/quest_list/ScrollContainer/GridContainer/quest_003"]
+margin_left = 16.0
+margin_right = 288.0
+margin_bottom = 64.0
+custom_fonts/font = SubResource( 7 )
+text = "0. าฟาห่กสาดาำสกาหก"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="quest_004" type="Panel" parent="Panel/quest_list/ScrollContainer/GridContainer"]
+margin_top = 204.0
+margin_right = 400.0
+margin_bottom = 268.0
+rect_min_size = Vector2( 400, 64 )
+custom_styles/panel = SubResource( 5 )
+
+[node name="quest_004_button" type="Button" parent="Panel/quest_list/ScrollContainer/GridContainer/quest_004"]
+margin_left = 304.0
+margin_top = 16.0
+margin_right = 388.0
+margin_bottom = 48.0
+custom_fonts/font = SubResource( 6 )
+text = "รายละเอียด"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/quest_list/ScrollContainer/GridContainer/quest_004"]
+margin_left = 16.0
+margin_right = 288.0
+margin_bottom = 64.0
+custom_fonts/font = SubResource( 7 )
+text = "0. าฟาห่กสาดาำสกาหก"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="quest_005" type="Panel" parent="Panel/quest_list/ScrollContainer/GridContainer"]
+margin_top = 272.0
+margin_right = 400.0
+margin_bottom = 336.0
+rect_min_size = Vector2( 400, 64 )
+custom_styles/panel = SubResource( 5 )
+
+[node name="quest_005_button" type="Button" parent="Panel/quest_list/ScrollContainer/GridContainer/quest_005"]
+margin_left = 304.0
+margin_top = 16.0
+margin_right = 388.0
+margin_bottom = 48.0
+custom_fonts/font = SubResource( 6 )
+text = "รายละเอียด"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/quest_list/ScrollContainer/GridContainer/quest_005"]
+margin_left = 16.0
+margin_right = 288.0
+margin_bottom = 64.0
+custom_fonts/font = SubResource( 7 )
+text = "0. าฟาห่กสาดาำสกาหก"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="quest_006" type="Panel" parent="Panel/quest_list/ScrollContainer/GridContainer"]
+margin_top = 340.0
+margin_right = 400.0
+margin_bottom = 404.0
+rect_min_size = Vector2( 400, 64 )
+custom_styles/panel = SubResource( 5 )
+
+[node name="quest_006_button" type="Button" parent="Panel/quest_list/ScrollContainer/GridContainer/quest_006"]
+margin_left = 304.0
+margin_top = 16.0
+margin_right = 388.0
+margin_bottom = 48.0
+custom_fonts/font = SubResource( 6 )
+text = "รายละเอียด"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/quest_list/ScrollContainer/GridContainer/quest_006"]
+margin_left = 16.0
+margin_right = 288.0
+margin_bottom = 64.0
+custom_fonts/font = SubResource( 7 )
+text = "0. าฟาห่กสาดาำสกาหก"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="quest_007" type="Panel" parent="Panel/quest_list/ScrollContainer/GridContainer"]
+margin_top = 408.0
+margin_right = 400.0
+margin_bottom = 472.0
+rect_min_size = Vector2( 400, 64 )
+custom_styles/panel = SubResource( 5 )
+
+[node name="quest_007_button" type="Button" parent="Panel/quest_list/ScrollContainer/GridContainer/quest_007"]
+margin_left = 304.0
+margin_top = 16.0
+margin_right = 388.0
+margin_bottom = 48.0
+custom_fonts/font = SubResource( 6 )
+text = "รายละเอียด"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/quest_list/ScrollContainer/GridContainer/quest_007"]
+margin_left = 16.0
+margin_right = 288.0
+margin_bottom = 64.0
+custom_fonts/font = SubResource( 7 )
+text = "0. าฟาห่กสาดาำสกาหก"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="quest_008" type="Panel" parent="Panel/quest_list/ScrollContainer/GridContainer"]
+margin_top = 476.0
+margin_right = 400.0
+margin_bottom = 540.0
+rect_min_size = Vector2( 400, 64 )
+custom_styles/panel = SubResource( 5 )
+
+[node name="quest_008_button" type="Button" parent="Panel/quest_list/ScrollContainer/GridContainer/quest_008"]
+margin_left = 304.0
+margin_top = 16.0
+margin_right = 388.0
+margin_bottom = 48.0
+custom_fonts/font = SubResource( 6 )
+text = "รายละเอียด"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/quest_list/ScrollContainer/GridContainer/quest_008"]
+margin_left = 16.0
+margin_right = 288.0
+margin_bottom = 64.0
+custom_fonts/font = SubResource( 7 )
+text = "0. าฟาห่กสาดาำสกาหก"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="quest_009" type="Panel" parent="Panel/quest_list/ScrollContainer/GridContainer"]
+margin_top = 544.0
+margin_right = 400.0
+margin_bottom = 608.0
+rect_min_size = Vector2( 400, 64 )
+custom_styles/panel = SubResource( 5 )
+
+[node name="quest_009_button" type="Button" parent="Panel/quest_list/ScrollContainer/GridContainer/quest_009"]
+margin_left = 304.0
+margin_top = 16.0
+margin_right = 388.0
+margin_bottom = 48.0
+custom_fonts/font = SubResource( 6 )
+text = "รายละเอียด"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/quest_list/ScrollContainer/GridContainer/quest_009"]
+margin_left = 16.0
+margin_right = 288.0
+margin_bottom = 64.0
+custom_fonts/font = SubResource( 7 )
+text = "0. าฟาห่กสาดาำสกาหก"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="quest_detail" type="Panel" parent="Panel"]
+margin_left = 560.0
+margin_top = 64.0
+margin_right = 952.0
+margin_bottom = 472.0
+custom_styles/panel = SubResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/quest_detail"]
+margin_right = 384.0
+margin_bottom = 40.0
+custom_fonts/font = SubResource( 9 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "รายละเอียดเควส"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel/quest_detail"]
+margin_left = 34.0
+margin_top = 50.0
+margin_right = 362.0
+margin_bottom = 170.0
+custom_fonts/normal_font = SubResource( 10 )
+text = "ชื่อเควส
+รับจาก
+
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="item_require" type="Panel" parent="Panel/quest_detail"]
+margin_left = 16.0
+margin_top = 176.0
+margin_right = 376.0
+margin_bottom = 280.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="quest_status" type="Label" parent="Panel/quest_detail/item_require"]
+margin_right = 360.0
+margin_bottom = 104.0
+custom_fonts/font = SubResource( 11 )
+text = "รับเควสรึยัง......"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="item_list_for_quest" type="Control" parent="Panel/quest_detail/item_require"]
+visible = false
+margin_right = 358.0
+margin_bottom = 104.0
+
+[node name="GridContainer" type="GridContainer" parent="Panel/quest_detail/item_require/item_list_for_quest"]
+margin_left = 22.0
+margin_top = 10.0
+margin_right = 340.0
+margin_bottom = 82.0
+custom_constants/hseparation = 10
+columns = 4
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="item_0" type="Panel" parent="Panel/quest_detail/item_require/item_list_for_quest/GridContainer"]
+margin_right = 72.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+custom_styles/panel = SubResource( 12 )
+
+[node name="TextureRect" type="TextureRect" parent="Panel/quest_detail/item_require/item_list_for_quest/GridContainer/item_0"]
+visible = false
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 68.0
+margin_bottom = 68.0
+texture = ExtResource( 6 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="item_count" type="Label" parent="Panel/quest_detail/item_require/item_list_for_quest/GridContainer/item_0"]
+margin_left = -2.0
+margin_top = 76.0
+margin_right = 74.0
+margin_bottom = 92.0
+custom_fonts/font = SubResource( 13 )
+text = "00/00"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="Panel/quest_detail/item_require/item_list_for_quest/GridContainer/item_0"]
+position = Vector2( 36, 36 )
+texture = ExtResource( 6 )
+
+[node name="item_1" type="Panel" parent="Panel/quest_detail/item_require/item_list_for_quest/GridContainer"]
+margin_left = 82.0
+margin_right = 154.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+custom_styles/panel = SubResource( 12 )
+
+[node name="TextureRect" type="TextureRect" parent="Panel/quest_detail/item_require/item_list_for_quest/GridContainer/item_1"]
+visible = false
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 68.0
+margin_bottom = 68.0
+texture = ExtResource( 6 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="item_count" type="Label" parent="Panel/quest_detail/item_require/item_list_for_quest/GridContainer/item_1"]
+margin_left = -2.0
+margin_top = 76.0
+margin_right = 74.0
+margin_bottom = 92.0
+custom_fonts/font = SubResource( 13 )
+text = "00/00"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="Panel/quest_detail/item_require/item_list_for_quest/GridContainer/item_1"]
+position = Vector2( 36, 36 )
+texture = ExtResource( 6 )
+
+[node name="item_2" type="Panel" parent="Panel/quest_detail/item_require/item_list_for_quest/GridContainer"]
+margin_left = 164.0
+margin_right = 236.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+custom_styles/panel = SubResource( 12 )
+
+[node name="TextureRect" type="TextureRect" parent="Panel/quest_detail/item_require/item_list_for_quest/GridContainer/item_2"]
+visible = false
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 68.0
+margin_bottom = 68.0
+texture = ExtResource( 6 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="item_count" type="Label" parent="Panel/quest_detail/item_require/item_list_for_quest/GridContainer/item_2"]
+margin_left = -2.0
+margin_top = 76.0
+margin_right = 74.0
+margin_bottom = 92.0
+custom_fonts/font = SubResource( 13 )
+text = "00/00"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="Panel/quest_detail/item_require/item_list_for_quest/GridContainer/item_2"]
+position = Vector2( 36, 36 )
+texture = ExtResource( 6 )
+
+[node name="item_3" type="Panel" parent="Panel/quest_detail/item_require/item_list_for_quest/GridContainer"]
+margin_left = 246.0
+margin_right = 318.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+custom_styles/panel = SubResource( 12 )
+
+[node name="TextureRect" type="TextureRect" parent="Panel/quest_detail/item_require/item_list_for_quest/GridContainer/item_3"]
+visible = false
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 68.0
+margin_bottom = 68.0
+texture = ExtResource( 6 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="item_count" type="Label" parent="Panel/quest_detail/item_require/item_list_for_quest/GridContainer/item_3"]
+margin_left = -2.0
+margin_top = 76.0
+margin_right = 74.0
+margin_bottom = 92.0
+custom_fonts/font = SubResource( 13 )
+text = "00/00"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="Panel/quest_detail/item_require/item_list_for_quest/GridContainer/item_3"]
+position = Vector2( 36, 36 )
+texture = ExtResource( 6 )
+
+[node name="quest_rewards" type="Panel" parent="Panel/quest_detail"]
+margin_left = 16.0
+margin_top = 288.0
+margin_right = 376.0
+margin_bottom = 400.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel/quest_detail/quest_rewards"]
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 344.0
+margin_bottom = 110.0
+custom_fonts/normal_font = SubResource( 14 )
+text = "ของรางวัล
+	Exp +200
+	เงิน +500
+	แต้มอัพทักษะ +2"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="bottom_bar" type="Panel" parent="."]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -64.0
+custom_styles/panel = SubResource( 17 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="bottom_bar"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -304.0
+margin_top = -32.0
+margin_right = -17.0
+margin_bottom = 32.0
+custom_fonts/font = SubResource( 18 )
+text = "Press B to close"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Panel/close_button" to="." method="_on_close_button_pressed"]
+[connection signal="pressed" from="Panel/quest_list/ScrollContainer/GridContainer/quest_001/quest_001_button" to="." method="_on_quest_001_button_pressed"]
+[connection signal="pressed" from="Panel/quest_list/ScrollContainer/GridContainer/quest_002/quest_002_button" to="." method="_on_quest_002_button_pressed"]
+[connection signal="pressed" from="Panel/quest_list/ScrollContainer/GridContainer/quest_003/quest_003_button" to="." method="_on_quest_003_button_pressed"]
+[connection signal="pressed" from="Panel/quest_list/ScrollContainer/GridContainer/quest_004/quest_004_button" to="." method="_on_quest_004_button_pressed"]
+[connection signal="pressed" from="Panel/quest_list/ScrollContainer/GridContainer/quest_005/quest_005_button" to="." method="_on_quest_005_button_pressed"]
+[connection signal="pressed" from="Panel/quest_list/ScrollContainer/GridContainer/quest_006/quest_006_button" to="." method="_on_quest_006_button_pressed"]
+[connection signal="pressed" from="Panel/quest_list/ScrollContainer/GridContainer/quest_007/quest_007_button" to="." method="_on_quest_007_button_pressed"]
+[connection signal="pressed" from="Panel/quest_list/ScrollContainer/GridContainer/quest_008/quest_008_button" to="." method="_on_quest_008_button_pressed"]
+[connection signal="pressed" from="Panel/quest_list/ScrollContainer/GridContainer/quest_009/quest_009_button" to="." method="_on_quest_009_button_pressed"]

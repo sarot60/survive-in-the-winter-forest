@@ -1,0 +1,167 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://assets/fonts/supermarket.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://dialogue/dialogue.gd" type="Script" id=2]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0, 0, 0, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 32
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 24
+extra_spacing_top = 12
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 24
+extra_spacing_top = 8
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.6, 0.6, 0.6, 0.152941 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 20
+extra_spacing_top = 4
+font_data = ExtResource( 1 )
+
+[node name="dialogue" type="CanvasLayer"]
+layer = 10
+script = ExtResource( 2 )
+
+[node name="dialog_panel" type="Panel" parent="."]
+anchor_left = 0.062
+anchor_top = 0.64
+anchor_right = 0.937
+anchor_bottom = 0.907
+margin_left = 0.511997
+margin_top = -3.05176e-05
+margin_right = 0.511963
+margin_bottom = -0.200012
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="name" type="Label" parent="dialog_panel"]
+anchor_left = 0.036
+anchor_top = 0.062
+anchor_right = 0.214
+anchor_bottom = 0.225
+margin_left = -0.256001
+margin_top = 0.0799999
+margin_right = 0.255981
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.945098, 0.819608, 0.270588, 1 )
+text = "name = xxx"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="dialog_text" type="RichTextLabel" parent="dialog_panel"]
+anchor_left = 0.054
+anchor_top = 0.4
+anchor_right = 0.786
+anchor_bottom = 0.9
+margin_left = -0.383999
+margin_top = -1.52588e-05
+margin_right = -0.255981
+margin_bottom = -3.05176e-05
+custom_fonts/normal_font = SubResource( 3 )
+text = "อิอ้ิ้อิฟออ้อ้"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="button_group" type="VBoxContainer" parent="dialog_panel"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -176.0
+margin_top = -220.0
+margin_right = -23.9999
+margin_bottom = -23.0
+custom_constants/separation = 8
+alignment = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="success_quest" type="Button" parent="dialog_panel/button_group"]
+visible = false
+margin_top = 164.0
+margin_right = 152.0
+margin_bottom = 197.0
+rect_min_size = Vector2( 152, 32 )
+custom_fonts/font = SubResource( 4 )
+text = "ส่งเควส"
+
+[node name="accept_quest_button" type="Button" parent="dialog_panel/button_group"]
+visible = false
+margin_top = 41.0
+margin_right = 152.0
+margin_bottom = 74.0
+rect_min_size = Vector2( 152, 32 )
+custom_fonts/font = SubResource( 4 )
+text = "รับเควส"
+
+[node name="shop_button" type="Button" parent="dialog_panel/button_group"]
+visible = false
+margin_top = 82.0
+margin_right = 152.0
+margin_bottom = 115.0
+rect_min_size = Vector2( 152, 32 )
+custom_fonts/font = SubResource( 4 )
+text = "ร้านค้า"
+
+[node name="quest_button" type="Button" parent="dialog_panel/button_group"]
+visible = false
+margin_top = 123.0
+margin_right = 152.0
+margin_bottom = 156.0
+rect_min_size = Vector2( 152, 32 )
+custom_fonts/font = SubResource( 4 )
+text = "เควส"
+
+[node name="close_button" type="Button" parent="dialog_panel/button_group"]
+visible = false
+margin_top = 164.0
+margin_right = 152.0
+margin_bottom = 197.0
+rect_min_size = Vector2( 152, 32 )
+custom_fonts/font = SubResource( 4 )
+text = "ปิด"
+
+[node name="hint_next" type="Label" parent="dialog_panel"]
+anchor_left = 0.609
+anchor_right = 0.757
+margin_left = -33.664
+margin_top = 16.0
+margin_right = 41.728
+margin_bottom = 42.0
+custom_styles/normal = SubResource( 5 )
+custom_fonts/font = SubResource( 6 )
+text = "กด SPACE เพื่อดำเนินการต่อ"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="first_dialog_timer" type="Timer" parent="."]
+wait_time = 0.05
+
+[node name="quest_dialog_timer" type="Timer" parent="."]
+wait_time = 0.05
+[connection signal="timeout" from="first_dialog_timer" to="." method="_on_first_dialog_timer_timeout"]
+[connection signal="timeout" from="quest_dialog_timer" to="." method="_on_quest_dialog_timer_timeout"]

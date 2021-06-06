@@ -1,0 +1,123 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://props/campfire/campfire.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/camp/tent_campfire.png" type="Texture" id=2]
+[ext_resource path="res://props/camping/camping.gd" type="Script" id=3]
+[ext_resource path="res://assets/fonts/supermarket.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://assets/other/white_circle_128x128.png" type="Texture" id=5]
+
+[sub_resource type="OccluderPolygon2D" id=1]
+polygon = PoolVector2Array( -32, -44, -50, -8, -78, 22, -10, 42, 84, 32, 68, 16, 56, -4, 36, -56, 16, -44, -2, -40, -18, -40 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 90, 46 )
+
+[sub_resource type="CanvasItemMaterial" id=3]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id=4]
+light_mode = 1
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0, 0, 0, 0.784314 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="CanvasItemMaterial" id=6]
+light_mode = 1
+
+[sub_resource type="DynamicFont" id=7]
+size = 32
+extra_spacing_top = 8
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=8]
+size = 32
+extra_spacing_top = 8
+font_data = ExtResource( 4 )
+
+[node name="camping" type="YSort"]
+script = ExtResource( 3 )
+
+[node name="campfire" parent="." instance=ExtResource( 1 )]
+position = Vector2( 96, 48 )
+
+[node name="tent" type="StaticBody2D" parent="."]
+position = Vector2( -166, -48 )
+
+[node name="shadow" type="Sprite" parent="tent"]
+self_modulate = Color( 0, 0, 0, 0.196078 )
+position = Vector2( 1.2517e-06, 28 )
+scale = Vector2( 1.5625, 0.375 )
+texture = ExtResource( 5 )
+
+[node name="graphic" type="Sprite" parent="tent"]
+self_modulate = Color( 0.329412, 0.301961, 0.662745, 1 )
+position = Vector2( 0, 40 )
+texture = ExtResource( 2 )
+offset = Vector2( 0, -40 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="tent"]
+occluder = SubResource( 1 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tent"]
+polygon = PoolVector2Array( -54, -4, 56, -2, 68, 16, 84, 32, -10, 42, -78, 22 )
+
+[node name="player_detection" type="Area2D" parent="tent"]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tent/player_detection"]
+self_modulate = Color( 0.282353, 0.705882, 0.0156863, 0.380392 )
+position = Vector2( 0, 18 )
+shape = SubResource( 2 )
+
+[node name="tent_dialog" type="Node2D" parent="tent"]
+visible = false
+material = SubResource( 3 )
+z_index = 20
+
+[node name="Panel" type="Panel" parent="tent/tent_dialog"]
+material = SubResource( 4 )
+margin_left = 22.0
+margin_top = -216.0
+margin_right = 198.0
+margin_bottom = -48.0
+custom_styles/panel = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="close_tent_button" type="Button" parent="tent/tent_dialog"]
+material = SubResource( 6 )
+margin_left = 50.0
+margin_top = -190.0
+margin_right = 170.0
+margin_bottom = -144.0
+custom_fonts/font = SubResource( 7 )
+text = "เก็บแคมป์"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="sleep_button" type="Button" parent="tent/tent_dialog"]
+use_parent_material = true
+margin_left = 50.0
+margin_top = -118.0
+margin_right = 170.0
+margin_bottom = -78.0
+custom_fonts/font = SubResource( 8 )
+text = "นอน"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="body_entered" from="tent/player_detection" to="." method="_on_player_detection_body_entered"]
+[connection signal="body_exited" from="tent/player_detection" to="." method="_on_player_detection_body_exited"]
+[connection signal="pressed" from="tent/tent_dialog/close_tent_button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="tent/tent_dialog/sleep_button" to="." method="_on_sleep_button_pressed"]

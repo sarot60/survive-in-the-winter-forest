@@ -1,0 +1,332 @@
+[gd_scene load_steps=22 format=2]
+
+[ext_resource path="res://screens/pause_screen/pause.gd" type="Script" id=1]
+[ext_resource path="res://assets/fonts/supermarket.ttf" type="DynamicFontData" id=2]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.945098, 0.819608, 0.270588, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.945098, 0.819608, 0.270588, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.945098, 0.819608, 0.270588, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 1, 1, 1, 0.117647 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 1, 1, 1, 1 )
+shadow_size = 16
+
+[sub_resource type="DynamicFont" id=5]
+size = 32
+outline_size = 1
+extra_spacing_top = 8
+extra_spacing_char = 4
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.945098, 0.819608, 0.270588, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0.945098, 0.819608, 0.270588, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=8]
+bg_color = Color( 0.945098, 0.819608, 0.270588, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=9]
+bg_color = Color( 1, 1, 1, 0.117647 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 1, 1, 1, 1 )
+shadow_size = 16
+
+[sub_resource type="DynamicFont" id=10]
+size = 32
+outline_size = 1
+extra_spacing_top = 8
+extra_spacing_char = 4
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxFlat" id=11]
+bg_color = Color( 0.945098, 0.819608, 0.270588, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=12]
+bg_color = Color( 0.945098, 0.819608, 0.270588, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=13]
+bg_color = Color( 0.945098, 0.819608, 0.270588, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=14]
+bg_color = Color( 1, 1, 1, 0.117647 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 1, 1, 1, 1 )
+shadow_size = 16
+
+[sub_resource type="DynamicFont" id=15]
+size = 32
+outline_size = 1
+extra_spacing_top = 8
+extra_spacing_char = 4
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=16]
+size = 64
+outline_size = 2
+extra_spacing_top = 8
+extra_spacing_char = 4
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=18]
+size = 32
+extra_spacing_top = 16
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=17]
+size = 32
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=19]
+size = 40
+extra_spacing_top = 16
+font_data = ExtResource( 2 )
+
+[node name="pause" type="Control"]
+pause_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="black_overlay" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0.588235 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="menu" type="VBoxContainer" parent="."]
+anchor_left = 0.437
+anchor_top = 0.587
+anchor_right = 0.562
+anchor_bottom = 1.0
+margin_left = -63.488
+margin_top = -224.2
+margin_right = 64.512
+margin_bottom = -40.0
+custom_constants/separation = 16
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="resume" type="Button" parent="menu"]
+margin_right = 256.0
+margin_bottom = 96.0
+rect_min_size = Vector2( 256, 96 )
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/focus = SubResource( 3 )
+custom_styles/normal = SubResource( 4 )
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "RESUME"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="save" type="Button" parent="menu"]
+margin_top = 112.0
+margin_right = 256.0
+margin_bottom = 208.0
+rect_min_size = Vector2( 256, 96 )
+custom_styles/hover = SubResource( 6 )
+custom_styles/pressed = SubResource( 7 )
+custom_styles/focus = SubResource( 8 )
+custom_styles/normal = SubResource( 9 )
+custom_fonts/font = SubResource( 10 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "SAVE"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="setting" type="Button" parent="menu"]
+margin_top = 224.0
+margin_right = 256.0
+margin_bottom = 320.0
+rect_min_size = Vector2( 256, 96 )
+custom_styles/hover = SubResource( 6 )
+custom_styles/pressed = SubResource( 7 )
+custom_styles/focus = SubResource( 8 )
+custom_styles/normal = SubResource( 9 )
+custom_fonts/font = SubResource( 10 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "SETTING"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="quit" type="Button" parent="menu"]
+margin_top = 336.0
+margin_right = 256.0
+margin_bottom = 432.0
+rect_min_size = Vector2( 256, 96 )
+custom_styles/hover = SubResource( 11 )
+custom_styles/pressed = SubResource( 12 )
+custom_styles/focus = SubResource( 13 )
+custom_styles/normal = SubResource( 14 )
+custom_fonts/font = SubResource( 15 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "QUIT"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.307
+anchor_right = 0.5
+anchor_bottom = 0.307
+margin_left = -176.0
+margin_top = -136.2
+margin_right = 176.0
+margin_bottom = -78.2
+custom_fonts/font = SubResource( 16 )
+custom_colors/font_color = Color( 0.945098, 0.819608, 0.270588, 1 )
+text = "PAUSE MENU"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="setting_dialog" type="WindowDialog" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -448.0
+margin_top = -276.0
+margin_right = 448.0
+margin_bottom = 276.0
+window_title = "SETTING"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="setting_dialog"]
+margin_left = 64.0
+margin_top = 192.0
+margin_right = 424.0
+margin_bottom = 360.0
+custom_fonts/normal_font = SubResource( 18 )
+text = "เสียงเพลง
+
+เสียง EFFECT"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="save_setting" type="Button" parent="setting_dialog"]
+margin_left = 320.0
+margin_top = 424.0
+margin_right = 576.0
+margin_bottom = 488.0
+custom_fonts/font = SubResource( 17 )
+text = "Use And Save"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="setting_dialog"]
+margin_top = 40.0
+margin_right = 896.0
+margin_bottom = 136.0
+custom_fonts/font = SubResource( 19 )
+text = "ตั้งค่าเสียงในเกม"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="music_volume" type="HSlider" parent="setting_dialog"]
+margin_left = 384.0
+margin_top = 184.0
+margin_right = 768.0
+margin_bottom = 256.0
+min_value = -80.0
+max_value = 24.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="sfx_volume" type="HSlider" parent="setting_dialog"]
+margin_left = 384.0
+margin_top = 272.0
+margin_right = 768.0
+margin_bottom = 328.0
+min_value = -80.0
+max_value = 24.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="menu/resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="menu/save" to="." method="_on_save_pressed"]
+[connection signal="pressed" from="menu/setting" to="." method="_on_setting_pressed"]
+[connection signal="pressed" from="menu/quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="setting_dialog/save_setting" to="." method="_on_save_setting_pressed"]

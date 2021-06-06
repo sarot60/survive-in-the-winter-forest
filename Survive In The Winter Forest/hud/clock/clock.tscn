@@ -1,0 +1,242 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://fonts/clock_top_number/clock_top_number.tres" type="DynamicFont" id=1]
+[ext_resource path="res://hud/clock/clock.gd" type="Script" id=2]
+[ext_resource path="res://assets/icons/clock/location_.png" type="Texture" id=3]
+
+[sub_resource type="StyleBoxEmpty" id=1]
+
+[node name="clock" type="Control"]
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="day_night_canvas" type="CanvasModulate" parent="."]
+
+[node name="graphic" type="CanvasLayer" parent="."]
+
+[node name="color" type="Control" parent="graphic"]
+anchor_right = 1.0
+anchor_bottom = 0.04
+margin_bottom = -1.90735e-06
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="ColorRect" parent="graphic/color"]
+anchor_right = 0.125
+margin_bottom = 20.0
+rect_min_size = Vector2( 128, 20 )
+color = Color( 0.219608, 0.219608, 0.564706, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="2" type="ColorRect" parent="graphic/color"]
+anchor_left = 0.125
+anchor_right = 0.25
+margin_bottom = 20.0
+rect_min_size = Vector2( 128, 20 )
+color = Color( 0.427451, 0.431373, 0.627451, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="3" type="ColorRect" parent="graphic/color"]
+anchor_left = 0.25
+anchor_right = 0.375
+margin_bottom = 20.0
+rect_min_size = Vector2( 128, 20 )
+color = Color( 0.682353, 0.682353, 0.67451, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="4" type="ColorRect" parent="graphic/color"]
+anchor_left = 0.375
+anchor_right = 0.5
+margin_bottom = 20.0
+rect_min_size = Vector2( 128, 20 )
+color = Color( 0.823529, 0.823529, 0.588235, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="5" type="ColorRect" parent="graphic/color"]
+anchor_left = 0.5
+anchor_right = 0.625
+margin_bottom = 20.0
+rect_min_size = Vector2( 128, 20 )
+color = Color( 0.823529, 0.823529, 0.588235, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="6" type="ColorRect" parent="graphic/color"]
+anchor_left = 0.625
+anchor_right = 0.75
+margin_bottom = 20.0
+rect_min_size = Vector2( 128, 20 )
+color = Color( 0.682353, 0.682353, 0.67451, 1 )
+
+[node name="7" type="ColorRect" parent="graphic/color"]
+anchor_left = 0.75
+anchor_right = 0.875
+margin_bottom = 20.0
+rect_min_size = Vector2( 128, 20 )
+color = Color( 0.427451, 0.431373, 0.627451, 1 )
+
+[node name="8" type="ColorRect" parent="graphic/color"]
+anchor_left = 0.875
+anchor_right = 1.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 128, 20 )
+color = Color( 0.219608, 0.219608, 0.564706, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="clock_text" type="Control" parent="graphic"]
+anchor_right = 1.0
+margin_bottom = 20.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0_00_AM" type="Label" parent="graphic/clock_text"]
+margin_right = 40.0
+margin_bottom = 20.0
+custom_fonts/font = ExtResource( 1 )
+text = "0:00"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="3_00_AM" type="Label" parent="graphic/clock_text"]
+anchor_left = 0.125
+anchor_right = 0.125
+margin_left = -24.0
+margin_right = 24.0
+margin_bottom = 20.0
+custom_fonts/font = ExtResource( 1 )
+text = "3:00"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="6_00_AM" type="Label" parent="graphic/clock_text"]
+anchor_left = 0.25
+anchor_right = 0.25
+margin_left = -24.0
+margin_right = 24.0
+margin_bottom = 20.0
+custom_fonts/font = ExtResource( 1 )
+text = "6:00"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="9_00_AM" type="Label" parent="graphic/clock_text"]
+anchor_left = 0.375
+anchor_right = 0.375
+margin_left = -24.0
+margin_right = 24.0
+margin_bottom = 20.0
+custom_fonts/font = ExtResource( 1 )
+text = "9:00"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="12_00" type="Label" parent="graphic/clock_text"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -24.0
+margin_right = 24.0
+margin_bottom = 20.0
+custom_fonts/font = ExtResource( 1 )
+text = "12:00"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="3_00_PM" type="Label" parent="graphic/clock_text"]
+anchor_left = 0.625
+anchor_right = 0.625
+margin_left = -24.0001
+margin_right = 23.9999
+margin_bottom = 20.0
+custom_fonts/font = ExtResource( 1 )
+text = "3:00"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="6_00_PM" type="Label" parent="graphic/clock_text"]
+anchor_left = 0.75
+anchor_right = 0.75
+margin_left = -24.0001
+margin_right = 23.9999
+margin_bottom = 20.0
+custom_fonts/font = ExtResource( 1 )
+text = "6:00"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="9_00_PM" type="Label" parent="graphic/clock_text"]
+anchor_left = 0.875
+anchor_right = 0.875
+margin_left = -24.0001
+margin_right = 23.9999
+margin_bottom = 20.0
+custom_fonts/font = ExtResource( 1 )
+text = "9:00"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0_00_PM" type="Label" parent="graphic/clock_text"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -48.0
+margin_bottom = 20.0
+custom_fonts/font = ExtResource( 1 )
+text = "0:00"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HSlider" type="HSlider" parent="graphic"]
+anchor_right = 1.0
+margin_bottom = 32.0
+custom_icons/grabber_disabled = ExtResource( 3 )
+custom_styles/slider = SubResource( 1 )
+max_value = 300.0
+value = 150.0
+editable = false
+scrollable = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Timer" type="Timer" parent="graphic"]
+[connection signal="timeout" from="graphic/Timer" to="." method="_on_Timer_timeout"]

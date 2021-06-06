@@ -1,0 +1,436 @@
+[gd_scene load_steps=40 format=2]
+
+[ext_resource path="res://hud/clock/clock.tscn" type="PackedScene" id=1]
+[ext_resource path="res://hud/health_bar/health_bar.tscn" type="PackedScene" id=2]
+[ext_resource path="res://performance_check/fps/fps.gd" type="Script" id=3]
+[ext_resource path="res://gui/B_menu/B_menu.tscn" type="PackedScene" id=4]
+[ext_resource path="res://screens/main/main.gd" type="Script" id=5]
+[ext_resource path="res://hud/equipment_hud/equipment_hud.tscn" type="PackedScene" id=6]
+[ext_resource path="res://hud/state_hud/state_hud.tscn" type="PackedScene" id=7]
+[ext_resource path="res://assets/other/white-64x64.png" type="Texture" id=8]
+[ext_resource path="res://gui/inventory/inventory.tscn" type="PackedScene" id=9]
+[ext_resource path="res://gui/perk/perk.tscn" type="PackedScene" id=10]
+[ext_resource path="res://gui/manage_equipment/manage_equipment.tscn" type="PackedScene" id=11]
+[ext_resource path="res://gui/quest/quest.tscn" type="PackedScene" id=12]
+[ext_resource path="res://music/soundimage_dot_org/Lost-Jungle_Looping.wav" type="AudioStream" id=13]
+[ext_resource path="res://screens/pause_screen/pause.tscn" type="PackedScene" id=14]
+[ext_resource path="res://gui/gui.gd" type="Script" id=15]
+[ext_resource path="res://gui/herb_gps/finding_herb.tscn" type="PackedScene" id=16]
+[ext_resource path="res://hud/floating_reward/reward_drop_show.tscn" type="PackedScene" id=17]
+[ext_resource path="res://materials/world_env.tres" type="Environment" id=18]
+[ext_resource path="res://gui/player_detail/player_detail.tscn" type="PackedScene" id=19]
+[ext_resource path="res://hud/zone_alert_fade.tscn" type="PackedScene" id=20]
+[ext_resource path="res://assets/other/white_circle_32x32.png" type="Texture" id=22]
+[ext_resource path="res://assets/items/herb/oregano.png" type="Texture" id=23]
+[ext_resource path="res://assets/fonts/supermarket.ttf" type="DynamicFontData" id=24]
+[ext_resource path="res://gui/shop/shop.tscn" type="PackedScene" id=25]
+[ext_resource path="res://hud/text_alert/text_alert.tscn" type="PackedScene" id=26]
+[ext_resource path="res://gui/shortcut_help/shortcut_help.tscn" type="PackedScene" id=27]
+[ext_resource path="res://gui/shortcut_help/shortcut_help.gd" type="Script" id=28]
+[ext_resource path="res://hud/current_quest_item_req/current_quest.tscn" type="PackedScene" id=29]
+[ext_resource path="res://hud/hud.gd" type="Script" id=30]
+
+[sub_resource type="DynamicFont" id=1]
+size = 24
+font_data = ExtResource( 24 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 20
+font_data = ExtResource( 24 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0, 0, 0, 0.313726 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 24
+outline_size = 2
+extra_spacing_top = 8
+font_data = ExtResource( 24 )
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.6, 0.6, 0.6, 0.392157 )
+
+[sub_resource type="Shader" id=6]
+code = "shader_type canvas_item;
+
+uniform float blur_amount = 2.0;
+
+void fragment()
+{
+    COLOR = textureLod(SCREEN_TEXTURE, SCREEN_UV, blur_amount);
+}"
+
+[sub_resource type="ShaderMaterial" id=7]
+shader = SubResource( 6 )
+shader_param/blur_amount = 2.0
+
+[sub_resource type="Animation" id=8]
+tracks/0/type = "value"
+tracks/0/path = NodePath("fade_color:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("fade_color:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=9]
+length = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("fade_color:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("fade_color:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=10]
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("fade_color:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("fade_color:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[node name="main" type="Node"]
+pause_mode = 2
+script = ExtResource( 5 )
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource( 18 )
+
+[node name="game" type="Node2D" parent="."]
+pause_mode = 1
+
+[node name="clock" parent="." instance=ExtResource( 1 )]
+pause_mode = 1
+
+[node name="hud_layer" type="CanvasLayer" parent="."]
+layer = 2
+
+[node name="hud" type="Control" parent="hud_layer"]
+pause_mode = 1
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -1024.0
+margin_bottom = -600.0
+script = ExtResource( 30 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="fps" type="Control" parent="hud_layer/hud"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = 1024.0
+margin_right = 1024.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FPS" type="Label" parent="hud_layer/hud/fps"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -66.0
+margin_top = 28.0
+margin_right = -10.0
+margin_bottom = 47.0
+custom_fonts/font = SubResource( 1 )
+text = "FPS"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="player_position" type="Label" parent="hud_layer/hud/fps"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -128.0
+margin_top = 54.0
+margin_right = -11.0
+margin_bottom = 102.0
+custom_fonts/font = SubResource( 2 )
+text = "player position"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="shortcut_help" parent="hud_layer/hud" instance=ExtResource( 27 )]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 512.0
+margin_top = 306.0
+margin_right = 512.0
+margin_bottom = 306.0
+script = ExtResource( 28 )
+
+[node name="health_bar" parent="hud_layer/hud" instance=ExtResource( 2 )]
+
+[node name="state_hud" parent="hud_layer/hud" instance=ExtResource( 7 )]
+margin_left = 1024.0
+margin_top = 600.0
+margin_right = 1024.0
+margin_bottom = 600.0
+
+[node name="equipment_hud" parent="hud_layer/hud" instance=ExtResource( 6 )]
+margin_top = 600.0
+margin_bottom = 600.0
+
+[node name="reward_drop_show" parent="hud_layer/hud" instance=ExtResource( 17 )]
+anchor_top = 0.0
+margin_left = 698.0
+margin_top = 286.0
+margin_right = 698.0
+margin_bottom = 286.0
+
+[node name="pressed_h_key_shortcut" type="Control" parent="hud_layer/hud"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_top = 600.0
+margin_bottom = 600.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="hud_layer/hud/pressed_h_key_shortcut"]
+margin_left = 40.0
+margin_top = -232.0
+margin_right = 272.0
+margin_bottom = -198.0
+custom_styles/normal = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "กด H เพิ่อดู Key Shortcut"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="press_g_hint" type="Control" parent="hud_layer/hud"]
+visible = false
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1024.0
+margin_top = 600.0
+margin_right = 1024.0
+margin_bottom = 600.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="background" type="Panel" parent="hud_layer/hud/press_g_hint"]
+margin_left = -172.0
+margin_top = -224.0
+margin_right = -36.0
+margin_bottom = -192.0
+custom_styles/panel = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="Sprite" parent="hud_layer/hud/press_g_hint/background"]
+self_modulate = Color( 0.945098, 0.819608, 0.270588, 1 )
+position = Vector2( 80, 16 )
+texture = ExtResource( 22 )
+
+[node name="Label" type="Label" parent="hud_layer/hud/press_g_hint/background"]
+margin_left = 8.0
+margin_right = 84.0
+margin_bottom = 34.0
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Press G"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="hud_layer/hud/press_g_hint/background"]
+self_modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 112, 16 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 23 )
+
+[node name="current_quest" parent="hud_layer/hud" instance=ExtResource( 29 )]
+margin_left = 800.0
+margin_top = 160.0
+margin_right = 800.0
+margin_bottom = 160.0
+
+[node name="zone_alert_fade" parent="hud_layer/hud" instance=ExtResource( 20 )]
+margin_right = 1024.0
+margin_bottom = 600.0
+
+[node name="other" type="CanvasLayer" parent="."]
+layer = 3
+
+[node name="finding_herb" parent="other" instance=ExtResource( 16 )]
+visible = false
+
+[node name="shop" parent="other" instance=ExtResource( 25 )]
+visible = false
+
+[node name="gui_layer" type="CanvasLayer" parent="."]
+pause_mode = 1
+layer = 5
+
+[node name="blur_background" type="Control" parent="gui_layer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="gui_layer/blur_background"]
+self_modulate = Color( 0.784314, 0.784314, 0.784314, 1 )
+material = SubResource( 7 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="gui" type="Control" parent="gui_layer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 15 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="B_menu" parent="gui_layer/gui" instance=ExtResource( 4 )]
+visible = false
+
+[node name="inventory" parent="gui_layer/gui" instance=ExtResource( 9 )]
+visible = false
+
+[node name="perk" parent="gui_layer/gui" instance=ExtResource( 10 )]
+visible = false
+
+[node name="manage_equipment" parent="gui_layer/gui" instance=ExtResource( 11 )]
+visible = false
+
+[node name="quest" parent="gui_layer/gui" instance=ExtResource( 12 )]
+visible = false
+
+[node name="player_detail" parent="gui_layer/gui" instance=ExtResource( 19 )]
+visible = false
+
+[node name="pause_layer" type="CanvasLayer" parent="."]
+layer = 90
+
+[node name="pause" parent="pause_layer" instance=ExtResource( 14 )]
+visible = false
+
+[node name="text_alert" parent="pause_layer" instance=ExtResource( 26 )]
+margin_left = 0.0
+margin_top = -172.0
+margin_right = 0.0
+margin_bottom = -172.0
+
+[node name="fade_layer" type="CanvasLayer" parent="."]
+layer = 96
+
+[node name="fade_bg" type="ColorRect" parent="fade_layer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="fade_color" type="ColorRect" parent="fade_layer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="fade_layer"]
+autoplay = "default"
+anims/default = SubResource( 8 )
+anims/fade_1 = SubResource( 9 )
+anims/fade_2 = SubResource( 10 )
+
+[node name="music" type="AudioStreamPlayer" parent="."]
+pause_mode = 2
+stream = ExtResource( 13 )
+bus = "Music"
+
+[node name="screentimer" type="Timer" parent="."]
+process_mode = 0
+one_shot = true
+
+[node name="loadtimer" type="Timer" parent="."]
+process_mode = 0
+one_shot = true
+[connection signal="finished" from="music" to="." method="_on_music_finished"]
+[connection signal="timeout" from="screentimer" to="." method="_on_screentimer_timeout"]
+[connection signal="timeout" from="loadtimer" to="." method="_on_loadtimer_timeout"]

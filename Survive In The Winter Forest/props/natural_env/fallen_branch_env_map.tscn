@@ -1,0 +1,205 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://props/fallen_branch/fallen_branch_1.tscn" type="PackedScene" id=2]
+
+[node name="fallen_branch_env_map" type="YSort"]
+
+[node name="YSort" type="YSort" parent="."]
+
+[node name="fallen_branch_1_1" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 2094, -1600 )
+
+[node name="fallen_branch_1_66" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 1726, -2342 )
+
+[node name="fallen_branch_1_38" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 110, -2058 )
+
+[node name="fallen_branch_1_7" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 3864, -2484 )
+
+[node name="fallen_branch_1_43" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 3470, -2700 )
+
+[node name="fallen_branch_1_65" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 4470, -3886 )
+
+[node name="fallen_branch_1_32" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 7474, -3510 )
+
+[node name="fallen_branch_1_26" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 4940, -1266 )
+
+[node name="fallen_branch_1_39" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 4806, -1096 )
+
+[node name="fallen_branch_1_40" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 5246, -786 )
+
+[node name="fallen_branch_1_54" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 7926, -1656 )
+
+[node name="fallen_branch_1_25" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 4566, -4414 )
+
+[node name="fallen_branch_1_29" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 4826, -6048 )
+
+[node name="fallen_branch_1_30" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 4610, -8364 )
+
+[node name="fallen_branch_1_50" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 7786, -6820 )
+
+[node name="fallen_branch_1_49" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 1618, -7948 )
+
+[node name="fallen_branch_1_8" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 1784, -4036 )
+
+[node name="fallen_branch_1_9" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 2000, -5668 )
+
+[node name="fallen_branch_1_2" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 1768, 1440 )
+
+[node name="fallen_branch_1_44" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 2086, 1618 )
+
+[node name="fallen_branch_1_15" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 3346, 1196 )
+
+[node name="fallen_branch_1_64" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 5498, 1604 )
+
+[node name="fallen_branch_1_16" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 4766, 1352 )
+
+[node name="fallen_branch_1_17" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 7320, 1934 )
+
+[node name="fallen_branch_1_18" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 3362, 3546 )
+
+[node name="fallen_branch_1_41" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 3858, 3128 )
+
+[node name="fallen_branch_1_21" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 5664, 3846 )
+
+[node name="fallen_branch_1_19" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 1732, 4236 )
+
+[node name="fallen_branch_1_36" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 2866, 4958 )
+
+[node name="fallen_branch_1_51" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 4228, 5648 )
+
+[node name="fallen_branch_1_52" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 5940, 7954 )
+
+[node name="fallen_branch_1_53" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 8482, 6894 )
+
+[node name="fallen_branch_1_34" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 1332, 6512 )
+
+[node name="fallen_branch_1_3" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -748, 1340 )
+
+[node name="fallen_branch_1_63" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -130, 1574 )
+
+[node name="fallen_branch_1_4" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -3776, 814 )
+
+[node name="fallen_branch_1_45" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -5018, 798 )
+
+[node name="fallen_branch_1_46" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -4192, 1214 )
+
+[node name="fallen_branch_1_10" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -5230, 2602 )
+
+[node name="fallen_branch_1_11" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -2976, 3264 )
+
+[node name="fallen_branch_1_20" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -3008, 4692 )
+
+[node name="fallen_branch_1_55" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -6574, 5566 )
+
+[node name="fallen_branch_1_37" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 292, 3936 )
+
+[node name="fallen_branch_1_62" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 516, 4216 )
+
+[node name="fallen_branch_1_22" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -2810, 5734 )
+
+[node name="fallen_branch_1_56" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -846, 7562 )
+
+[node name="fallen_branch_1_57" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -6480, 7896 )
+
+[node name="fallen_branch_1_58" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -5984, 4722 )
+
+[node name="fallen_branch_1_59" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -6182, 744 )
+
+[node name="fallen_branch_1_60" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -6130, -4390 )
+
+[node name="fallen_branch_1_12" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -944, 2840 )
+
+[node name="fallen_branch_1_5" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -2952, -1114 )
+
+[node name="fallen_branch_1_35" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -2748, -1236 )
+
+[node name="fallen_branch_1_28" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -2718, -246 )
+
+[node name="fallen_branch_1_6" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -182, -2714 )
+
+[node name="fallen_branch_1_13" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -1734, -3494 )
+
+[node name="fallen_branch_1_27" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -1544, -3234 )
+
+[node name="fallen_branch_1_23" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -1502, -4670 )
+
+[node name="fallen_branch_1_61" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -302, -5508 )
+
+[node name="fallen_branch_1_33" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -998, -7052 )
+
+[node name="fallen_branch_1_24" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -3774, -5720 )
+
+[node name="fallen_branch_1_42" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -4366, -6264 )
+
+[node name="fallen_branch_1_47" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -7172, -6606 )
+
+[node name="fallen_branch_1_48" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -4934, -8606 )
+
+[node name="fallen_branch_1_14" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -4724, -3258 )
+
+[node name="fallen_branch_1_31" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -5768, -2436 )

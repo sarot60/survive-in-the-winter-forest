@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="ParticlesMaterial" id=1]
+emission_shape = 2
+emission_box_extents = Vector3( 2560, 1440, 1 )
+flag_disable_z = true
+spread = 1.0
+gravity = Vector3( 0, 98, 0 )
+angular_velocity = -100.0
+angular_velocity_random = 1.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+radial_accel = -300.0
+radial_accel_random = 1.0
+scale = 5.0
+scale_random = 1.0
+
+[node name="snow_effect" type="Particles2D"]
+self_modulate = Color( 0.901961, 0.901961, 0.901961, 1 )
+position = Vector2( 512, 300 )
+amount = 1000
+lifetime = 0.5
+preprocess = 300.0
+speed_scale = 0.5
+randomness = 1.0
+visibility_rect = Rect2( -1500, -1500, 3000, 3000 )
+process_material = SubResource( 1 )

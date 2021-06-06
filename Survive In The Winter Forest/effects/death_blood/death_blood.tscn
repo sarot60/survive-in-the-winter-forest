@@ -1,0 +1,45 @@
+[gd_scene format=2]
+
+[node name="death_blood" type="Node2D"]
+visible = false
+z_index = -1
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+color = Color( 0.658824, 0.0705882, 0.0705882, 1 )
+polygon = PoolVector2Array( 33, 8, 48, 7, 53, 11, 30, 17 )
+
+[node name="Polygon2D2" type="Polygon2D" parent="."]
+color = Color( 0.847059, 0.109804, 0.109804, 1 )
+polygon = PoolVector2Array( -24, 16, -57, 5, -52, 18 )
+
+[node name="Polygon2D3" type="Polygon2D" parent="."]
+color = Color( 0.933333, 0.180392, 0.180392, 1 )
+polygon = PoolVector2Array( -13, -4, 6, -14, 10, -4, -11, 2 )
+
+[node name="Polygon2D4" type="Polygon2D" parent="."]
+color = Color( 0.854902, 0.215686, 0.215686, 1 )
+polygon = PoolVector2Array( 16, 42, 37, 45, 35, 52, 25, 48, 6, 50 )
+
+[node name="Polygon2D5" type="Polygon2D" parent="."]
+color = Color( 0.945098, 0.168627, 0.168627, 1 )
+polygon = PoolVector2Array( -67, 54, -56, 45, -41, 47, -44, 54, -55, 55, -67, 59 )
+
+[node name="Polygon2D6" type="Polygon2D" parent="."]
+color = Color( 0.807843, 0.113725, 0.113725, 1 )
+polygon = PoolVector2Array( -8, 23, 13, 16, 8, 25, -1, 31, -6, 38, -12, 31 )
+
+[node name="Polygon2D7" type="Polygon2D" parent="."]
+color = Color( 0.890196, 0.113725, 0.113725, 1 )
+polygon = PoolVector2Array( 54, -9, 69, -12, 63, -6 )
+
+[node name="Polygon2D8" type="Polygon2D" parent="."]
+color = Color( 0.898039, 0.180392, 0.180392, 1 )
+polygon = PoolVector2Array( -75, -8, -91, -6, -99, 0 )
+
+[node name="Polygon2D9" type="Polygon2D" parent="."]
+color = Color( 0.901961, 0.239216, 0.239216, 1 )
+polygon = PoolVector2Array( -93, 17, -87, 23, -83, 21, -84, 15 )
+
+[node name="Polygon2D10" type="Polygon2D" parent="."]
+color = Color( 0.831373, 0.0745098, 0.0745098, 1 )
+polygon = PoolVector2Array( 78, 29, 84, 24, 95, 23, 90, 15, 77, 15, 56, 23 )

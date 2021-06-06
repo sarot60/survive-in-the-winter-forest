@@ -1,0 +1,587 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://props/bush_branch/bushbranch_1_1.tscn" type="PackedScene" id=3]
+
+[node name="bush_branch_env_map" type="YSort"]
+
+[node name="bushbranch_set1" type="YSort" parent="."]
+
+[node name="A" type="YSort" parent="bushbranch_set1"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="bushbranch_1_4" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -3028, -1524 )
+
+[node name="bushbranch_1_6" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -3068, -1696 )
+
+[node name="bushbranch_1_7" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -2470, -2524 )
+
+[node name="bushbranch_1_8" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -4096, -2838 )
+
+[node name="bushbranch_1_9" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -4734, -2192 )
+
+[node name="bushbranch_1_38" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -4572, -3714 )
+
+[node name="bushbranch_1_40" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -4956, -884 )
+
+[node name="bushbranch_1_43" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -1120, -2526 )
+
+[node name="bushbranch_1_47" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -1816, -1640 )
+
+[node name="bushbranch_1_48" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -870, -3606 )
+
+[node name="bushbranch_1_10" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -2379.92, -3549.8 )
+
+[node name="bushbranch_1_11" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -2100, -3654 )
+
+[node name="bushbranch_1_12" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -2420, -4524 )
+
+[node name="bushbranch_1_13" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -2244, -4546 )
+
+[node name="bushbranch_1_14" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -3626, -4904 )
+
+[node name="bushbranch_1_18" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -2456.35, -5726.14 )
+
+[node name="bushbranch_1_19" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -1716, -5390 )
+
+[node name="bushbranch_1_25" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -1528, -6104 )
+
+[node name="bushbranch_1_27" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -2806, -6186 )
+
+[node name="bushbranch_1_31" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -4878, -6186 )
+
+[node name="bushbranch_1_32" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -5402, -6024 )
+
+[node name="bushbranch_1_35" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -6156, -5742 )
+
+[node name="bushbranch_1_15" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -3796, -4846 )
+
+[node name="bushbranch_1_16" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -5408, -4748 )
+
+[node name="bushbranch_1_17" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -5630, -4630 )
+
+[node name="bushbranch_1_26" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -6696, -3382 )
+
+[node name="bushbranch_1_28" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -6766, -3102 )
+
+[node name="bushbranch_1_29" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -7246, -3000 )
+
+[node name="bushbranch_1_30" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -6440, -1688 )
+
+[node name="bushbranch_1_33" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -6990, -1306 )
+
+[node name="bushbranch_1_34" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -9114, -964 )
+
+[node name="bushbranch_1_36" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -9184, -684 )
+
+[node name="bushbranch_1_37" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -9664, -582 )
+
+[node name="bushbranch_1_39" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -5194, -7642 )
+
+[node name="bushbranch_1_41" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -5522, -7378 )
+
+[node name="bushbranch_1_42" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -5756, -9742 )
+
+[node name="bushbranch_1_44" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -5826, -9462 )
+
+[node name="bushbranch_1_45" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -6306, -9360 )
+
+[node name="bushbranch_1_46" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -3742, -8480 )
+
+[node name="bushbranch_1_49" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -4292, -8098 )
+
+[node name="bushbranch_1_50" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -2170, -8554 )
+
+[node name="bushbranch_1_53" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -2720, -8172 )
+
+[node name="bushbranch_1_54" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -602, -9652 )
+
+[node name="bushbranch_1_56" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -672, -9372 )
+
+[node name="bushbranch_1_57" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -1152, -9270 )
+
+[node name="bushbranch_1_59" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -792, -7846 )
+
+[node name="bushbranch_1_61" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -1120, -7582 )
+
+[node name="bushbranch_1_20" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -8306.49, -4990.57 )
+
+[node name="bushbranch_1_21" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -8608, -5288 )
+
+[node name="bushbranch_1_22" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -8808, -5666 )
+
+[node name="bushbranch_1_23" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -8400, -7204 )
+
+[node name="bushbranch_1_24" parent="bushbranch_set1/A" instance=ExtResource( 3 )]
+position = Vector2( -8122, -7520 )
+
+[node name="B" type="YSort" parent="bushbranch_set1"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="bushbranch_1_1" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 2396, -3392 )
+
+[node name="bushbranch_1_3" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 2342, -3082 )
+
+[node name="bushbranch_1_5" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 1616, -2854 )
+
+[node name="bushbranch_1_20" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 2100, -2276 )
+
+[node name="bushbranch_1_40" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 3190, -1550 )
+
+[node name="bushbranch_1_42" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 4200, -730 )
+
+[node name="bushbranch_1_51" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 836, -3784 )
+
+[node name="bushbranch_1_52" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 2854, -1752 )
+
+[node name="bushbranch_1_4" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 6384, -1774 )
+
+[node name="bushbranch_1_6" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 6330, -1464 )
+
+[node name="bushbranch_1_9" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 4377.15, -2483.19 )
+
+[node name="bushbranch_1_10" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 4740.64, -2704.13 )
+
+[node name="bushbranch_1_7" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 8526, -2820 )
+
+[node name="bushbranch_1_8" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 8708, -2678 )
+
+[node name="bushbranch_1_13" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 6404, -5998 )
+
+[node name="bushbranch_1_14" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 6642, -5934 )
+
+[node name="bushbranch_1_15" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 5028, -6446 )
+
+[node name="bushbranch_1_16" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 5266, -6382 )
+
+[node name="bushbranch_1_17" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 3372, -7046 )
+
+[node name="bushbranch_1_18" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 3610, -6982 )
+
+[node name="bushbranch_1_19" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 2694.77, -8202.69 )
+
+[node name="bushbranch_1_21" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 3779.54, -8993.8 )
+
+[node name="bushbranch_1_22" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 4017.54, -8929.8 )
+
+[node name="bushbranch_1_23" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 5551.08, -9647.81 )
+
+[node name="bushbranch_1_24" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 5789.08, -9583.81 )
+
+[node name="bushbranch_1_25" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 8122.67, -8365.19 )
+
+[node name="bushbranch_1_26" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 8360.67, -8301.19 )
+
+[node name="bushbranch_1_27" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 8884.62, -9546.21 )
+
+[node name="bushbranch_1_28" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 9122.62, -9482.21 )
+
+[node name="bushbranch_1_29" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 6624.16, -8403.29 )
+
+[node name="bushbranch_1_30" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 6862.16, -8339.29 )
+
+[node name="bushbranch_1_31" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 1725.33, -5031.8 )
+
+[node name="bushbranch_1_32" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 1963.33, -4967.8 )
+
+[node name="bushbranch_1_33" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 265.531, -5543.07 )
+
+[node name="bushbranch_1_34" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 681.32, -5326.68 )
+
+[node name="bushbranch_1_35" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 258.804, -6410.87 )
+
+[node name="bushbranch_1_36" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 496.804, -6346.87 )
+
+[node name="bushbranch_1_37" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 278.986, -8664.47 )
+
+[node name="bushbranch_1_38" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 516.986, -8600.47 )
+
+[node name="bushbranch_1_39" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 3812.85, -3952.65 )
+
+[node name="bushbranch_1_41" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 4005.29, -4048.87 )
+
+[node name="bushbranch_1_43" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 3342.46, -5189.22 )
+
+[node name="bushbranch_1_44" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 3580.46, -5125.22 )
+
+[node name="bushbranch_1_45" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 5777.2, -255.652 )
+
+[node name="bushbranch_1_46" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 6015.2, -191.652 )
+
+[node name="bushbranch_1_47" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 7725.36, -512.386 )
+
+[node name="bushbranch_1_48" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 7963.36, -448.386 )
+
+[node name="bushbranch_1_49" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 8460.43, -5534.17 )
+
+[node name="bushbranch_1_50" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 8698.43, -5470.17 )
+
+[node name="bushbranch_1_11" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 7152, -4692 )
+
+[node name="bushbranch_1_12" parent="bushbranch_set1/B" instance=ExtResource( 3 )]
+position = Vector2( 6916, -4524 )
+
+[node name="C" type="YSort" parent="bushbranch_set1"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="bushbranch_1_1" parent="bushbranch_set1/C" instance=ExtResource( 3 )]
+position = Vector2( -2397.35, 4492.07 )
+
+[node name="bushbranch_1_2" parent="bushbranch_set1/C" instance=ExtResource( 3 )]
+position = Vector2( -1820.5, 4204.09 )
+
+[node name="bushbranch_1_33" parent="bushbranch_set1/C" instance=ExtResource( 3 )]
+position = Vector2( -1322, 2468 )
+
+[node name="bushbranch_1_34" parent="bushbranch_set1/C" instance=ExtResource( 3 )]
+position = Vector2( -2156, 1970 )
+
+[node name="bushbranch_1_35" parent="bushbranch_set1/C" instance=ExtResource( 3 )]
+position = Vector2( -2734, 1352 )
+
+[node name="bushbranch_1_36" parent="bushbranch_set1/C" instance=ExtResource( 3 )]
+position = Vector2( -3084, 2132 )
+
+[node name="bushbranch_1_37" parent="bushbranch_set1/C" instance=ExtResource( 3 )]
+position = Vector2( -2586, 2710 )
+
+[node name="bushbranch_1_38" parent="bushbranch_set1/C" instance=ExtResource( 3 )]
+position = Vector2( -918, 3356 )
+
+[node name="bushbranch_1_3" parent="bushbranch_set1/C" instance=ExtResource( 3 )]
+position = Vector2( -4889.93, 4492.07 )
+
+[node name="bushbranch_1_4" parent="bushbranch_set1/C" instance=ExtResource( 3 )]
+position = Vector2( -4313.08, 4204.09 )
+
+[node name="bushbranch_1_5" parent="bushbranch_set1/C" instance=ExtResource( 3 )]
+position = Vector2( -7877.22, 3302.86 )
+
+[node name="bushbranch_1_6" parent="bushbranch_set1/C" instance=ExtResource( 3 )]
+position = Vector2( -7300.37, 3014.89 )
+
+[node name="bushbranch_1_7" parent="bushbranch_set1/C" instance=ExtResource( 3 )]
+position = Vector2( -4803.01, 1881.67 )
+
+[node name="bushbranch_1_8" parent="bushbranch_set1/C" instance=ExtResource( 3 )]
+position = Vector2( -4226.16, 1593.69 )
+
+[node name="bushbranch_1_9" parent="bushbranch_set1/C" instance=ExtResource( 3 )]
+position = Vector2( -939.631, 9555.47 )
+
+[node name="bushbranch_1_10" parent="bushbranch_set1/C" instance=ExtResource( 3 )]
+position = Vector2( -362.779, 9267.49 )
+
+[node name="bushbranch_1_11" parent="bushbranch_set1/C" instance=ExtResource( 3 )]
+position = Vector2( -7833.38, 7035.29 )
+
+[node name="bushbranch_1_12" parent="bushbranch_set1/C" instance=ExtResource( 3 )]
+position = Vector2( -7256.53, 6747.3 )
+
+[node name="bushbranch_1_13" parent="bushbranch_set1/C" instance=ExtResource( 3 )]
+position = Vector2( -3856.67, 8034.22 )
+
+[node name="bushbranch_1_14" parent="bushbranch_set1/C" instance=ExtResource( 3 )]
+position = Vector2( -3279.82, 7746.24 )
+
+[node name="bushbranch_1_15" parent="bushbranch_set1/C" instance=ExtResource( 3 )]
+position = Vector2( -6900.79, 8887.29 )
+
+[node name="bushbranch_1_16" parent="bushbranch_set1/C" instance=ExtResource( 3 )]
+position = Vector2( -6323.94, 8599.31 )
+
+[node name="bushbranch_1_17" parent="bushbranch_set1/C" instance=ExtResource( 3 )]
+position = Vector2( -5517.92, 5968.89 )
+
+[node name="bushbranch_1_18" parent="bushbranch_set1/C" instance=ExtResource( 3 )]
+position = Vector2( -4941.06, 5680.91 )
+
+[node name="bushbranch_1_19" parent="bushbranch_set1/C" instance=ExtResource( 3 )]
+position = Vector2( -972.12, 5475 )
+
+[node name="bushbranch_1_20" parent="bushbranch_set1/C" instance=ExtResource( 3 )]
+position = Vector2( -395.269, 5187.02 )
+
+[node name="bushbranch_1_21" parent="bushbranch_set1/C" instance=ExtResource( 3 )]
+position = Vector2( -2352.99, 8791.11 )
+
+[node name="bushbranch_1_22" parent="bushbranch_set1/C" instance=ExtResource( 3 )]
+position = Vector2( -1776.14, 8503.13 )
+
+[node name="bushbranch_1_23" parent="bushbranch_set1/C" instance=ExtResource( 3 )]
+position = Vector2( -5479.72, 486.389 )
+
+[node name="bushbranch_1_24" parent="bushbranch_set1/C" instance=ExtResource( 3 )]
+position = Vector2( -4902.87, 198.41 )
+
+[node name="bushbranch_1_25" parent="bushbranch_set1/C" instance=ExtResource( 3 )]
+position = Vector2( -7319.72, 926.389 )
+
+[node name="bushbranch_1_26" parent="bushbranch_set1/C" instance=ExtResource( 3 )]
+position = Vector2( -6742.87, 638.41 )
+
+[node name="bushbranch_1_27" parent="bushbranch_set1/C" instance=ExtResource( 3 )]
+position = Vector2( -9385.99, 2760.83 )
+
+[node name="bushbranch_1_28" parent="bushbranch_set1/C" instance=ExtResource( 3 )]
+position = Vector2( -8809.14, 2472.86 )
+
+[node name="bushbranch_1_29" parent="bushbranch_set1/C" instance=ExtResource( 3 )]
+position = Vector2( -9456.55, 3264.8 )
+
+[node name="bushbranch_1_30" parent="bushbranch_set1/C" instance=ExtResource( 3 )]
+position = Vector2( -8879.7, 2976.82 )
+
+[node name="bushbranch_1_31" parent="bushbranch_set1/C" instance=ExtResource( 3 )]
+position = Vector2( -9063.9, 6481.53 )
+
+[node name="bushbranch_1_32" parent="bushbranch_set1/C" instance=ExtResource( 3 )]
+position = Vector2( -8487.05, 6193.55 )
+
+[node name="D" type="YSort" parent="bushbranch_set1"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="bushbranch_1_1" parent="bushbranch_set1/D" instance=ExtResource( 3 )]
+position = Vector2( 4483.76, 2179.96 )
+
+[node name="bushbranch_1_2" parent="bushbranch_set1/D" instance=ExtResource( 3 )]
+position = Vector2( 4959.94, 2467.22 )
+
+[node name="bushbranch_1_3" parent="bushbranch_set1/D" instance=ExtResource( 3 )]
+position = Vector2( 2975.09, 4163.27 )
+
+[node name="bushbranch_1_37" parent="bushbranch_set1/D" instance=ExtResource( 3 )]
+position = Vector2( 2364, 2612 )
+
+[node name="bushbranch_1_38" parent="bushbranch_set1/D" instance=ExtResource( 3 )]
+position = Vector2( 1424, 2426 )
+
+[node name="bushbranch_1_39" parent="bushbranch_set1/D" instance=ExtResource( 3 )]
+position = Vector2( 2152, 2062 )
+
+[node name="bushbranch_1_40" parent="bushbranch_set1/D" instance=ExtResource( 3 )]
+position = Vector2( 1364, 3080 )
+
+[node name="bushbranch_1_41" parent="bushbranch_set1/D" instance=ExtResource( 3 )]
+position = Vector2( 720, 2978 )
+
+[node name="bushbranch_1_42" parent="bushbranch_set1/D" instance=ExtResource( 3 )]
+position = Vector2( 3882, 1104 )
+
+[node name="bushbranch_1_43" parent="bushbranch_set1/D" instance=ExtResource( 3 )]
+position = Vector2( 3034, 630 )
+
+[node name="bushbranch_1_44" parent="bushbranch_set1/D" instance=ExtResource( 3 )]
+position = Vector2( 2974, 198 )
+
+[node name="bushbranch_1_45" parent="bushbranch_set1/D" instance=ExtResource( 3 )]
+position = Vector2( 2330, 1062 )
+
+[node name="bushbranch_1_4" parent="bushbranch_set1/D" instance=ExtResource( 3 )]
+position = Vector2( 3451.27, 4450.54 )
+
+[node name="bushbranch_1_5" parent="bushbranch_set1/D" instance=ExtResource( 3 )]
+position = Vector2( 3074.96, 7407.69 )
+
+[node name="bushbranch_1_6" parent="bushbranch_set1/D" instance=ExtResource( 3 )]
+position = Vector2( 3551.14, 7694.96 )
+
+[node name="bushbranch_1_7" parent="bushbranch_set1/D" instance=ExtResource( 3 )]
+position = Vector2( 2703.38, 9109.76 )
+
+[node name="bushbranch_1_8" parent="bushbranch_set1/D" instance=ExtResource( 3 )]
+position = Vector2( 3179.56, 9397.03 )
+
+[node name="bushbranch_1_9" parent="bushbranch_set1/D" instance=ExtResource( 3 )]
+position = Vector2( 5304.44, 7060.08 )
+
+[node name="bushbranch_1_29" parent="bushbranch_set1/D" instance=ExtResource( 3 )]
+position = Vector2( 5726, 5830 )
+
+[node name="bushbranch_1_30" parent="bushbranch_set1/D" instance=ExtResource( 3 )]
+position = Vector2( 5142, 5668 )
+
+[node name="bushbranch_1_31" parent="bushbranch_set1/D" instance=ExtResource( 3 )]
+position = Vector2( 5502, 5552 )
+
+[node name="bushbranch_1_32" parent="bushbranch_set1/D" instance=ExtResource( 3 )]
+position = Vector2( 5600, 5050 )
+
+[node name="bushbranch_1_33" parent="bushbranch_set1/D" instance=ExtResource( 3 )]
+position = Vector2( 7054, 4960 )
+
+[node name="bushbranch_1_34" parent="bushbranch_set1/D" instance=ExtResource( 3 )]
+position = Vector2( 6802, 5804 )
+
+[node name="bushbranch_1_35" parent="bushbranch_set1/D" instance=ExtResource( 3 )]
+position = Vector2( 3938, 6432 )
+
+[node name="bushbranch_1_36" parent="bushbranch_set1/D" instance=ExtResource( 3 )]
+position = Vector2( 2196, 6424 )
+
+[node name="bushbranch_1_10" parent="bushbranch_set1/D" instance=ExtResource( 3 )]
+position = Vector2( 5780.62, 7347.35 )
+
+[node name="bushbranch_1_11" parent="bushbranch_set1/D" instance=ExtResource( 3 )]
+position = Vector2( 8161.16, 6064.47 )
+
+[node name="bushbranch_1_12" parent="bushbranch_set1/D" instance=ExtResource( 3 )]
+position = Vector2( 8637.33, 6351.74 )
+
+[node name="bushbranch_1_13" parent="bushbranch_set1/D" instance=ExtResource( 3 )]
+position = Vector2( 8433.3, 3857.09 )
+
+[node name="bushbranch_1_14" parent="bushbranch_set1/D" instance=ExtResource( 3 )]
+position = Vector2( 8909.48, 4144.36 )
+
+[node name="bushbranch_1_15" parent="bushbranch_set1/D" instance=ExtResource( 3 )]
+position = Vector2( 8761.52, 3885.63 )
+
+[node name="bushbranch_1_16" parent="bushbranch_set1/D" instance=ExtResource( 3 )]
+position = Vector2( 9237.7, 4172.9 )
+
+[node name="bushbranch_1_17" parent="bushbranch_set1/D" instance=ExtResource( 3 )]
+position = Vector2( 6183.32, 3600.22 )
+
+[node name="bushbranch_1_18" parent="bushbranch_set1/D" instance=ExtResource( 3 )]
+position = Vector2( 6659.5, 3887.49 )
+
+[node name="bushbranch_1_19" parent="bushbranch_set1/D" instance=ExtResource( 3 )]
+position = Vector2( 399.662, 4929.7 )
+
+[node name="bushbranch_1_20" parent="bushbranch_set1/D" instance=ExtResource( 3 )]
+position = Vector2( 875.838, 5216.97 )
+
+[node name="bushbranch_1_21" parent="bushbranch_set1/D" instance=ExtResource( 3 )]
+position = Vector2( 2234.55, 5473.37 )
+
+[node name="bushbranch_1_22" parent="bushbranch_set1/D" instance=ExtResource( 3 )]
+position = Vector2( 2710.73, 5760.64 )
+
+[node name="bushbranch_1_23" parent="bushbranch_set1/D" instance=ExtResource( 3 )]
+position = Vector2( 537.497, 7713.49 )
+
+[node name="bushbranch_1_24" parent="bushbranch_set1/D" instance=ExtResource( 3 )]
+position = Vector2( 1013.67, 8000.75 )
+
+[node name="bushbranch_1_25" parent="bushbranch_set1/D" instance=ExtResource( 3 )]
+position = Vector2( 8614.59, 8407.98 )
+
+[node name="bushbranch_1_26" parent="bushbranch_set1/D" instance=ExtResource( 3 )]
+position = Vector2( 9090.77, 8695.25 )
+
+[node name="bushbranch_1_27" parent="bushbranch_set1/D" instance=ExtResource( 3 )]
+position = Vector2( 7715.55, 1443.99 )
+
+[node name="bushbranch_1_28" parent="bushbranch_set1/D" instance=ExtResource( 3 )]
+position = Vector2( 8191.73, 1731.25 )
+
+[node name="bushbranch_set2" type="YSort" parent="."]

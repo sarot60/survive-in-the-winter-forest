@@ -1,0 +1,120 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://assets/icons/hud/sit.png" type="Texture" id=1]
+[ext_resource path="res://hud/state_hud/state_hud.gd" type="Script" id=2]
+[ext_resource path="res://assets/icons/hud/walk.png" type="Texture" id=3]
+[ext_resource path="res://assets/icons/hud/idle.png" type="Texture" id=4]
+[ext_resource path="res://assets/other/can_calling.png" type="Texture" id=5]
+[ext_resource path="res://assets/other/cannot.png" type="Texture" id=6]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0, 0, 0, 0.392157 )
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+border_color = Color( 1, 1, 1, 1 )
+border_blend = true
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+shadow_color = Color( 0, 0, 0, 0.392157 )
+shadow_size = 16
+
+[node name="state_hud" type="Control"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="background" type="Panel" parent="."]
+margin_left = -168.0
+margin_top = -168.0
+margin_right = -40.0
+margin_bottom = -40.0
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="idle" type="Control" parent="background"]
+visible = false
+margin_left = 152.0
+margin_top = 152.0
+margin_right = 152.0
+margin_bottom = 152.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="background/idle"]
+margin_left = -136.0
+margin_top = -136.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = ExtResource( 4 )
+expand = true
+
+[node name="move" type="Control" parent="background"]
+visible = false
+margin_left = 152.0
+margin_top = 152.0
+margin_right = 152.0
+margin_bottom = 152.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="background/move"]
+margin_left = -136.0
+margin_top = -136.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = ExtResource( 3 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="sit" type="Control" parent="background"]
+visible = false
+margin_left = 152.0
+margin_top = 152.0
+margin_right = 152.0
+margin_bottom = 152.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="background/sit"]
+margin_left = -136.0
+margin_top = -136.0
+margin_right = -40.0
+margin_bottom = -40.0
+texture = ExtResource( 1 )
+expand = true
+
+[node name="can_calling" type="TextureRect" parent="."]
+margin_left = -256.0
+margin_top = -104.0
+margin_right = -192.0
+margin_bottom = -40.0
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="cannot" type="TextureRect" parent="can_calling"]
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 72.0
+margin_bottom = 72.0
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

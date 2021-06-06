@@ -1,0 +1,267 @@
+[gd_scene load_steps=19 format=2]
+
+[ext_resource path="res://assets/fonts/supermarket.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://assets/other/white_circle_64x64.png" type="Texture" id=2]
+[ext_resource path="res://gui/player_detail/player_detail.gd" type="Script" id=3]
+[ext_resource path="res://assets/icons/white-cancel-icon_24x24.png" type="Texture" id=4]
+[ext_resource path="res://assets/fonts/FC Galaxy Italic.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://assets/other/white-32x32.png" type="Texture" id=6]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+
+[sub_resource type="DynamicFont" id=2]
+size = 24
+extra_spacing_top = 8
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+
+[sub_resource type="DynamicFont" id=4]
+size = 24
+extra_spacing_top = 8
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0, 0, 0, 0.784314 )
+border_width_top = 40
+border_color = Color( 0.945098, 0.819608, 0.266667, 1 )
+shadow_size = 32
+
+[sub_resource type="DynamicFont" id=6]
+size = 30
+extra_spacing_top = 8
+extra_spacing_char = 4
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 24
+extra_spacing_top = 12
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=8]
+size = 24
+font_data = ExtResource( 1 )
+
+[sub_resource type="Gradient" id=9]
+offsets = PoolRealArray( 0, 0.3, 1 )
+colors = PoolColorArray( 0.945098, 0.819608, 0.266667, 1, 0.223529, 0.215686, 0.121569, 1, 0, 0, 0, 1 )
+
+[sub_resource type="GradientTexture" id=10]
+gradient = SubResource( 9 )
+
+[sub_resource type="StyleBoxTexture" id=11]
+texture = SubResource( 10 )
+region_rect = Rect2( 0, 0, 2048, 1 )
+
+[sub_resource type="DynamicFont" id=12]
+size = 52
+outline_size = 1
+extra_spacing_char = 4
+font_data = ExtResource( 5 )
+
+[node name="player_status" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Table_Ins" type="Control" parent="."]
+visible = false
+margin_left = 112.0
+margin_top = 96.0
+margin_right = 912.0
+margin_bottom = 136.0
+rect_min_size = Vector2( 800, 40 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="Table_Ins"]
+margin_right = 384.0
+margin_bottom = 40.0
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Table_Ins/Panel"]
+margin_right = 384.0
+margin_bottom = 40.0
+custom_fonts/font = SubResource( 2 )
+text = "name ชื่อ"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel2" type="Panel" parent="Table_Ins"]
+margin_left = 384.0
+margin_right = 800.0
+margin_bottom = 40.0
+custom_styles/panel = SubResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Table_Ins/Panel2"]
+margin_right = 416.0
+margin_bottom = 40.0
+custom_fonts/font = SubResource( 4 )
+text = "status สถานะ"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -496.0
+margin_top = -284.0
+margin_right = 496.0
+margin_bottom = 212.0
+custom_styles/panel = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel"]
+margin_left = 16.0
+margin_right = 173.0
+margin_bottom = 40.0
+custom_fonts/font = SubResource( 6 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "PLAYER STATUS"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="close_button" type="TextureButton" parent="Panel"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -40.0
+margin_top = 4.0
+margin_right = 24.0
+margin_bottom = 68.0
+rect_scale = Vector2( 0.5, 0.5 )
+texture_normal = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="Panel/close_button"]
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = 12.0
+margin_top = 12.0
+margin_right = 52.0
+margin_bottom = 52.0
+texture = ExtResource( 4 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="detail" type="Control" parent="Panel"]
+margin_left = 24.0
+margin_top = 56.0
+margin_right = 968.0
+margin_bottom = 472.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel/detail"]
+visible = false
+margin_left = 96.0
+margin_top = 24.0
+margin_right = 872.0
+margin_bottom = 360.0
+custom_fonts/normal_font = SubResource( 7 )
+text = "xyz
+xxx
+czs"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Panel/detail"]
+margin_left = 72.0
+margin_top = 24.0
+margin_right = 888.0
+margin_bottom = 360.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GridContainer" type="GridContainer" parent="Panel/detail/ScrollContainer"]
+custom_constants/vseparation = -2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="exp_progress" type="TextureProgress" parent="Panel"]
+margin_left = 112.0
+margin_top = 448.0
+margin_right = 960.0
+margin_bottom = 464.0
+value = 50.0
+texture_under = ExtResource( 6 )
+texture_progress = ExtResource( 6 )
+tint_progress = Color( 0.207843, 0.741176, 0.282353, 1 )
+nine_patch_stretch = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="exp" type="Label" parent="Panel/exp_progress"]
+margin_left = -56.0
+margin_right = -16.0
+margin_bottom = 14.0
+custom_fonts/font = SubResource( 8 )
+text = "EXP"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="bottom_bar" type="Panel" parent="."]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -64.0
+custom_styles/panel = SubResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="bottom_bar"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -304.0
+margin_top = -32.0
+margin_right = -18.0
+margin_bottom = 32.0
+custom_fonts/font = SubResource( 12 )
+text = "press B to close"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Panel/close_button" to="." method="_on_close_button_pressed"]

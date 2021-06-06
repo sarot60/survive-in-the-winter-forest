@@ -1,0 +1,2940 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/props/trees/tree_2_1.png" type="Texture" id=1]
+[ext_resource path="res://assets/props/trees/tree_3_1.png" type="Texture" id=2]
+
+[node name="outside_env_map" type="YSort"]
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+color = Color( 0.882353, 0.105882, 0.0235294, 1 )
+polygon = PoolVector2Array( 10000, -10000, 10000, 10000, -10000, 10008, -10000, -9992, -10016, -9992, -10016, 10024, 10016, 10016, 10016, -10016, -10016, -10016, -10016, -10000 )
+
+[node name="top" type="YSort" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="tree_3_1_pack3_1" type="YSort" parent="top"]
+position = Vector2( 8776, -11064 )
+
+[node name="tree_3_1_" type="Sprite" parent="top/tree_3_1_pack3_1"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="top/tree_3_1_pack3_1"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="top/tree_3_1_pack3_1"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_2" type="YSort" parent="top"]
+position = Vector2( 7944, -10696 )
+
+[node name="tree_3_1_" type="Sprite" parent="top/tree_3_1_pack3_2"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="top/tree_3_1_pack3_2"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="top/tree_3_1_pack3_2"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_8" type="YSort" parent="top"]
+position = Vector2( 8264, -11304 )
+
+[node name="tree_3_1_" type="Sprite" parent="top/tree_3_1_pack3_8"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="top/tree_3_1_pack3_8"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="top/tree_3_1_pack3_8"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_9" type="YSort" parent="top"]
+position = Vector2( 9000, -11776 )
+
+[node name="tree_3_1_" type="Sprite" parent="top/tree_3_1_pack3_9"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="top/tree_3_1_pack3_9"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="top/tree_3_1_pack3_9"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_10" type="YSort" parent="top"]
+position = Vector2( 10256, -11816 )
+
+[node name="tree_3_1_" type="Sprite" parent="top/tree_3_1_pack3_10"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="top/tree_3_1_pack3_10"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="top/tree_3_1_pack3_10"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_11" type="YSort" parent="top"]
+position = Vector2( 7752, -11752 )
+
+[node name="tree_3_1_" type="Sprite" parent="top/tree_3_1_pack3_11"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="top/tree_3_1_pack3_11"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="top/tree_3_1_pack3_11"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_12" type="YSort" parent="top"]
+position = Vector2( 5848, -11640 )
+
+[node name="tree_3_1_" type="Sprite" parent="top/tree_3_1_pack3_12"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="top/tree_3_1_pack3_12"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="top/tree_3_1_pack3_12"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_14" type="YSort" parent="top"]
+position = Vector2( 4368, -11216 )
+
+[node name="tree_3_1_" type="Sprite" parent="top/tree_3_1_pack3_14"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="top/tree_3_1_pack3_14"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="top/tree_3_1_pack3_14"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_35" type="YSort" parent="top"]
+position = Vector2( 4816, -11800 )
+
+[node name="tree_3_1_" type="Sprite" parent="top/tree_3_1_pack3_35"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="top/tree_3_1_pack3_35"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="top/tree_3_1_pack3_35"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_32" type="YSort" parent="top"]
+position = Vector2( 3960, -10480 )
+
+[node name="tree_3_1_" type="Sprite" parent="top/tree_3_1_pack3_32"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="top/tree_3_1_pack3_32"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="top/tree_3_1_pack3_32"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_33" type="YSort" parent="top"]
+position = Vector2( 3960, -10480 )
+
+[node name="tree_3_1_" type="Sprite" parent="top/tree_3_1_pack3_33"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="top/tree_3_1_pack3_33"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="top/tree_3_1_pack3_33"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_34" type="YSort" parent="top"]
+position = Vector2( 3184, -11376 )
+
+[node name="tree_3_1_" type="Sprite" parent="top/tree_3_1_pack3_34"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="top/tree_3_1_pack3_34"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="top/tree_3_1_pack3_34"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_15" type="YSort" parent="top"]
+position = Vector2( 2792, -10608 )
+
+[node name="tree_3_1_" type="Sprite" parent="top/tree_3_1_pack3_15"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="top/tree_3_1_pack3_15"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="top/tree_3_1_pack3_15"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_16" type="YSort" parent="top"]
+position = Vector2( 1944, -11528 )
+
+[node name="tree_3_1_" type="Sprite" parent="top/tree_3_1_pack3_16"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="top/tree_3_1_pack3_16"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="top/tree_3_1_pack3_16"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_17" type="YSort" parent="top"]
+position = Vector2( 1304, -10768 )
+
+[node name="tree_3_1_" type="Sprite" parent="top/tree_3_1_pack3_17"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="top/tree_3_1_pack3_17"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="top/tree_3_1_pack3_17"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_18" type="YSort" parent="top"]
+position = Vector2( 312, -11088 )
+
+[node name="tree_3_1_" type="Sprite" parent="top/tree_3_1_pack3_18"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="top/tree_3_1_pack3_18"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="top/tree_3_1_pack3_18"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_36" type="YSort" parent="top"]
+position = Vector2( -112, -11680 )
+
+[node name="tree_3_1_" type="Sprite" parent="top/tree_3_1_pack3_36"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="top/tree_3_1_pack3_36"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="top/tree_3_1_pack3_36"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_37" type="YSort" parent="top"]
+position = Vector2( -40, -10464 )
+
+[node name="tree_3_1_" type="Sprite" parent="top/tree_3_1_pack3_37"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="top/tree_3_1_pack3_37"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="top/tree_3_1_pack3_37"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_19" type="YSort" parent="top"]
+position = Vector2( -1336, -10968 )
+
+[node name="tree_3_1_" type="Sprite" parent="top/tree_3_1_pack3_19"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="top/tree_3_1_pack3_19"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="top/tree_3_1_pack3_19"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_20" type="YSort" parent="top"]
+position = Vector2( -2176, -11560 )
+
+[node name="tree_3_1_" type="Sprite" parent="top/tree_3_1_pack3_20"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="top/tree_3_1_pack3_20"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="top/tree_3_1_pack3_20"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_21" type="YSort" parent="top"]
+position = Vector2( -2624, -10552 )
+
+[node name="tree_3_1_" type="Sprite" parent="top/tree_3_1_pack3_21"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="top/tree_3_1_pack3_21"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="top/tree_3_1_pack3_21"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_22" type="YSort" parent="top"]
+position = Vector2( -3968, -11048 )
+
+[node name="tree_3_1_" type="Sprite" parent="top/tree_3_1_pack3_22"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="top/tree_3_1_pack3_22"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="top/tree_3_1_pack3_22"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_39" type="YSort" parent="top"]
+position = Vector2( -3368, -11800 )
+
+[node name="tree_3_1_" type="Sprite" parent="top/tree_3_1_pack3_39"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="top/tree_3_1_pack3_39"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="top/tree_3_1_pack3_39"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_23" type="YSort" parent="top"]
+position = Vector2( -4776, -11472 )
+
+[node name="tree_3_1_" type="Sprite" parent="top/tree_3_1_pack3_23"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="top/tree_3_1_pack3_23"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="top/tree_3_1_pack3_23"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_24" type="YSort" parent="top"]
+position = Vector2( -6144, -11352 )
+
+[node name="tree_3_1_" type="Sprite" parent="top/tree_3_1_pack3_24"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="top/tree_3_1_pack3_24"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="top/tree_3_1_pack3_24"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_25" type="YSort" parent="top"]
+position = Vector2( -6720, -10640 )
+
+[node name="tree_3_1_" type="Sprite" parent="top/tree_3_1_pack3_25"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="top/tree_3_1_pack3_25"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="top/tree_3_1_pack3_25"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_26" type="YSort" parent="top"]
+position = Vector2( -7744, -11136 )
+
+[node name="tree_3_1_" type="Sprite" parent="top/tree_3_1_pack3_26"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="top/tree_3_1_pack3_26"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="top/tree_3_1_pack3_26"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_38" type="YSort" parent="top"]
+position = Vector2( -7272, -11672 )
+
+[node name="tree_3_1_" type="Sprite" parent="top/tree_3_1_pack3_38"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="top/tree_3_1_pack3_38"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="top/tree_3_1_pack3_38"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_27" type="YSort" parent="top"]
+position = Vector2( -9144, -11344 )
+
+[node name="tree_3_1_" type="Sprite" parent="top/tree_3_1_pack3_27"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="top/tree_3_1_pack3_27"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="top/tree_3_1_pack3_27"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_28" type="YSort" parent="top"]
+position = Vector2( -9144, -10600 )
+
+[node name="tree_3_1_" type="Sprite" parent="top/tree_3_1_pack3_28"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="top/tree_3_1_pack3_28"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="top/tree_3_1_pack3_28"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_29" type="YSort" parent="top"]
+position = Vector2( -10216, -10624 )
+
+[node name="tree_3_1_" type="Sprite" parent="top/tree_3_1_pack3_29"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="top/tree_3_1_pack3_29"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="top/tree_3_1_pack3_29"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_30" type="YSort" parent="top"]
+position = Vector2( -11376, -10768 )
+
+[node name="tree_3_1_" type="Sprite" parent="top/tree_3_1_pack3_30"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="top/tree_3_1_pack3_30"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="top/tree_3_1_pack3_30"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_31" type="YSort" parent="top"]
+position = Vector2( -10712, -11368 )
+
+[node name="tree_3_1_" type="Sprite" parent="top/tree_3_1_pack3_31"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="top/tree_3_1_pack3_31"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="top/tree_3_1_pack3_31"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_13" type="YSort" parent="top"]
+position = Vector2( 5552, -10752 )
+
+[node name="tree_3_1_" type="Sprite" parent="top/tree_3_1_pack3_13"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="top/tree_3_1_pack3_13"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="top/tree_3_1_pack3_13"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_3" type="YSort" parent="top"]
+position = Vector2( 10376, -10736 )
+
+[node name="tree_3_1_" type="Sprite" parent="top/tree_3_1_pack3_3"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="top/tree_3_1_pack3_3"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="top/tree_3_1_pack3_3"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_4" type="YSort" parent="top"]
+position = Vector2( 10848, -10376 )
+
+[node name="tree_3_1_" type="Sprite" parent="top/tree_3_1_pack3_4"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="top/tree_3_1_pack3_4"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="top/tree_3_1_pack3_4"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_5" type="YSort" parent="top"]
+position = Vector2( 11320, -10784 )
+
+[node name="tree_3_1_" type="Sprite" parent="top/tree_3_1_pack3_5"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="top/tree_3_1_pack3_5"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="top/tree_3_1_pack3_5"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_6" type="YSort" parent="top"]
+position = Vector2( 10776, -11288 )
+
+[node name="tree_3_1_" type="Sprite" parent="top/tree_3_1_pack3_6"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="top/tree_3_1_pack3_6"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="top/tree_3_1_pack3_6"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_7" type="YSort" parent="top"]
+position = Vector2( 9656, -11344 )
+
+[node name="tree_3_1_" type="Sprite" parent="top/tree_3_1_pack3_7"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="top/tree_3_1_pack3_7"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="top/tree_3_1_pack3_7"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_2_1" type="Sprite" parent="top"]
+position = Vector2( -9536, -10072 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_2" type="Sprite" parent="top"]
+position = Vector2( -8568, -10224 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_3" type="Sprite" parent="top"]
+position = Vector2( -8056, -10104 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_4" type="Sprite" parent="top"]
+position = Vector2( -7192, -10120 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_5" type="Sprite" parent="top"]
+position = Vector2( -6056, -10112 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_6" type="Sprite" parent="top"]
+position = Vector2( -4624, -10168 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_7" type="Sprite" parent="top"]
+position = Vector2( -3312, -10072 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_8" type="Sprite" parent="top"]
+position = Vector2( -1904, -10304 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_9" type="Sprite" parent="top"]
+position = Vector2( -592, -10040 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_10" type="Sprite" parent="top"]
+position = Vector2( 688, -10056 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_11" type="Sprite" parent="top"]
+position = Vector2( 1824, -10112 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_12" type="Sprite" parent="top"]
+position = Vector2( 3296, -10072 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_13" type="Sprite" parent="top"]
+position = Vector2( 4776, -10272 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_22" type="Sprite" parent="top"]
+position = Vector2( 3728, -11064 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_23" type="Sprite" parent="top"]
+position = Vector2( 2576, -10864 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_24" type="Sprite" parent="top"]
+position = Vector2( 1176, -11048 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_25" type="Sprite" parent="top"]
+position = Vector2( -712, -10968 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_26" type="Sprite" parent="top"]
+position = Vector2( -2696, -10992 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_27" type="Sprite" parent="top"]
+position = Vector2( -4152, -11352 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_28" type="Sprite" parent="top"]
+position = Vector2( -5408, -11088 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_29" type="Sprite" parent="top"]
+position = Vector2( -6680, -11072 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_30" type="Sprite" parent="top"]
+position = Vector2( -8512, -11160 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_31" type="Sprite" parent="top"]
+position = Vector2( -9888, -10952 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_32" type="Sprite" parent="top"]
+position = Vector2( -10776, -10512 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_33" type="Sprite" parent="top"]
+position = Vector2( -11640, -11128 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_34" type="Sprite" parent="top"]
+position = Vector2( -5160, -10288 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_14" type="Sprite" parent="top"]
+position = Vector2( 6400, -10080 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_19" type="Sprite" parent="top"]
+position = Vector2( 6776, -10864 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_20" type="Sprite" parent="top"]
+position = Vector2( 5272, -10880 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_21" type="Sprite" parent="top"]
+position = Vector2( 6232, -10672 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_15" type="Sprite" parent="top"]
+position = Vector2( 7336, -10296 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_16" type="Sprite" parent="top"]
+position = Vector2( 8632, -10040 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_17" type="Sprite" parent="top"]
+position = Vector2( 9232, -10240 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_18" type="Sprite" parent="top"]
+position = Vector2( 9880, -10168 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="left" type="YSort" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="tree_3_1_pack3_1" type="YSort" parent="left"]
+position = Vector2( -10800, 8904 )
+
+[node name="tree_3_1_" type="Sprite" parent="left/tree_3_1_pack3_1"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="left/tree_3_1_pack3_1"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="left/tree_3_1_pack3_1"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_2" type="YSort" parent="left"]
+position = Vector2( -11888, 8576 )
+
+[node name="tree_3_1_" type="Sprite" parent="left/tree_3_1_pack3_2"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="left/tree_3_1_pack3_2"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="left/tree_3_1_pack3_2"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_3" type="YSort" parent="left"]
+position = Vector2( -11280, 9648 )
+
+[node name="tree_3_1_" type="Sprite" parent="left/tree_3_1_pack3_3"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="left/tree_3_1_pack3_3"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="left/tree_3_1_pack3_3"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_4" type="YSort" parent="left"]
+position = Vector2( -11016, 7568 )
+
+[node name="tree_3_1_" type="Sprite" parent="left/tree_3_1_pack3_4"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="left/tree_3_1_pack3_4"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="left/tree_3_1_pack3_4"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_25" type="YSort" parent="left"]
+position = Vector2( -10984, 6832 )
+
+[node name="tree_3_1_" type="Sprite" parent="left/tree_3_1_pack3_25"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="left/tree_3_1_pack3_25"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="left/tree_3_1_pack3_25"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_26" type="YSort" parent="left"]
+position = Vector2( -11808, 6760 )
+
+[node name="tree_3_1_" type="Sprite" parent="left/tree_3_1_pack3_26"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="left/tree_3_1_pack3_26"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="left/tree_3_1_pack3_26"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_5" type="YSort" parent="left"]
+position = Vector2( -12000, 5816 )
+
+[node name="tree_3_1_" type="Sprite" parent="left/tree_3_1_pack3_5"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="left/tree_3_1_pack3_5"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="left/tree_3_1_pack3_5"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_6" type="YSort" parent="left"]
+position = Vector2( -11304, 4120 )
+
+[node name="tree_3_1_" type="Sprite" parent="left/tree_3_1_pack3_6"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="left/tree_3_1_pack3_6"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="left/tree_3_1_pack3_6"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_7" type="YSort" parent="left"]
+position = Vector2( -11336, 1920 )
+
+[node name="tree_3_1_" type="Sprite" parent="left/tree_3_1_pack3_7"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="left/tree_3_1_pack3_7"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="left/tree_3_1_pack3_7"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_8" type="YSort" parent="left"]
+position = Vector2( -10440, 2160 )
+
+[node name="tree_3_1_" type="Sprite" parent="left/tree_3_1_pack3_8"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="left/tree_3_1_pack3_8"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="left/tree_3_1_pack3_8"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_9" type="YSort" parent="left"]
+position = Vector2( -11664, 344 )
+
+[node name="tree_3_1_" type="Sprite" parent="left/tree_3_1_pack3_9"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="left/tree_3_1_pack3_9"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="left/tree_3_1_pack3_9"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_10" type="YSort" parent="left"]
+position = Vector2( -11112, -1456 )
+
+[node name="tree_3_1_" type="Sprite" parent="left/tree_3_1_pack3_10"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="left/tree_3_1_pack3_10"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="left/tree_3_1_pack3_10"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_11" type="YSort" parent="left"]
+position = Vector2( -11560, -2512 )
+
+[node name="tree_3_1_" type="Sprite" parent="left/tree_3_1_pack3_11"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="left/tree_3_1_pack3_11"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="left/tree_3_1_pack3_11"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_12" type="YSort" parent="left"]
+position = Vector2( -11424, -3928 )
+
+[node name="tree_3_1_" type="Sprite" parent="left/tree_3_1_pack3_12"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="left/tree_3_1_pack3_12"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="left/tree_3_1_pack3_12"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_13" type="YSort" parent="left"]
+position = Vector2( -10480, -4680 )
+
+[node name="tree_3_1_" type="Sprite" parent="left/tree_3_1_pack3_13"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="left/tree_3_1_pack3_13"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="left/tree_3_1_pack3_13"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_14" type="YSort" parent="left"]
+position = Vector2( -11832, -5856 )
+
+[node name="tree_3_1_" type="Sprite" parent="left/tree_3_1_pack3_14"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="left/tree_3_1_pack3_14"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="left/tree_3_1_pack3_14"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_15" type="YSort" parent="left"]
+position = Vector2( -10968, -7344 )
+
+[node name="tree_3_1_" type="Sprite" parent="left/tree_3_1_pack3_15"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="left/tree_3_1_pack3_15"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="left/tree_3_1_pack3_15"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_16" type="YSort" parent="left"]
+position = Vector2( -11224, -8616 )
+
+[node name="tree_3_1_" type="Sprite" parent="left/tree_3_1_pack3_16"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="left/tree_3_1_pack3_16"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="left/tree_3_1_pack3_16"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_17" type="YSort" parent="left"]
+position = Vector2( -11760, -9152 )
+
+[node name="tree_3_1_" type="Sprite" parent="left/tree_3_1_pack3_17"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="left/tree_3_1_pack3_17"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="left/tree_3_1_pack3_17"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_18" type="YSort" parent="left"]
+position = Vector2( -10288, -8200 )
+
+[node name="tree_3_1_" type="Sprite" parent="left/tree_3_1_pack3_18"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="left/tree_3_1_pack3_18"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="left/tree_3_1_pack3_18"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_19" type="YSort" parent="left"]
+position = Vector2( -10600, -6312 )
+
+[node name="tree_3_1_" type="Sprite" parent="left/tree_3_1_pack3_19"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="left/tree_3_1_pack3_19"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="left/tree_3_1_pack3_19"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_20" type="YSort" parent="left"]
+position = Vector2( -10464, -2976 )
+
+[node name="tree_3_1_" type="Sprite" parent="left/tree_3_1_pack3_20"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="left/tree_3_1_pack3_20"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="left/tree_3_1_pack3_20"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_21" type="YSort" parent="left"]
+position = Vector2( -10384, -1960 )
+
+[node name="tree_3_1_" type="Sprite" parent="left/tree_3_1_pack3_21"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="left/tree_3_1_pack3_21"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="left/tree_3_1_pack3_21"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_22" type="YSort" parent="left"]
+position = Vector2( -10448, -160 )
+
+[node name="tree_3_1_" type="Sprite" parent="left/tree_3_1_pack3_22"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="left/tree_3_1_pack3_22"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="left/tree_3_1_pack3_22"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_23" type="YSort" parent="left"]
+position = Vector2( -10872, 5424 )
+
+[node name="tree_3_1_" type="Sprite" parent="left/tree_3_1_pack3_23"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="left/tree_3_1_pack3_23"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="left/tree_3_1_pack3_23"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_24" type="YSort" parent="left"]
+position = Vector2( -11448, 2808 )
+
+[node name="tree_3_1_" type="Sprite" parent="left/tree_3_1_pack3_24"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="left/tree_3_1_pack3_24"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="left/tree_3_1_pack3_24"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_27" type="YSort" parent="left"]
+position = Vector2( -10984, 3448 )
+
+[node name="tree_3_1_" type="Sprite" parent="left/tree_3_1_pack3_27"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="left/tree_3_1_pack3_27"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="left/tree_3_1_pack3_27"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_2_1" type="Sprite" parent="left"]
+position = Vector2( -10312, -8568 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_18" type="Sprite" parent="left"]
+position = Vector2( -10216, -9456 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_21" type="Sprite" parent="left"]
+position = Vector2( -11520, -9656 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_22" type="Sprite" parent="left"]
+position = Vector2( -11736, -7952 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_23" type="Sprite" parent="left"]
+position = Vector2( -11792, -6608 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_24" type="Sprite" parent="left"]
+position = Vector2( -11624, -4832 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_25" type="Sprite" parent="left"]
+position = Vector2( -11952, -3264 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_26" type="Sprite" parent="left"]
+position = Vector2( -12008, -1328 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_27" type="Sprite" parent="left"]
+position = Vector2( -11864, 1872 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_28" type="Sprite" parent="left"]
+position = Vector2( -11864, 3672 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_29" type="Sprite" parent="left"]
+position = Vector2( -11568, 5272 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_30" type="Sprite" parent="left"]
+position = Vector2( -11256, 6416 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_31" type="Sprite" parent="left"]
+position = Vector2( -11728, 7912 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_32" type="Sprite" parent="left"]
+position = Vector2( -11896, 9888 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_19" type="Sprite" parent="left"]
+position = Vector2( -10904, -9080 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_20" type="Sprite" parent="left"]
+position = Vector2( -11368, -312 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_2" type="Sprite" parent="left"]
+position = Vector2( -10720, -7808 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_3" type="Sprite" parent="left"]
+position = Vector2( -10280, -6760 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_4" type="Sprite" parent="left"]
+position = Vector2( -11208, -6048 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_5" type="Sprite" parent="left"]
+position = Vector2( -10472, -5184 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_6" type="Sprite" parent="left"]
+position = Vector2( -10696, -3688 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_7" type="Sprite" parent="left"]
+position = Vector2( -10888, -2168 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_8" type="Sprite" parent="left"]
+position = Vector2( -10440, -712 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_9" type="Sprite" parent="left"]
+position = Vector2( -11040, 704 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_10" type="Sprite" parent="left"]
+position = Vector2( -10336, 1368 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_11" type="Sprite" parent="left"]
+position = Vector2( -10904, 3072 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_12" type="Sprite" parent="left"]
+position = Vector2( -10328, 3952 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_13" type="Sprite" parent="left"]
+position = Vector2( -10376, 5304 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_14" type="Sprite" parent="left"]
+position = Vector2( -10496, 6776 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_15" type="Sprite" parent="left"]
+position = Vector2( -10416, 8512 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_16" type="Sprite" parent="left"]
+position = Vector2( -10464, 9840 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_17" type="Sprite" parent="left"]
+position = Vector2( -11368, 9304 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="right" type="YSort" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="tree_2_1" type="Sprite" parent="right"]
+position = Vector2( 10368, -8840 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_16" type="Sprite" parent="right"]
+position = Vector2( 10816, -9200 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_34" type="Sprite" parent="right"]
+position = Vector2( 10520, -7376 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_19" type="Sprite" parent="right"]
+position = Vector2( 11192, -8408 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_17" type="Sprite" parent="right"]
+position = Vector2( 10200, -8528 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_18" type="Sprite" parent="right"]
+position = Vector2( 11552, -8904 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_2" type="Sprite" parent="right"]
+position = Vector2( 10296, -7752 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_3" type="Sprite" parent="right"]
+position = Vector2( 10184, -6776 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_4" type="Sprite" parent="right"]
+position = Vector2( 10536, -5912 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_20" type="Sprite" parent="right"]
+position = Vector2( 11416, -6568 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_21" type="Sprite" parent="right"]
+position = Vector2( 11264, -7384 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_5" type="Sprite" parent="right"]
+position = Vector2( 10296, -4528 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_6" type="Sprite" parent="right"]
+position = Vector2( 10488, -3256 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_35" type="Sprite" parent="right"]
+position = Vector2( 11512, -3928 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_7" type="Sprite" parent="right"]
+position = Vector2( 10352, -1936 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_8" type="Sprite" parent="right"]
+position = Vector2( 10392, -448 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_22" type="Sprite" parent="right"]
+position = Vector2( 10200, -1240 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_23" type="Sprite" parent="right"]
+position = Vector2( 11536, -1176 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_24" type="Sprite" parent="right"]
+position = Vector2( 11216, -456 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_33" type="Sprite" parent="right"]
+position = Vector2( 10240, 64 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_9" type="Sprite" parent="right"]
+position = Vector2( 10464, 1112 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_10" type="Sprite" parent="right"]
+position = Vector2( 10344, 2704 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_31" type="Sprite" parent="right"]
+position = Vector2( 10952, 2432 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_32" type="Sprite" parent="right"]
+position = Vector2( 11640, 1824 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_11" type="Sprite" parent="right"]
+position = Vector2( 10480, 4256 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_25" type="Sprite" parent="right"]
+position = Vector2( 11048, 4496 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_26" type="Sprite" parent="right"]
+position = Vector2( 11472, 5304 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_27" type="Sprite" parent="right"]
+position = Vector2( 11528, 6352 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_28" type="Sprite" parent="right"]
+position = Vector2( 11200, 7776 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_30" type="Sprite" parent="right"]
+position = Vector2( 11640, 7288 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_29" type="Sprite" parent="right"]
+position = Vector2( 11640, 8504 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_12" type="Sprite" parent="right"]
+position = Vector2( 10376, 5992 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_13" type="Sprite" parent="right"]
+position = Vector2( 10360, 7848 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_14" type="Sprite" parent="right"]
+position = Vector2( 10400, 8728 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_15" type="Sprite" parent="right"]
+position = Vector2( 10672, 9640 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_3_1_pack3_1" type="YSort" parent="right"]
+position = Vector2( 10224, -9720 )
+
+[node name="tree_3_1_" type="Sprite" parent="right/tree_3_1_pack3_1"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="right/tree_3_1_pack3_1"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="right/tree_3_1_pack3_1"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_38" type="YSort" parent="right"]
+position = Vector2( 11360, -9856 )
+
+[node name="tree_3_1_" type="Sprite" parent="right/tree_3_1_pack3_38"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="right/tree_3_1_pack3_38"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="right/tree_3_1_pack3_38"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_39" type="YSort" parent="right"]
+position = Vector2( 11656, -8232 )
+
+[node name="tree_3_1_" type="Sprite" parent="right/tree_3_1_pack3_39"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="right/tree_3_1_pack3_39"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="right/tree_3_1_pack3_39"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_40" type="YSort" parent="right"]
+position = Vector2( 11512, -6064 )
+
+[node name="tree_3_1_" type="Sprite" parent="right/tree_3_1_pack3_40"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="right/tree_3_1_pack3_40"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="right/tree_3_1_pack3_40"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_2" type="YSort" parent="right"]
+position = Vector2( 10696, -8680 )
+
+[node name="tree_3_1_" type="Sprite" parent="right/tree_3_1_pack3_2"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="right/tree_3_1_pack3_2"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="right/tree_3_1_pack3_2"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_22" type="YSort" parent="right"]
+position = Vector2( 10888, -8136 )
+
+[node name="tree_3_1_" type="Sprite" parent="right/tree_3_1_pack3_22"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="right/tree_3_1_pack3_22"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="right/tree_3_1_pack3_22"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_23" type="YSort" parent="right"]
+position = Vector2( 10720, -6824 )
+
+[node name="tree_3_1_" type="Sprite" parent="right/tree_3_1_pack3_23"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="right/tree_3_1_pack3_23"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="right/tree_3_1_pack3_23"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_24" type="YSort" parent="right"]
+position = Vector2( 11040, -5800 )
+
+[node name="tree_3_1_" type="Sprite" parent="right/tree_3_1_pack3_24"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="right/tree_3_1_pack3_24"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="right/tree_3_1_pack3_24"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_25" type="YSort" parent="right"]
+position = Vector2( 11352, -5064 )
+
+[node name="tree_3_1_" type="Sprite" parent="right/tree_3_1_pack3_25"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="right/tree_3_1_pack3_25"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="right/tree_3_1_pack3_25"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_26" type="YSort" parent="right"]
+position = Vector2( 11296, -3584 )
+
+[node name="tree_3_1_" type="Sprite" parent="right/tree_3_1_pack3_26"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="right/tree_3_1_pack3_26"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="right/tree_3_1_pack3_26"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_27" type="YSort" parent="right"]
+position = Vector2( 11224, -2592 )
+
+[node name="tree_3_1_" type="Sprite" parent="right/tree_3_1_pack3_27"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="right/tree_3_1_pack3_27"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="right/tree_3_1_pack3_27"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_3" type="YSort" parent="right"]
+position = Vector2( 10736, -7536 )
+
+[node name="tree_3_1_" type="Sprite" parent="right/tree_3_1_pack3_3"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="right/tree_3_1_pack3_3"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="right/tree_3_1_pack3_3"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_4" type="YSort" parent="right"]
+position = Vector2( 10240, -6328 )
+
+[node name="tree_3_1_" type="Sprite" parent="right/tree_3_1_pack3_4"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="right/tree_3_1_pack3_4"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="right/tree_3_1_pack3_4"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_5" type="YSort" parent="right"]
+position = Vector2( 10528, -5328 )
+
+[node name="tree_3_1_" type="Sprite" parent="right/tree_3_1_pack3_5"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="right/tree_3_1_pack3_5"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="right/tree_3_1_pack3_5"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_6" type="YSort" parent="right"]
+position = Vector2( 10728, -4384 )
+
+[node name="tree_3_1_" type="Sprite" parent="right/tree_3_1_pack3_6"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="right/tree_3_1_pack3_6"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="right/tree_3_1_pack3_6"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_7" type="YSort" parent="right"]
+position = Vector2( 10304, -3032 )
+
+[node name="tree_3_1_" type="Sprite" parent="right/tree_3_1_pack3_7"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="right/tree_3_1_pack3_7"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="right/tree_3_1_pack3_7"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_8" type="YSort" parent="right"]
+position = Vector2( 10696, -1848 )
+
+[node name="tree_3_1_" type="Sprite" parent="right/tree_3_1_pack3_8"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="right/tree_3_1_pack3_8"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="right/tree_3_1_pack3_8"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_9" type="YSort" parent="right"]
+position = Vector2( 10712, -1032 )
+
+[node name="tree_3_1_" type="Sprite" parent="right/tree_3_1_pack3_9"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="right/tree_3_1_pack3_9"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="right/tree_3_1_pack3_9"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_10" type="YSort" parent="right"]
+position = Vector2( 10344, 248 )
+
+[node name="tree_3_1_" type="Sprite" parent="right/tree_3_1_pack3_10"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="right/tree_3_1_pack3_10"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="right/tree_3_1_pack3_10"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_28" type="YSort" parent="right"]
+position = Vector2( 11368, 608 )
+
+[node name="tree_3_1_" type="Sprite" parent="right/tree_3_1_pack3_28"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="right/tree_3_1_pack3_28"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="right/tree_3_1_pack3_28"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_41" type="YSort" parent="right"]
+position = Vector2( 10944, -56 )
+
+[node name="tree_3_1_" type="Sprite" parent="right/tree_3_1_pack3_41"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="right/tree_3_1_pack3_41"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="right/tree_3_1_pack3_41"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_29" type="YSort" parent="right"]
+position = Vector2( 11032, 1304 )
+
+[node name="tree_3_1_" type="Sprite" parent="right/tree_3_1_pack3_29"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="right/tree_3_1_pack3_29"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="right/tree_3_1_pack3_29"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_30" type="YSort" parent="right"]
+position = Vector2( 11536, 2288 )
+
+[node name="tree_3_1_" type="Sprite" parent="right/tree_3_1_pack3_30"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="right/tree_3_1_pack3_30"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="right/tree_3_1_pack3_30"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_31" type="YSort" parent="right"]
+position = Vector2( 11352, 3256 )
+
+[node name="tree_3_1_" type="Sprite" parent="right/tree_3_1_pack3_31"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="right/tree_3_1_pack3_31"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="right/tree_3_1_pack3_31"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_11" type="YSort" parent="right"]
+position = Vector2( 10400, 1688 )
+
+[node name="tree_3_1_" type="Sprite" parent="right/tree_3_1_pack3_11"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="right/tree_3_1_pack3_11"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="right/tree_3_1_pack3_11"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_12" type="YSort" parent="right"]
+position = Vector2( 10736, 2960 )
+
+[node name="tree_3_1_" type="Sprite" parent="right/tree_3_1_pack3_12"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="right/tree_3_1_pack3_12"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="right/tree_3_1_pack3_12"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_13" type="YSort" parent="right"]
+position = Vector2( 10368, 4648 )
+
+[node name="tree_3_1_" type="Sprite" parent="right/tree_3_1_pack3_13"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="right/tree_3_1_pack3_13"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="right/tree_3_1_pack3_13"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_35" type="YSort" parent="right"]
+position = Vector2( 11736, 4136 )
+
+[node name="tree_3_1_" type="Sprite" parent="right/tree_3_1_pack3_35"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="right/tree_3_1_pack3_35"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="right/tree_3_1_pack3_35"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_14" type="YSort" parent="right"]
+position = Vector2( 10792, 5488 )
+
+[node name="tree_3_1_" type="Sprite" parent="right/tree_3_1_pack3_14"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="right/tree_3_1_pack3_14"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="right/tree_3_1_pack3_14"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_36" type="YSort" parent="right"]
+position = Vector2( 11864, 5416 )
+
+[node name="tree_3_1_" type="Sprite" parent="right/tree_3_1_pack3_36"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="right/tree_3_1_pack3_36"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="right/tree_3_1_pack3_36"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_15" type="YSort" parent="right"]
+position = Vector2( 10408, 6696 )
+
+[node name="tree_3_1_" type="Sprite" parent="right/tree_3_1_pack3_15"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="right/tree_3_1_pack3_15"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="right/tree_3_1_pack3_15"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_16" type="YSort" parent="right"]
+position = Vector2( 10752, 7856 )
+
+[node name="tree_3_1_" type="Sprite" parent="right/tree_3_1_pack3_16"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="right/tree_3_1_pack3_16"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="right/tree_3_1_pack3_16"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_37" type="YSort" parent="right"]
+position = Vector2( 11904, 7600 )
+
+[node name="tree_3_1_" type="Sprite" parent="right/tree_3_1_pack3_37"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="right/tree_3_1_pack3_37"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="right/tree_3_1_pack3_37"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_17" type="YSort" parent="right"]
+position = Vector2( 10456, 9080 )
+
+[node name="tree_3_1_" type="Sprite" parent="right/tree_3_1_pack3_17"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="right/tree_3_1_pack3_17"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="right/tree_3_1_pack3_17"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_18" type="YSort" parent="right"]
+position = Vector2( 10368, 9776 )
+
+[node name="tree_3_1_" type="Sprite" parent="right/tree_3_1_pack3_18"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="right/tree_3_1_pack3_18"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="right/tree_3_1_pack3_18"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_19" type="YSort" parent="right"]
+position = Vector2( 11144, 8696 )
+
+[node name="tree_3_1_" type="Sprite" parent="right/tree_3_1_pack3_19"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="right/tree_3_1_pack3_19"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="right/tree_3_1_pack3_19"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_32" type="YSort" parent="right"]
+position = Vector2( 11080, 9640 )
+
+[node name="tree_3_1_" type="Sprite" parent="right/tree_3_1_pack3_32"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="right/tree_3_1_pack3_32"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="right/tree_3_1_pack3_32"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_33" type="YSort" parent="right"]
+position = Vector2( 11712, 9712 )
+
+[node name="tree_3_1_" type="Sprite" parent="right/tree_3_1_pack3_33"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="right/tree_3_1_pack3_33"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="right/tree_3_1_pack3_33"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_34" type="YSort" parent="right"]
+position = Vector2( 11608, 9032 )
+
+[node name="tree_3_1_" type="Sprite" parent="right/tree_3_1_pack3_34"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="right/tree_3_1_pack3_34"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="right/tree_3_1_pack3_34"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_20" type="YSort" parent="right"]
+position = Vector2( 11056, 6320 )
+
+[node name="tree_3_1_" type="Sprite" parent="right/tree_3_1_pack3_20"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="right/tree_3_1_pack3_20"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="right/tree_3_1_pack3_20"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="bottom" type="YSort" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="tree_2_1" type="Sprite" parent="bottom"]
+position = Vector2( 6856, 10888 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_2" type="Sprite" parent="bottom"]
+position = Vector2( 7592, 10480 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_3" type="Sprite" parent="bottom"]
+position = Vector2( 8192, 10936 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_4" type="Sprite" parent="bottom"]
+position = Vector2( 8800, 10440 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_5" type="Sprite" parent="bottom"]
+position = Vector2( 9624, 10712 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_19" type="Sprite" parent="bottom"]
+position = Vector2( 9304, 11504 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_20" type="Sprite" parent="bottom"]
+position = Vector2( 9904, 11312 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_35" type="Sprite" parent="bottom"]
+position = Vector2( 10304, 10872 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_36" type="Sprite" parent="bottom"]
+position = Vector2( 10808, 10712 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_37" type="Sprite" parent="bottom"]
+position = Vector2( 11360, 11016 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_38" type="Sprite" parent="bottom"]
+position = Vector2( 10560, 11624 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_21" type="Sprite" parent="bottom"]
+position = Vector2( 7848, 11536 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_22" type="Sprite" parent="bottom"]
+position = Vector2( 6488, 11720 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_23" type="Sprite" parent="bottom"]
+position = Vector2( 4752, 11592 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_24" type="Sprite" parent="bottom"]
+position = Vector2( 3464, 11656 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_25" type="Sprite" parent="bottom"]
+position = Vector2( 1960, 11568 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_26" type="Sprite" parent="bottom"]
+position = Vector2( 672, 11768 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_27" type="Sprite" parent="bottom"]
+position = Vector2( -512, 11968 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_28" type="Sprite" parent="bottom"]
+position = Vector2( -2168, 12056 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_29" type="Sprite" parent="bottom"]
+position = Vector2( -3520, 11848 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_30" type="Sprite" parent="bottom"]
+position = Vector2( -4968, 12032 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_31" type="Sprite" parent="bottom"]
+position = Vector2( -6368, 11880 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_32" type="Sprite" parent="bottom"]
+position = Vector2( -7768, 11872 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_33" type="Sprite" parent="bottom"]
+position = Vector2( -8824, 11920 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_34" type="Sprite" parent="bottom"]
+position = Vector2( -10192, 11936 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_39" type="Sprite" parent="bottom"]
+position = Vector2( -10424, 11608 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_40" type="Sprite" parent="bottom"]
+position = Vector2( -11440, 11624 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_6" type="Sprite" parent="bottom"]
+position = Vector2( 5928, 10976 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_7" type="Sprite" parent="bottom"]
+position = Vector2( 4456, 10728 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_8" type="Sprite" parent="bottom"]
+position = Vector2( 2952, 10936 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_9" type="Sprite" parent="bottom"]
+position = Vector2( 1216, 10608 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_10" type="Sprite" parent="bottom"]
+position = Vector2( -272, 10792 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_11" type="Sprite" parent="bottom"]
+position = Vector2( -1472, 10472 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_12" type="Sprite" parent="bottom"]
+position = Vector2( -2456, 11184 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_13" type="Sprite" parent="bottom"]
+position = Vector2( -3848, 10744 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_14" type="Sprite" parent="bottom"]
+position = Vector2( -5120, 10872 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_15" type="Sprite" parent="bottom"]
+position = Vector2( -6760, 10760 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_16" type="Sprite" parent="bottom"]
+position = Vector2( -8216, 10688 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_17" type="Sprite" parent="bottom"]
+position = Vector2( -9328, 10960 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_2_18" type="Sprite" parent="bottom"]
+position = Vector2( -9928, 10720 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -385 )
+
+[node name="tree_3_1_pack3_1" type="YSort" parent="bottom"]
+position = Vector2( 9864, 10080 )
+
+[node name="tree_3_1_" type="Sprite" parent="bottom/tree_3_1_pack3_1"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="bottom/tree_3_1_pack3_1"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="bottom/tree_3_1_pack3_1"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_2" type="YSort" parent="bottom"]
+position = Vector2( 9112, 10384 )
+
+[node name="tree_3_1_" type="Sprite" parent="bottom/tree_3_1_pack3_2"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="bottom/tree_3_1_pack3_2"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="bottom/tree_3_1_pack3_2"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_35" type="YSort" parent="bottom"]
+position = Vector2( 11152, 10296 )
+
+[node name="tree_3_1_" type="Sprite" parent="bottom/tree_3_1_pack3_35"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="bottom/tree_3_1_pack3_35"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="bottom/tree_3_1_pack3_35"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_36" type="YSort" parent="bottom"]
+position = Vector2( 11944, 10512 )
+
+[node name="tree_3_1_" type="Sprite" parent="bottom/tree_3_1_pack3_36"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="bottom/tree_3_1_pack3_36"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="bottom/tree_3_1_pack3_36"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_37" type="YSort" parent="bottom"]
+position = Vector2( 10984, 11208 )
+
+[node name="tree_3_1_" type="Sprite" parent="bottom/tree_3_1_pack3_37"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="bottom/tree_3_1_pack3_37"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="bottom/tree_3_1_pack3_37"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_3" type="YSort" parent="bottom"]
+position = Vector2( 8184, 10088 )
+
+[node name="tree_3_1_" type="Sprite" parent="bottom/tree_3_1_pack3_3"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="bottom/tree_3_1_pack3_3"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="bottom/tree_3_1_pack3_3"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_4" type="YSort" parent="bottom"]
+position = Vector2( 7248, 10720 )
+
+[node name="tree_3_1_" type="Sprite" parent="bottom/tree_3_1_pack3_4"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="bottom/tree_3_1_pack3_4"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="bottom/tree_3_1_pack3_4"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_5" type="YSort" parent="bottom"]
+position = Vector2( 6352, 10320 )
+
+[node name="tree_3_1_" type="Sprite" parent="bottom/tree_3_1_pack3_5"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="bottom/tree_3_1_pack3_5"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="bottom/tree_3_1_pack3_5"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_6" type="YSort" parent="bottom"]
+position = Vector2( 5184, 10376 )
+
+[node name="tree_3_1_" type="Sprite" parent="bottom/tree_3_1_pack3_6"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="bottom/tree_3_1_pack3_6"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="bottom/tree_3_1_pack3_6"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_7" type="YSort" parent="bottom"]
+position = Vector2( 3752, 10376 )
+
+[node name="tree_3_1_" type="Sprite" parent="bottom/tree_3_1_pack3_7"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="bottom/tree_3_1_pack3_7"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="bottom/tree_3_1_pack3_7"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_8" type="YSort" parent="bottom"]
+position = Vector2( 2312, 10272 )
+
+[node name="tree_3_1_" type="Sprite" parent="bottom/tree_3_1_pack3_8"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="bottom/tree_3_1_pack3_8"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="bottom/tree_3_1_pack3_8"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_9" type="YSort" parent="bottom"]
+position = Vector2( 1432, 10712 )
+
+[node name="tree_3_1_" type="Sprite" parent="bottom/tree_3_1_pack3_9"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="bottom/tree_3_1_pack3_9"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="bottom/tree_3_1_pack3_9"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_10" type="YSort" parent="bottom"]
+position = Vector2( 304, 10280 )
+
+[node name="tree_3_1_" type="Sprite" parent="bottom/tree_3_1_pack3_10"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="bottom/tree_3_1_pack3_10"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="bottom/tree_3_1_pack3_10"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_11" type="YSort" parent="bottom"]
+position = Vector2( -776, 10792 )
+
+[node name="tree_3_1_" type="Sprite" parent="bottom/tree_3_1_pack3_11"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="bottom/tree_3_1_pack3_11"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="bottom/tree_3_1_pack3_11"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_12" type="YSort" parent="bottom"]
+position = Vector2( -1856, 10456 )
+
+[node name="tree_3_1_" type="Sprite" parent="bottom/tree_3_1_pack3_12"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="bottom/tree_3_1_pack3_12"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="bottom/tree_3_1_pack3_12"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_13" type="YSort" parent="bottom"]
+position = Vector2( -3048, 10424 )
+
+[node name="tree_3_1_" type="Sprite" parent="bottom/tree_3_1_pack3_13"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="bottom/tree_3_1_pack3_13"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="bottom/tree_3_1_pack3_13"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_14" type="YSort" parent="bottom"]
+position = Vector2( -4512, 10760 )
+
+[node name="tree_3_1_" type="Sprite" parent="bottom/tree_3_1_pack3_14"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="bottom/tree_3_1_pack3_14"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="bottom/tree_3_1_pack3_14"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_15" type="YSort" parent="bottom"]
+position = Vector2( -5832, 10392 )
+
+[node name="tree_3_1_" type="Sprite" parent="bottom/tree_3_1_pack3_15"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="bottom/tree_3_1_pack3_15"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="bottom/tree_3_1_pack3_15"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_16" type="YSort" parent="bottom"]
+position = Vector2( -7616, 10480 )
+
+[node name="tree_3_1_" type="Sprite" parent="bottom/tree_3_1_pack3_16"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="bottom/tree_3_1_pack3_16"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="bottom/tree_3_1_pack3_16"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_17" type="YSort" parent="bottom"]
+position = Vector2( -8800, 10312 )
+
+[node name="tree_3_1_" type="Sprite" parent="bottom/tree_3_1_pack3_17"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="bottom/tree_3_1_pack3_17"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="bottom/tree_3_1_pack3_17"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_18" type="YSort" parent="bottom"]
+position = Vector2( -9752, 10800 )
+
+[node name="tree_3_1_" type="Sprite" parent="bottom/tree_3_1_pack3_18"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="bottom/tree_3_1_pack3_18"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="bottom/tree_3_1_pack3_18"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_21" type="YSort" parent="bottom"]
+position = Vector2( -9368, 11456 )
+
+[node name="tree_3_1_" type="Sprite" parent="bottom/tree_3_1_pack3_21"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="bottom/tree_3_1_pack3_21"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="bottom/tree_3_1_pack3_21"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_22" type="YSort" parent="bottom"]
+position = Vector2( -8448, 11136 )
+
+[node name="tree_3_1_" type="Sprite" parent="bottom/tree_3_1_pack3_22"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="bottom/tree_3_1_pack3_22"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="bottom/tree_3_1_pack3_22"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_23" type="YSort" parent="bottom"]
+position = Vector2( -7192, 11128 )
+
+[node name="tree_3_1_" type="Sprite" parent="bottom/tree_3_1_pack3_23"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="bottom/tree_3_1_pack3_23"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="bottom/tree_3_1_pack3_23"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_24" type="YSort" parent="bottom"]
+position = Vector2( -5608, 11264 )
+
+[node name="tree_3_1_" type="Sprite" parent="bottom/tree_3_1_pack3_24"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="bottom/tree_3_1_pack3_24"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="bottom/tree_3_1_pack3_24"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_25" type="YSort" parent="bottom"]
+position = Vector2( -4216, 11464 )
+
+[node name="tree_3_1_" type="Sprite" parent="bottom/tree_3_1_pack3_25"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="bottom/tree_3_1_pack3_25"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="bottom/tree_3_1_pack3_25"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_26" type="YSort" parent="bottom"]
+position = Vector2( -2952, 11416 )
+
+[node name="tree_3_1_" type="Sprite" parent="bottom/tree_3_1_pack3_26"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="bottom/tree_3_1_pack3_26"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="bottom/tree_3_1_pack3_26"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_27" type="YSort" parent="bottom"]
+position = Vector2( -1472, 11120 )
+
+[node name="tree_3_1_" type="Sprite" parent="bottom/tree_3_1_pack3_27"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="bottom/tree_3_1_pack3_27"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="bottom/tree_3_1_pack3_27"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_28" type="YSort" parent="bottom"]
+position = Vector2( 136, 11296 )
+
+[node name="tree_3_1_" type="Sprite" parent="bottom/tree_3_1_pack3_28"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="bottom/tree_3_1_pack3_28"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="bottom/tree_3_1_pack3_28"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_29" type="YSort" parent="bottom"]
+position = Vector2( 1304, 11528 )
+
+[node name="tree_3_1_" type="Sprite" parent="bottom/tree_3_1_pack3_29"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="bottom/tree_3_1_pack3_29"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="bottom/tree_3_1_pack3_29"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_30" type="YSort" parent="bottom"]
+position = Vector2( 2656, 11384 )
+
+[node name="tree_3_1_" type="Sprite" parent="bottom/tree_3_1_pack3_30"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="bottom/tree_3_1_pack3_30"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="bottom/tree_3_1_pack3_30"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_31" type="YSort" parent="bottom"]
+position = Vector2( 4064, 11104 )
+
+[node name="tree_3_1_" type="Sprite" parent="bottom/tree_3_1_pack3_31"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="bottom/tree_3_1_pack3_31"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="bottom/tree_3_1_pack3_31"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_32" type="YSort" parent="bottom"]
+position = Vector2( 5520, 11304 )
+
+[node name="tree_3_1_" type="Sprite" parent="bottom/tree_3_1_pack3_32"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="bottom/tree_3_1_pack3_32"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="bottom/tree_3_1_pack3_32"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_33" type="YSort" parent="bottom"]
+position = Vector2( 7200, 11336 )
+
+[node name="tree_3_1_" type="Sprite" parent="bottom/tree_3_1_pack3_33"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="bottom/tree_3_1_pack3_33"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="bottom/tree_3_1_pack3_33"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_34" type="YSort" parent="bottom"]
+position = Vector2( 8728, 11128 )
+
+[node name="tree_3_1_" type="Sprite" parent="bottom/tree_3_1_pack3_34"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="bottom/tree_3_1_pack3_34"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="bottom/tree_3_1_pack3_34"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_19" type="YSort" parent="bottom"]
+position = Vector2( -10440, 10368 )
+
+[node name="tree_3_1_" type="Sprite" parent="bottom/tree_3_1_pack3_19"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="bottom/tree_3_1_pack3_19"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="bottom/tree_3_1_pack3_19"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_38" type="YSort" parent="bottom"]
+position = Vector2( -11016, 10288 )
+
+[node name="tree_3_1_" type="Sprite" parent="bottom/tree_3_1_pack3_38"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="bottom/tree_3_1_pack3_38"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="bottom/tree_3_1_pack3_38"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_39" type="YSort" parent="bottom"]
+position = Vector2( -11544, 10344 )
+
+[node name="tree_3_1_" type="Sprite" parent="bottom/tree_3_1_pack3_39"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="bottom/tree_3_1_pack3_39"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="bottom/tree_3_1_pack3_39"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_40" type="YSort" parent="bottom"]
+position = Vector2( -11088, 11016 )
+
+[node name="tree_3_1_" type="Sprite" parent="bottom/tree_3_1_pack3_40"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="bottom/tree_3_1_pack3_40"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="bottom/tree_3_1_pack3_40"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_41" type="YSort" parent="bottom"]
+position = Vector2( -8200, 11856 )
+
+[node name="tree_3_1_" type="Sprite" parent="bottom/tree_3_1_pack3_41"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="bottom/tree_3_1_pack3_41"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="bottom/tree_3_1_pack3_41"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_pack3_20" type="YSort" parent="bottom"]
+position = Vector2( -7176, 10128 )
+
+[node name="tree_3_1_" type="Sprite" parent="bottom/tree_3_1_pack3_20"]
+position = Vector2( 40, -48 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_2" type="Sprite" parent="bottom/tree_3_1_pack3_20"]
+position = Vector2( -88, 72 )
+texture = ExtResource( 2 )
+
+[node name="tree_3_1_3" type="Sprite" parent="bottom/tree_3_1_pack3_20"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 2 )

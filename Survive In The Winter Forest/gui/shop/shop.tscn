@@ -1,0 +1,317 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://gui/shop/shop.gd" type="Script" id=1]
+[ext_resource path="res://assets/fonts/supermarket.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://assets/icons/pistol_ammo.png" type="Texture" id=3]
+[ext_resource path="res://assets/items/material/rope.png" type="Texture" id=4]
+[ext_resource path="res://assets/icons/sniper_ammo.png" type="Texture" id=5]
+[ext_resource path="res://assets/items/material/empty_bottle.png" type="Texture" id=6]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0, 0, 0, 0.784314 )
+border_width_top = 40
+border_color = Color( 0.945098, 0.819608, 0.270588, 1 )
+shadow_size = 16
+
+[sub_resource type="DynamicFont" id=2]
+size = 32
+extra_spacing_top = 8
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.196078, 0.196078, 0.196078, 1 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 24
+extra_spacing_top = 8
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 20
+extra_spacing_top = 8
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 20
+extra_spacing_top = 8
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0, 0, 0, 0.784314 )
+border_width_top = 40
+border_color = Color( 0.945098, 0.819608, 0.270588, 1 )
+shadow_size = 16
+
+[sub_resource type="DynamicFont" id=8]
+size = 32
+extra_spacing_top = 8
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=9]
+size = 40
+font_data = ExtResource( 2 )
+
+[node name="shop" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="shop" type="Panel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -446.0
+margin_top = -236.0
+margin_right = -16.0
+margin_bottom = 230.0
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="shop"]
+margin_right = 430.0
+margin_bottom = 40.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "ร้านค้า"
+align = 1
+valign = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="shop"]
+margin_left = 14.0
+margin_top = 70.0
+margin_right = 426.0
+margin_bottom = 454.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GridContainer" type="GridContainer" parent="shop/ScrollContainer"]
+margin_right = 400.0
+margin_bottom = 368.0
+custom_constants/vseparation = 16
+
+[node name="itm_0" type="Panel" parent="shop/ScrollContainer/GridContainer"]
+margin_right = 400.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 400, 80 )
+custom_styles/panel = SubResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="shop/ScrollContainer/GridContainer/itm_0"]
+position = Vector2( 48, 40 )
+texture = ExtResource( 5 )
+
+[node name="itm_0_button" type="Button" parent="shop/ScrollContainer/GridContainer/itm_0"]
+margin_left = 304.0
+margin_top = 18.0
+margin_right = 384.0
+margin_bottom = 60.0
+custom_fonts/font = SubResource( 4 )
+text = "ซื้อ"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="shop/ScrollContainer/GridContainer/itm_0"]
+margin_left = 78.0
+margin_right = 206.0
+margin_bottom = 80.0
+custom_fonts/font = SubResource( 5 )
+text = "กระสุนสไนเปอร์"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="price" type="Label" parent="shop/ScrollContainer/GridContainer/itm_0"]
+margin_left = 224.0
+margin_right = 304.0
+margin_bottom = 80.0
+custom_fonts/font = SubResource( 6 )
+text = "500.-"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="itm_1" type="Panel" parent="shop/ScrollContainer/GridContainer"]
+margin_top = 96.0
+margin_right = 400.0
+margin_bottom = 176.0
+rect_min_size = Vector2( 400, 80 )
+custom_styles/panel = SubResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="shop/ScrollContainer/GridContainer/itm_1"]
+position = Vector2( 48, 40 )
+texture = ExtResource( 3 )
+
+[node name="Label" type="Label" parent="shop/ScrollContainer/GridContainer/itm_1"]
+margin_left = 80.0
+margin_right = 208.0
+margin_bottom = 80.0
+custom_fonts/font = SubResource( 5 )
+text = "กระสุนปืนพก"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="price" type="Label" parent="shop/ScrollContainer/GridContainer/itm_1"]
+margin_left = 224.0
+margin_right = 304.0
+margin_bottom = 80.0
+custom_fonts/font = SubResource( 6 )
+text = "250.-"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="itm_1_button" type="Button" parent="shop/ScrollContainer/GridContainer/itm_1"]
+margin_left = 304.0
+margin_top = 20.0
+margin_right = 384.0
+margin_bottom = 62.0
+custom_fonts/font = SubResource( 4 )
+text = "ซื้อ"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="itm_2" type="Panel" parent="shop/ScrollContainer/GridContainer"]
+margin_top = 192.0
+margin_right = 400.0
+margin_bottom = 272.0
+rect_min_size = Vector2( 400, 80 )
+custom_styles/panel = SubResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="shop/ScrollContainer/GridContainer/itm_2"]
+position = Vector2( 48, 40 )
+texture = ExtResource( 6 )
+
+[node name="Label" type="Label" parent="shop/ScrollContainer/GridContainer/itm_2"]
+margin_left = 80.0
+margin_right = 208.0
+margin_bottom = 80.0
+custom_fonts/font = SubResource( 5 )
+text = "ขวดเปล่า"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="price2" type="Label" parent="shop/ScrollContainer/GridContainer/itm_2"]
+margin_left = 224.0
+margin_right = 304.0
+margin_bottom = 80.0
+custom_fonts/font = SubResource( 6 )
+text = "100.-"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="itm_2_button" type="Button" parent="shop/ScrollContainer/GridContainer/itm_2"]
+margin_left = 304.0
+margin_top = 18.0
+margin_right = 384.0
+margin_bottom = 60.0
+custom_fonts/font = SubResource( 4 )
+text = "ซื้อ"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="itm_3" type="Panel" parent="shop/ScrollContainer/GridContainer"]
+margin_top = 288.0
+margin_right = 400.0
+margin_bottom = 368.0
+rect_min_size = Vector2( 400, 80 )
+custom_styles/panel = SubResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="shop/ScrollContainer/GridContainer/itm_3"]
+position = Vector2( 48, 40 )
+texture = ExtResource( 4 )
+
+[node name="price" type="Label" parent="shop/ScrollContainer/GridContainer/itm_3"]
+margin_left = 224.0
+margin_right = 304.0
+margin_bottom = 80.0
+custom_fonts/font = SubResource( 6 )
+text = "100.-"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="shop/ScrollContainer/GridContainer/itm_3"]
+margin_left = 80.0
+margin_right = 208.0
+margin_bottom = 80.0
+custom_fonts/font = SubResource( 5 )
+text = "เชือก"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="itm_3_button" type="Button" parent="shop/ScrollContainer/GridContainer/itm_3"]
+margin_left = 304.0
+margin_top = 18.0
+margin_right = 384.0
+margin_bottom = 60.0
+custom_fonts/font = SubResource( 4 )
+text = "ซื้อ"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="player_money" type="Panel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 142.0
+margin_top = -234.0
+margin_right = 348.0
+margin_bottom = -74.0
+custom_styles/panel = SubResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="head" type="Label" parent="player_money"]
+margin_right = 206.0
+margin_bottom = 40.0
+custom_fonts/font = SubResource( 8 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "เงินที่มี"
+align = 1
+valign = 1
+
+[node name="money" type="Label" parent="player_money"]
+margin_left = 32.0
+margin_top = 74.0
+margin_right = 176.0
+margin_bottom = 116.0
+custom_fonts/font = SubResource( 9 )
+text = "xxxxxx"
+align = 1
+valign = 1
+[connection signal="pressed" from="shop/ScrollContainer/GridContainer/itm_0/itm_0_button" to="." method="_on_itm_0_button_pressed"]
+[connection signal="pressed" from="shop/ScrollContainer/GridContainer/itm_1/itm_1_button" to="." method="_on_itm_1_button_pressed"]
+[connection signal="pressed" from="shop/ScrollContainer/GridContainer/itm_2/itm_2_button" to="." method="_on_itm_2_button_pressed"]
+[connection signal="pressed" from="shop/ScrollContainer/GridContainer/itm_3/itm_3_button" to="." method="_on_itm_3_button_pressed"]

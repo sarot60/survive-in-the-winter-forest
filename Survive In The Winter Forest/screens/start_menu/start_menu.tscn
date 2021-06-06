@@ -1,0 +1,1258 @@
+[gd_scene load_steps=65 format=2]
+
+[ext_resource path="res://screens/start_menu/start_menu.gd" type="Script" id=1]
+[ext_resource path="res://assets/menu/snow_effect_menu.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/menu/tree_2_.png" type="Texture" id=3]
+[ext_resource path="res://icon.png" type="Texture" id=4]
+[ext_resource path="res://assets/fonts/supermarket.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://assets/menu/fire_menu.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/menu/moose_male.png" type="Texture" id=7]
+[ext_resource path="res://assets/menu/campfire_wood_32x18_menu.png" type="Texture" id=8]
+[ext_resource path="res://game_logo_128x128.png" type="Texture" id=9]
+[ext_resource path="res://assets/other/white_circle_512x512.png" type="Texture" id=10]
+[ext_resource path="res://assets/menu/tent_camp.png" type="Texture" id=11]
+[ext_resource path="res://assets/menu/tree_3_.png" type="Texture" id=12]
+[ext_resource path="res://assets/menu/sniper_bullet.png" type="Texture" id=13]
+[ext_resource path="res://screens/menu_bottom_bar/menu_buttom_bar.tscn" type="PackedScene" id=14]
+
+[sub_resource type="Shader" id=1]
+code = "shader_type canvas_item;
+
+uniform float blur_amount = 2.0;
+
+void fragment()
+{
+    COLOR = textureLod(SCREEN_TEXTURE, SCREEN_UV, blur_amount);
+}"
+
+[sub_resource type="ShaderMaterial" id=2]
+shader = SubResource( 1 )
+shader_param/blur_amount = 2.0
+
+[sub_resource type="DynamicFont" id=3]
+size = 54
+outline_size = 1
+extra_spacing_char = 4
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 32
+extra_spacing_char = 4
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 54
+outline_size = 1
+extra_spacing_char = 4
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 52
+outline_size = 2
+extra_spacing_top = 8
+extra_spacing_char = 6
+font_data = ExtResource( 5 )
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0.945098, 0.819608, 0.270588, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=8]
+bg_color = Color( 0.945098, 0.819608, 0.270588, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=9]
+bg_color = Color( 0.945098, 0.819608, 0.270588, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=10]
+bg_color = Color( 1, 1, 1, 0.117647 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 1, 1, 1, 1 )
+shadow_size = 6
+
+[sub_resource type="DynamicFont" id=11]
+size = 28
+extra_spacing_top = 8
+extra_spacing_char = 4
+font_data = ExtResource( 5 )
+
+[sub_resource type="StyleBoxFlat" id=12]
+bg_color = Color( 0.945098, 0.819608, 0.270588, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=13]
+bg_color = Color( 0.945098, 0.819608, 0.270588, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=14]
+bg_color = Color( 0.945098, 0.819608, 0.270588, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=15]
+bg_color = Color( 1, 1, 1, 0.117647 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 1, 1, 1, 1 )
+shadow_size = 6
+
+[sub_resource type="DynamicFont" id=16]
+size = 28
+extra_spacing_top = 8
+extra_spacing_char = 4
+font_data = ExtResource( 5 )
+
+[sub_resource type="StyleBoxFlat" id=17]
+bg_color = Color( 1, 0.196078, 0.196078, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=18]
+bg_color = Color( 1, 0.196078, 0.196078, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=19]
+bg_color = Color( 0, 0, 0, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="DynamicFont" id=20]
+size = 24
+extra_spacing_top = 8
+extra_spacing_char = 2
+font_data = ExtResource( 5 )
+
+[sub_resource type="StyleBoxFlat" id=21]
+bg_color = Color( 0.945098, 0.819608, 0.270588, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=22]
+bg_color = Color( 0.945098, 0.819608, 0.270588, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=23]
+bg_color = Color( 0.945098, 0.819608, 0.270588, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=24]
+bg_color = Color( 1, 1, 1, 0.117647 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 1, 1, 1, 1 )
+shadow_size = 6
+
+[sub_resource type="DynamicFont" id=25]
+size = 28
+extra_spacing_top = 8
+extra_spacing_char = 4
+font_data = ExtResource( 5 )
+
+[sub_resource type="StyleBoxFlat" id=26]
+bg_color = Color( 0.945098, 0.819608, 0.270588, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=27]
+bg_color = Color( 0.945098, 0.819608, 0.270588, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=28]
+bg_color = Color( 0.945098, 0.819608, 0.270588, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=29]
+bg_color = Color( 1, 1, 1, 0.117647 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 1, 1, 1, 1 )
+shadow_size = 6
+
+[sub_resource type="DynamicFont" id=30]
+size = 28
+extra_spacing_top = 8
+extra_spacing_char = 4
+font_data = ExtResource( 5 )
+
+[sub_resource type="StyleBoxFlat" id=31]
+bg_color = Color( 0.945098, 0.819608, 0.270588, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=32]
+bg_color = Color( 0.945098, 0.819608, 0.270588, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=33]
+bg_color = Color( 0.945098, 0.819608, 0.270588, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=34]
+bg_color = Color( 1, 1, 1, 0.117647 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 1, 1, 1, 1 )
+shadow_size = 6
+
+[sub_resource type="DynamicFont" id=35]
+size = 28
+extra_spacing_top = 8
+extra_spacing_char = 4
+font_data = ExtResource( 5 )
+
+[sub_resource type="StyleBoxFlat" id=36]
+bg_color = Color( 0.945098, 0.819608, 0.270588, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=37]
+bg_color = Color( 0.945098, 0.819608, 0.270588, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=38]
+bg_color = Color( 0.945098, 0.819608, 0.270588, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=39]
+bg_color = Color( 1, 1, 1, 0.117647 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 1, 1, 1, 1 )
+shadow_size = 6
+
+[sub_resource type="DynamicFont" id=40]
+size = 28
+extra_spacing_top = 8
+extra_spacing_char = 4
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=41]
+size = 64
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=42]
+size = 32
+outline_size = 1
+extra_spacing_top = 8
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=43]
+size = 32
+outline_size = 1
+extra_spacing_top = 8
+font_data = ExtResource( 5 )
+
+[sub_resource type="Animation" id=44]
+length = 0.3
+tracks/0/type = "value"
+tracks/0/path = NodePath("exit_button:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("exit_alert:margin_top")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ -156.0, 0.0 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("exit_alert:margin_bottom")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 156.0, 0.0 ]
+}
+
+[sub_resource type="Animation" id=45]
+tracks/0/type = "value"
+tracks/0/path = NodePath("exit_alert:margin_top")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 0.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("exit_alert:margin_bottom")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 0.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("exit_button:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath(".:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+
+[sub_resource type="Animation" id=46]
+length = 0.3
+tracks/0/type = "value"
+tracks/0/path = NodePath("exit_alert:margin_top")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0, -156.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("exit_alert:margin_bottom")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0, 156.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("exit_button:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath(".:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=47]
+length = 0.3
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("newgame_alert:margin_top")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ -156.0, 0.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("newgame_alert:margin_bottom")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 156.0, 0.0 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("exit_button:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+
+[sub_resource type="Animation" id=48]
+tracks/0/type = "value"
+tracks/0/path = NodePath("newgame_alert:margin_top")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 0.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("newgame_alert:margin_bottom")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 0.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("exit_button:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath(".:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+
+[sub_resource type="Animation" id=49]
+length = 0.3
+tracks/0/type = "value"
+tracks/0/path = NodePath("newgame_alert:margin_top")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0, -156.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("newgame_alert:margin_bottom")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0, 156.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("exit_button:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath(".:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=50]
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+
+[node name="start_menu" type="CanvasLayer"]
+pause_mode = 2
+layer = 95
+script = ExtResource( 1 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 94
+
+[node name="ground" type="ColorRect" parent="CanvasLayer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.717647, 0.74902, 0.756863, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CanvasModulate" type="CanvasModulate" parent="CanvasLayer"]
+color = Color( 0.588235, 0.588235, 0.588235, 1 )
+
+[node name="props" type="Control" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -513.835
+margin_top = -300.5
+margin_right = 510.165
+margin_bottom = 299.5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="trees" type="Node2D" parent="props"]
+
+[node name="tree_2_" type="Sprite" parent="props/trees"]
+position = Vector2( 241.835, -23.5 )
+texture = ExtResource( 3 )
+
+[node name="tree_2_3" type="Sprite" parent="props/trees"]
+position = Vector2( 1041.84, 736.5 )
+texture = ExtResource( 3 )
+
+[node name="tree_2_4" type="Sprite" parent="props/trees"]
+position = Vector2( 610.316, 346.003 )
+texture = ExtResource( 3 )
+
+[node name="tree_2_13" type="Sprite" parent="props/trees"]
+position = Vector2( -30.665, -376 )
+texture = ExtResource( 3 )
+
+[node name="tree_2_14" type="Sprite" parent="props/trees"]
+position = Vector2( -366.665, -216 )
+texture = ExtResource( 3 )
+
+[node name="tree_2_15" type="Sprite" parent="props/trees"]
+position = Vector2( -286.165, 632.5 )
+texture = ExtResource( 3 )
+
+[node name="tree_2_16" type="Sprite" parent="props/trees"]
+position = Vector2( 836.314, 925.404 )
+texture = ExtResource( 3 )
+
+[node name="tree_2_10" type="Sprite" parent="props/trees"]
+position = Vector2( 865.335, -344 )
+texture = ExtResource( 3 )
+
+[node name="tree_2_11" type="Sprite" parent="props/trees"]
+position = Vector2( 1457.84, -39.5 )
+texture = ExtResource( 3 )
+
+[node name="tree_2_12" type="Sprite" parent="props/trees"]
+position = Vector2( 1313.84, 480.5 )
+texture = ExtResource( 3 )
+
+[node name="tree_2_9" type="Sprite" parent="props/trees"]
+position = Vector2( 362.842, 601.572 )
+texture = ExtResource( 3 )
+
+[node name="tree_3_" type="Sprite" parent="props/trees"]
+position = Vector2( 9.83502, 104.5 )
+texture = ExtResource( 12 )
+
+[node name="tree_3_2" type="Sprite" parent="props/trees"]
+position = Vector2( 673.835, -191.5 )
+texture = ExtResource( 12 )
+
+[node name="tree_3_3" type="Sprite" parent="props/trees"]
+position = Vector2( 737.835, 640.5 )
+texture = ExtResource( 12 )
+
+[node name="tree_3_7" type="Sprite" parent="props/trees"]
+position = Vector2( 1209.83, 56.5 )
+texture = ExtResource( 12 )
+
+[node name="tree_3_4" type="Sprite" parent="props/trees"]
+position = Vector2( -166.165, 232.5 )
+texture = ExtResource( 12 )
+
+[node name="tree_3_5" type="Sprite" parent="props/trees"]
+position = Vector2( 129.835, 608.5 )
+texture = ExtResource( 12 )
+
+[node name="tree_3_6" type="Sprite" parent="props/trees"]
+position = Vector2( 377.835, -111.5 )
+texture = ExtResource( 12 )
+
+[node name="animals" type="Node2D" parent="props"]
+
+[node name="moose_male2" type="Sprite" parent="props/animals"]
+position = Vector2( 57.835, 488.5 )
+texture = ExtResource( 7 )
+
+[node name="moose_male3" type="Sprite" parent="props/animals"]
+position = Vector2( 73.835, 72.5 )
+texture = ExtResource( 7 )
+flip_h = true
+
+[node name="fire_menu" parent="props" instance=ExtResource( 6 )]
+position = Vector2( 961.835, 328.5 )
+
+[node name="campfire_wood_32x18_menu" type="Sprite" parent="props/fire_menu"]
+position = Vector2( 0, 8 )
+texture = ExtResource( 8 )
+
+[node name="Sprite" type="Sprite" parent="props/fire_menu"]
+self_modulate = Color( 0.223529, 0.282353, 0.501961, 1 )
+position = Vector2( -168, -128 )
+texture = ExtResource( 11 )
+
+[node name="light" type="Sprite" parent="props/fire_menu"]
+self_modulate = Color( 0.670588, 0.611765, 0.486275, 0.196078 )
+texture = ExtResource( 10 )
+
+[node name="light_timer" type="Timer" parent="props/fire_menu"]
+wait_time = 0.2
+autostart = true
+
+[node name="Tween" type="Tween" parent="props/fire_menu"]
+
+[node name="Polygon2D" type="Polygon2D" parent="props/fire_menu"]
+color = Color( 0.364706, 0.317647, 0.262745, 1 )
+polygon = PoolVector2Array( -48, 16, -48, -56, -40, -56, -40, -48, 40, -48, 39.6173, -55.2379, 48, -56, 48, 16, 40, 16, 40, -40, -40, -40, -40, 16 )
+
+[node name="snow_effect_menu" parent="props" instance=ExtResource( 2 )]
+
+[node name="background_blur" type="TextureRect" parent="."]
+material = SubResource( 2 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 4 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="game_logo" type="Control" parent="."]
+anchor_left = 0.176
+anchor_top = 0.5
+anchor_right = 0.176
+anchor_bottom = 0.5
+margin_left = -180.224
+margin_top = -300.0
+margin_right = 179.776
+margin_bottom = 300.0
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="gamelogo" type="Sprite" parent="game_logo"]
+position = Vector2( 176, 168 )
+texture = ExtResource( 9 )
+
+[node name="Label" type="Label" parent="game_logo"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -172.0
+margin_top = -28.0
+margin_right = 28.0
+margin_bottom = 14.0
+custom_fonts/font = SubResource( 3 )
+text = "SURVIVE"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="game_logo"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -92.0
+margin_top = 36.0
+margin_right = 141.0
+margin_bottom = 62.0
+custom_fonts/font = SubResource( 4 )
+text = "IN THE WINTER"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label3" type="Label" parent="game_logo"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 4.0
+margin_top = 92.0
+margin_right = 176.0
+margin_bottom = 134.0
+custom_fonts/font = SubResource( 5 )
+text = "FOREST"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="main_menu" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.307
+anchor_right = 0.5
+anchor_bottom = 0.307
+margin_left = -144.0
+margin_top = -176.2
+margin_right = 150.0
+margin_bottom = -127.2
+custom_fonts/font = SubResource( 6 )
+custom_colors/font_color = Color( 0.945098, 0.819608, 0.270588, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "MAIN  MENU"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="menu" type="VBoxContainer" parent="."]
+pause_mode = 1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -150.0
+margin_top = -235.5
+margin_right = 150.0
+margin_bottom = 234.5
+custom_constants/separation = 10
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="start_button" type="Button" parent="menu"]
+margin_right = 300.0
+margin_bottom = 70.0
+rect_min_size = Vector2( 300, 70 )
+custom_styles/hover = SubResource( 7 )
+custom_styles/pressed = SubResource( 8 )
+custom_styles/focus = SubResource( 9 )
+custom_styles/normal = SubResource( 10 )
+custom_fonts/font = SubResource( 11 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "NEW GAME"
+
+[node name="Sprite" type="Sprite" parent="menu/start_button"]
+visible = false
+position = Vector2( 374, 31.5 )
+rotation = -1.5708
+texture = ExtResource( 13 )
+
+[node name="continue_button" type="Button" parent="menu"]
+margin_top = 80.0
+margin_right = 300.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 300, 70 )
+custom_styles/hover = SubResource( 12 )
+custom_styles/pressed = SubResource( 13 )
+custom_styles/focus = SubResource( 14 )
+custom_styles/normal = SubResource( 15 )
+custom_fonts/font = SubResource( 16 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+disabled = true
+text = "CONTINUE"
+
+[node name="Sprite" type="Sprite" parent="menu/continue_button"]
+visible = false
+position = Vector2( 374, 31.5 )
+rotation = -1.5708
+texture = ExtResource( 13 )
+
+[node name="remove_save_game" type="Button" parent="menu/continue_button"]
+margin_left = -106.0
+margin_top = 15.5
+margin_right = -10.0
+margin_bottom = 55.5
+custom_styles/hover = SubResource( 17 )
+custom_styles/pressed = SubResource( 18 )
+custom_styles/normal = SubResource( 19 )
+custom_fonts/font = SubResource( 20 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+disabled = true
+text = "Remove"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="setting_button" type="Button" parent="menu"]
+margin_top = 160.0
+margin_right = 300.0
+margin_bottom = 230.0
+rect_min_size = Vector2( 300, 70 )
+custom_styles/hover = SubResource( 21 )
+custom_styles/pressed = SubResource( 22 )
+custom_styles/focus = SubResource( 23 )
+custom_styles/normal = SubResource( 24 )
+custom_fonts/font = SubResource( 25 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "SETTINGS"
+
+[node name="Sprite" type="Sprite" parent="menu/setting_button"]
+visible = false
+position = Vector2( 374, 31.5 )
+rotation = -1.5708
+texture = ExtResource( 13 )
+
+[node name="help_button" type="Button" parent="menu"]
+margin_top = 240.0
+margin_right = 300.0
+margin_bottom = 310.0
+rect_min_size = Vector2( 300, 70 )
+custom_styles/hover = SubResource( 26 )
+custom_styles/pressed = SubResource( 27 )
+custom_styles/focus = SubResource( 28 )
+custom_styles/normal = SubResource( 29 )
+custom_fonts/font = SubResource( 30 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "HELP"
+
+[node name="Sprite" type="Sprite" parent="menu/help_button"]
+visible = false
+position = Vector2( 374, 31.5 )
+rotation = -1.5708
+texture = ExtResource( 13 )
+
+[node name="credit_button" type="Button" parent="menu"]
+margin_top = 320.0
+margin_right = 300.0
+margin_bottom = 390.0
+rect_min_size = Vector2( 300, 70 )
+custom_styles/hover = SubResource( 31 )
+custom_styles/pressed = SubResource( 32 )
+custom_styles/focus = SubResource( 33 )
+custom_styles/normal = SubResource( 34 )
+custom_fonts/font = SubResource( 35 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "CREDIT"
+
+[node name="Sprite" type="Sprite" parent="menu/credit_button"]
+visible = false
+position = Vector2( 374, 31.5 )
+rotation = -1.5708
+texture = ExtResource( 13 )
+
+[node name="quit" type="Button" parent="menu"]
+margin_top = 400.0
+margin_right = 300.0
+margin_bottom = 470.0
+rect_min_size = Vector2( 300, 70 )
+custom_styles/hover = SubResource( 36 )
+custom_styles/pressed = SubResource( 37 )
+custom_styles/focus = SubResource( 38 )
+custom_styles/normal = SubResource( 39 )
+custom_fonts/font = SubResource( 40 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "EXIT GAME"
+
+[node name="Sprite" type="Sprite" parent="menu/quit"]
+visible = false
+position = Vector2( 374, 31.5 )
+rotation = -1.5708
+texture = ExtResource( 13 )
+
+[node name="exit_alert" type="ColorRect" parent="."]
+visible = false
+self_modulate = Color( 0, 0, 0, 0.666667 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="exit_alert" type="ColorRect" parent="exit_alert"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+color = Color( 0, 0, 0, 0.784314 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="exit_button" type="Control" parent="exit_alert"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="exit_alert/exit_button"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -376.0
+margin_top = -84.0
+margin_right = 373.0
+margin_bottom = -34.0
+custom_fonts/font = SubResource( 41 )
+text = "Do you want to quit the game?"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="alert_exit_confirm" type="Button" parent="exit_alert/exit_button"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -320.0
+margin_top = 44.0
+margin_right = -128.0
+margin_bottom = 100.0
+custom_fonts/font = SubResource( 42 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "YES"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="alert_exit_cancle" type="Button" parent="exit_alert/exit_button"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 128.0
+margin_top = 44.0
+margin_right = 320.0
+margin_bottom = 100.0
+custom_fonts/font = SubResource( 43 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "NO"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="exit_alert"]
+autoplay = "default"
+anims/close = SubResource( 44 )
+anims/default = SubResource( 45 )
+anims/open = SubResource( 46 )
+
+[node name="newgame_alert" type="ColorRect" parent="."]
+visible = false
+self_modulate = Color( 0, 0, 0, 0.666667 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="newgame_alert" type="ColorRect" parent="newgame_alert"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+color = Color( 0, 0, 0, 0.784314 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="exit_button" type="Control" parent="newgame_alert"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="newgame_alert/exit_button"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -416.0
+margin_top = -84.0
+margin_right = 422.0
+margin_bottom = -34.0
+custom_fonts/font = SubResource( 41 )
+text = "Do you want to start a new game?"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="alert_newgame_confirm" type="Button" parent="newgame_alert/exit_button"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -320.0
+margin_top = 44.0
+margin_right = -128.0
+margin_bottom = 100.0
+custom_fonts/font = SubResource( 42 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "YES"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="alert_newgame_cancle" type="Button" parent="newgame_alert/exit_button"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 128.0
+margin_top = 44.0
+margin_right = 320.0
+margin_bottom = 100.0
+custom_fonts/font = SubResource( 43 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "NO"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="newgame_alert"]
+autoplay = "default"
+anims/close = SubResource( 47 )
+anims/default = SubResource( 48 )
+anims/open = SubResource( 49 )
+
+[node name="fade" type="Control" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1.0
+margin_right = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="fade"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="fade"]
+anims/cycle = SubResource( 50 )
+
+[node name="menu_buttom_bar" parent="." instance=ExtResource( 14 )]
+[connection signal="timeout" from="props/fire_menu/light_timer" to="." method="_on_light_timer_timeout"]
+[connection signal="mouse_entered" from="menu/start_button" to="." method="_on_start_button_mouse_entered"]
+[connection signal="mouse_exited" from="menu/start_button" to="." method="_on_start_button_mouse_exited"]
+[connection signal="pressed" from="menu/start_button" to="." method="_on_start_button_pressed"]
+[connection signal="mouse_entered" from="menu/continue_button" to="." method="_on_continue_button_mouse_entered"]
+[connection signal="mouse_exited" from="menu/continue_button" to="." method="_on_continue_button_mouse_exited"]
+[connection signal="pressed" from="menu/continue_button" to="." method="_on_continue_button_pressed"]
+[connection signal="pressed" from="menu/continue_button/remove_save_game" to="." method="_on_remove_save_game_pressed"]
+[connection signal="mouse_entered" from="menu/setting_button" to="." method="_on_setting_button_mouse_entered"]
+[connection signal="mouse_exited" from="menu/setting_button" to="." method="_on_setting_button_mouse_exited"]
+[connection signal="pressed" from="menu/setting_button" to="." method="_on_setting_button_pressed"]
+[connection signal="mouse_entered" from="menu/help_button" to="." method="_on_help_button_mouse_entered"]
+[connection signal="mouse_exited" from="menu/help_button" to="." method="_on_help_button_mouse_exited"]
+[connection signal="pressed" from="menu/help_button" to="." method="_on_help_button_pressed"]
+[connection signal="mouse_entered" from="menu/credit_button" to="." method="_on_credit_button_mouse_entered"]
+[connection signal="mouse_exited" from="menu/credit_button" to="." method="_on_credit_button_mouse_exited"]
+[connection signal="pressed" from="menu/credit_button" to="." method="_on_credit_button_pressed"]
+[connection signal="mouse_entered" from="menu/quit" to="." method="_on_quit_mouse_entered"]
+[connection signal="mouse_exited" from="menu/quit" to="." method="_on_quit_mouse_exited"]
+[connection signal="pressed" from="menu/quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="exit_alert/exit_button/alert_exit_confirm" to="." method="_on_alert_exit_confirm_pressed"]
+[connection signal="pressed" from="exit_alert/exit_button/alert_exit_cancle" to="." method="_on_alert_exit_cancle_pressed"]
+[connection signal="pressed" from="newgame_alert/exit_button/alert_newgame_confirm" to="." method="_on_alert_newgame_confirm_pressed"]
+[connection signal="pressed" from="newgame_alert/exit_button/alert_newgame_cancle" to="." method="_on_alert_newgame_cancle_pressed"]

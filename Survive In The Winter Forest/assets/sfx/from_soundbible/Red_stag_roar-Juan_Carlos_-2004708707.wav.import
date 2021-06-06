@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Red_stag_roar-Juan_Carlos_-2004708707.wav-9d0c06fb9972fa2465dc276c737fcff5.sample"
+
+[deps]
+
+source_file="res://assets/sfx/from_soundbible/Red_stag_roar-Juan_Carlos_-2004708707.wav"
+dest_files=[ "res://.import/Red_stag_roar-Juan_Carlos_-2004708707.wav-9d0c06fb9972fa2465dc276c737fcff5.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

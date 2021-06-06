@@ -1,0 +1,827 @@
+[gd_scene load_steps=25 format=2]
+
+[ext_resource path="res://assets/other/white_circle_32x32.png" type="Texture" id=1]
+[ext_resource path="res://assets/icons/white-cancel-icon_24x24.png" type="Texture" id=2]
+[ext_resource path="res://assets/fonts/supermarket.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://assets/props/herb_plant/mint_plant.png" type="Texture" id=4]
+[ext_resource path="res://assets/props/herb_plant/rosemary_plant.png" type="Texture" id=5]
+[ext_resource path="res://assets/props/herb_plant/parsley_plant.png" type="Texture" id=6]
+[ext_resource path="res://assets/props/herb_plant/thyme_plant.png" type="Texture" id=7]
+[ext_resource path="res://assets/props/herb_plant/winter_savory_plant.png" type="Texture" id=8]
+[ext_resource path="res://assets/props/herb_plant/chives_plant.png" type="Texture" id=9]
+[ext_resource path="res://assets/props/herb_plant/sage_plant.png" type="Texture" id=10]
+[ext_resource path="res://assets/props/herb_plant/basil_plant.png" type="Texture" id=11]
+[ext_resource path="res://assets/props/herb_plant/oregano_plant.png" type="Texture" id=12]
+[ext_resource path="res://assets/props/herb_plant/catnip_plant.png" type="Texture" id=13]
+[ext_resource path="res://assets/props/herb_plant/sorrel_plant.png" type="Texture" id=14]
+[ext_resource path="res://assets/props/herb_plant/caraway_plant.png" type="Texture" id=15]
+[ext_resource path="res://assets/props/herb_plant/tarragon_plant.png" type="Texture" id=16]
+[ext_resource path="res://assets/props/herb_plant/horseradish_plant.png" type="Texture" id=17]
+[ext_resource path="res://gui/herb_gps/finding_herb.gd" type="Script" id=18]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0, 0, 0, 0.784314 )
+border_width_top = 40
+border_color = Color( 0.945098, 0.819608, 0.266667, 1 )
+shadow_size = 32
+
+[sub_resource type="DynamicFont" id=2]
+size = 32
+extra_spacing_top = 8
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.196078, 0.196078, 0.196078, 1 )
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.117647, 0.117647, 0.117647, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="DynamicFont" id=5]
+size = 32
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 24
+extra_spacing_top = 8
+font_data = ExtResource( 3 )
+
+[node name="finding_herb" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 18 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="background" type="Panel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -416.0
+margin_top = -236.0
+margin_right = 416.0
+margin_bottom = 228.0
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="close_button" type="TextureButton" parent="background"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -38.0
+margin_top = 4.0
+margin_right = -6.0
+margin_bottom = 36.0
+texture_normal = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="background/close_button"]
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = 6.0
+margin_top = 6.0
+margin_right = 26.0
+margin_bottom = 26.0
+texture = ExtResource( 2 )
+expand = true
+
+[node name="Label" type="Label" parent="background"]
+margin_left = 18.0
+margin_right = 264.0
+margin_bottom = 40.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "ค้นหาสมุนไพร"
+valign = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="background"]
+margin_left = 158.0
+margin_top = 76.0
+margin_right = 690.0
+margin_bottom = 426.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GridContainer" type="GridContainer" parent="background/ScrollContainer"]
+margin_right = 512.0
+margin_bottom = 1224.0
+custom_constants/vseparation = 8
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="mint_tree" type="Panel" parent="background/ScrollContainer/GridContainer"]
+margin_right = 512.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 512, 80 )
+custom_styles/panel = SubResource( 3 )
+
+[node name="Panel" type="Panel" parent="background/ScrollContainer/GridContainer/mint_tree"]
+margin_left = 32.0
+margin_top = 4.0
+margin_right = 104.0
+margin_bottom = 76.0
+custom_styles/panel = SubResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="background/ScrollContainer/GridContainer/mint_tree/Panel"]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 68.0
+margin_bottom = 68.0
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="name" type="Label" parent="background/ScrollContainer/GridContainer/mint_tree"]
+margin_left = 164.0
+margin_top = 32.0
+margin_right = 214.0
+margin_bottom = 58.0
+custom_fonts/font = SubResource( 5 )
+text = "Mint"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="find_mint_tree" type="Button" parent="background/ScrollContainer/GridContainer/mint_tree"]
+margin_left = 384.0
+margin_top = 16.0
+margin_right = 482.0
+margin_bottom = 62.0
+custom_fonts/font = SubResource( 6 )
+text = "ค้นหา"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="rosemary_tree" type="Panel" parent="background/ScrollContainer/GridContainer"]
+margin_top = 88.0
+margin_right = 512.0
+margin_bottom = 168.0
+rect_min_size = Vector2( 512, 80 )
+custom_styles/panel = SubResource( 3 )
+
+[node name="Panel" type="Panel" parent="background/ScrollContainer/GridContainer/rosemary_tree"]
+margin_left = 32.0
+margin_top = 4.0
+margin_right = 104.0
+margin_bottom = 76.0
+custom_styles/panel = SubResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="background/ScrollContainer/GridContainer/rosemary_tree/Panel"]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 68.0
+margin_bottom = 68.0
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="name" type="Label" parent="background/ScrollContainer/GridContainer/rosemary_tree"]
+margin_left = 162.0
+margin_top = 28.0
+margin_right = 276.0
+margin_bottom = 54.0
+custom_fonts/font = SubResource( 5 )
+text = "Rosemary"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="find_rosemary_tree" type="Button" parent="background/ScrollContainer/GridContainer/rosemary_tree"]
+margin_left = 384.0
+margin_top = 16.0
+margin_right = 482.0
+margin_bottom = 62.0
+custom_fonts/font = SubResource( 6 )
+text = "ค้นหา"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="parsley_tree" type="Panel" parent="background/ScrollContainer/GridContainer"]
+margin_top = 176.0
+margin_right = 512.0
+margin_bottom = 256.0
+rect_min_size = Vector2( 512, 80 )
+custom_styles/panel = SubResource( 3 )
+
+[node name="Panel" type="Panel" parent="background/ScrollContainer/GridContainer/parsley_tree"]
+margin_left = 34.0
+margin_top = 4.0
+margin_right = 106.0
+margin_bottom = 76.0
+custom_styles/panel = SubResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="background/ScrollContainer/GridContainer/parsley_tree/Panel"]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 68.0
+margin_bottom = 68.0
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="name" type="Label" parent="background/ScrollContainer/GridContainer/parsley_tree"]
+margin_left = 162.0
+margin_top = 28.0
+margin_right = 246.0
+margin_bottom = 54.0
+custom_fonts/font = SubResource( 5 )
+text = "Parsley"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="find_parsley_tree" type="Button" parent="background/ScrollContainer/GridContainer/parsley_tree"]
+margin_left = 384.0
+margin_top = 16.0
+margin_right = 482.0
+margin_bottom = 62.0
+custom_fonts/font = SubResource( 6 )
+text = "ค้นหา"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="thyme_tree" type="Panel" parent="background/ScrollContainer/GridContainer"]
+margin_top = 264.0
+margin_right = 512.0
+margin_bottom = 344.0
+rect_min_size = Vector2( 512, 80 )
+custom_styles/panel = SubResource( 3 )
+
+[node name="Panel" type="Panel" parent="background/ScrollContainer/GridContainer/thyme_tree"]
+margin_left = 34.0
+margin_top = 4.0
+margin_right = 106.0
+margin_bottom = 76.0
+custom_styles/panel = SubResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="background/ScrollContainer/GridContainer/thyme_tree/Panel"]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 68.0
+margin_bottom = 68.0
+texture = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="name" type="Label" parent="background/ScrollContainer/GridContainer/thyme_tree"]
+margin_left = 162.0
+margin_top = 28.0
+margin_right = 242.0
+margin_bottom = 54.0
+custom_fonts/font = SubResource( 5 )
+text = "Thyme"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="find_thyme_tree" type="Button" parent="background/ScrollContainer/GridContainer/thyme_tree"]
+margin_left = 384.0
+margin_top = 16.0
+margin_right = 482.0
+margin_bottom = 62.0
+custom_fonts/font = SubResource( 6 )
+text = "ค้นหา"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="winter_savory_tree" type="Panel" parent="background/ScrollContainer/GridContainer"]
+margin_top = 352.0
+margin_right = 512.0
+margin_bottom = 432.0
+rect_min_size = Vector2( 512, 80 )
+custom_styles/panel = SubResource( 3 )
+
+[node name="Panel" type="Panel" parent="background/ScrollContainer/GridContainer/winter_savory_tree"]
+margin_left = 34.0
+margin_top = 4.0
+margin_right = 106.0
+margin_bottom = 76.0
+custom_styles/panel = SubResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="background/ScrollContainer/GridContainer/winter_savory_tree/Panel"]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 68.0
+margin_bottom = 68.0
+texture = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="name" type="Label" parent="background/ScrollContainer/GridContainer/winter_savory_tree"]
+margin_left = 162.0
+margin_top = 28.0
+margin_right = 331.0
+margin_bottom = 54.0
+custom_fonts/font = SubResource( 5 )
+text = "Winter Savory"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="find_winter_savory_tree" type="Button" parent="background/ScrollContainer/GridContainer/winter_savory_tree"]
+margin_left = 384.0
+margin_top = 16.0
+margin_right = 482.0
+margin_bottom = 62.0
+custom_fonts/font = SubResource( 6 )
+text = "ค้นหา"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="basil_tree" type="Panel" parent="background/ScrollContainer/GridContainer"]
+margin_top = 440.0
+margin_right = 512.0
+margin_bottom = 520.0
+rect_min_size = Vector2( 512, 80 )
+custom_styles/panel = SubResource( 3 )
+
+[node name="Panel" type="Panel" parent="background/ScrollContainer/GridContainer/basil_tree"]
+margin_left = 34.0
+margin_top = 4.0
+margin_right = 106.0
+margin_bottom = 76.0
+custom_styles/panel = SubResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="background/ScrollContainer/GridContainer/basil_tree/Panel"]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 68.0
+margin_bottom = 68.0
+texture = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="name" type="Label" parent="background/ScrollContainer/GridContainer/basil_tree"]
+margin_left = 162.0
+margin_top = 28.0
+margin_right = 216.0
+margin_bottom = 54.0
+custom_fonts/font = SubResource( 5 )
+text = "Basil"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="find_basil_tree" type="Button" parent="background/ScrollContainer/GridContainer/basil_tree"]
+margin_left = 384.0
+margin_top = 16.0
+margin_right = 482.0
+margin_bottom = 62.0
+custom_fonts/font = SubResource( 6 )
+text = "ค้นหา"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="sage_tree" type="Panel" parent="background/ScrollContainer/GridContainer"]
+margin_top = 528.0
+margin_right = 512.0
+margin_bottom = 608.0
+rect_min_size = Vector2( 512, 80 )
+custom_styles/panel = SubResource( 3 )
+
+[node name="Panel" type="Panel" parent="background/ScrollContainer/GridContainer/sage_tree"]
+margin_left = 34.0
+margin_top = 4.0
+margin_right = 106.0
+margin_bottom = 76.0
+custom_styles/panel = SubResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="background/ScrollContainer/GridContainer/sage_tree/Panel"]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 68.0
+margin_bottom = 68.0
+texture = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="name" type="Label" parent="background/ScrollContainer/GridContainer/sage_tree"]
+margin_left = 162.0
+margin_top = 28.0
+margin_right = 221.0
+margin_bottom = 54.0
+custom_fonts/font = SubResource( 5 )
+text = "Sage"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="find_sage_tree" type="Button" parent="background/ScrollContainer/GridContainer/sage_tree"]
+margin_left = 384.0
+margin_top = 16.0
+margin_right = 482.0
+margin_bottom = 62.0
+custom_fonts/font = SubResource( 6 )
+text = "ค้นหา"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="chives_tree" type="Panel" parent="background/ScrollContainer/GridContainer"]
+margin_top = 616.0
+margin_right = 512.0
+margin_bottom = 696.0
+rect_min_size = Vector2( 512, 80 )
+custom_styles/panel = SubResource( 3 )
+
+[node name="Panel" type="Panel" parent="background/ScrollContainer/GridContainer/chives_tree"]
+margin_left = 34.0
+margin_top = 4.0
+margin_right = 106.0
+margin_bottom = 76.0
+custom_styles/panel = SubResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="background/ScrollContainer/GridContainer/chives_tree/Panel"]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 68.0
+margin_bottom = 68.0
+texture = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="name" type="Label" parent="background/ScrollContainer/GridContainer/chives_tree"]
+margin_left = 162.0
+margin_top = 28.0
+margin_right = 241.0
+margin_bottom = 54.0
+custom_fonts/font = SubResource( 5 )
+text = "Chives"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="find_chives_tree" type="Button" parent="background/ScrollContainer/GridContainer/chives_tree"]
+margin_left = 384.0
+margin_top = 16.0
+margin_right = 482.0
+margin_bottom = 62.0
+custom_fonts/font = SubResource( 6 )
+text = "ค้นหา"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="oregano_tree" type="Panel" parent="background/ScrollContainer/GridContainer"]
+margin_top = 704.0
+margin_right = 512.0
+margin_bottom = 784.0
+rect_min_size = Vector2( 512, 80 )
+custom_styles/panel = SubResource( 3 )
+
+[node name="Panel" type="Panel" parent="background/ScrollContainer/GridContainer/oregano_tree"]
+margin_left = 34.0
+margin_top = 4.0
+margin_right = 106.0
+margin_bottom = 76.0
+custom_styles/panel = SubResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="background/ScrollContainer/GridContainer/oregano_tree/Panel"]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 68.0
+margin_bottom = 68.0
+texture = ExtResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="name" type="Label" parent="background/ScrollContainer/GridContainer/oregano_tree"]
+margin_left = 162.0
+margin_top = 28.0
+margin_right = 260.0
+margin_bottom = 54.0
+custom_fonts/font = SubResource( 5 )
+text = "Oregano"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="find_oregano_tree" type="Button" parent="background/ScrollContainer/GridContainer/oregano_tree"]
+margin_left = 384.0
+margin_top = 16.0
+margin_right = 482.0
+margin_bottom = 62.0
+custom_fonts/font = SubResource( 6 )
+text = "ค้นหา"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="catnip_tree" type="Panel" parent="background/ScrollContainer/GridContainer"]
+margin_top = 792.0
+margin_right = 512.0
+margin_bottom = 872.0
+rect_min_size = Vector2( 512, 80 )
+custom_styles/panel = SubResource( 3 )
+
+[node name="Panel" type="Panel" parent="background/ScrollContainer/GridContainer/catnip_tree"]
+margin_left = 34.0
+margin_top = 4.0
+margin_right = 106.0
+margin_bottom = 76.0
+custom_styles/panel = SubResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="background/ScrollContainer/GridContainer/catnip_tree/Panel"]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 68.0
+margin_bottom = 68.0
+texture = ExtResource( 13 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="name" type="Label" parent="background/ScrollContainer/GridContainer/catnip_tree"]
+margin_left = 162.0
+margin_top = 28.0
+margin_right = 239.0
+margin_bottom = 54.0
+custom_fonts/font = SubResource( 5 )
+text = "Catnip"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="find_catnip_tree" type="Button" parent="background/ScrollContainer/GridContainer/catnip_tree"]
+margin_left = 384.0
+margin_top = 16.0
+margin_right = 482.0
+margin_bottom = 62.0
+custom_fonts/font = SubResource( 6 )
+text = "ค้นหา"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="sorrel_tree" type="Panel" parent="background/ScrollContainer/GridContainer"]
+margin_top = 880.0
+margin_right = 512.0
+margin_bottom = 960.0
+rect_min_size = Vector2( 512, 80 )
+custom_styles/panel = SubResource( 3 )
+
+[node name="Panel" type="Panel" parent="background/ScrollContainer/GridContainer/sorrel_tree"]
+margin_left = 34.0
+margin_top = 4.0
+margin_right = 106.0
+margin_bottom = 76.0
+custom_styles/panel = SubResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="background/ScrollContainer/GridContainer/sorrel_tree/Panel"]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 68.0
+margin_bottom = 68.0
+texture = ExtResource( 14 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="name" type="Label" parent="background/ScrollContainer/GridContainer/sorrel_tree"]
+margin_left = 162.0
+margin_top = 28.0
+margin_right = 227.0
+margin_bottom = 54.0
+custom_fonts/font = SubResource( 5 )
+text = "Sorrel"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="find_sorrel_tree" type="Button" parent="background/ScrollContainer/GridContainer/sorrel_tree"]
+margin_left = 384.0
+margin_top = 16.0
+margin_right = 482.0
+margin_bottom = 62.0
+custom_fonts/font = SubResource( 6 )
+text = "ค้นหา"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="caraway_tree" type="Panel" parent="background/ScrollContainer/GridContainer"]
+margin_top = 968.0
+margin_right = 512.0
+margin_bottom = 1048.0
+rect_min_size = Vector2( 512, 80 )
+custom_styles/panel = SubResource( 3 )
+
+[node name="Panel" type="Panel" parent="background/ScrollContainer/GridContainer/caraway_tree"]
+margin_left = 34.0
+margin_top = 4.0
+margin_right = 106.0
+margin_bottom = 76.0
+custom_styles/panel = SubResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="background/ScrollContainer/GridContainer/caraway_tree/Panel"]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 68.0
+margin_bottom = 68.0
+texture = ExtResource( 15 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="name" type="Label" parent="background/ScrollContainer/GridContainer/caraway_tree"]
+margin_left = 162.0
+margin_top = 28.0
+margin_right = 269.0
+margin_bottom = 54.0
+custom_fonts/font = SubResource( 5 )
+text = "Caraway"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="find_caraway_tree" type="Button" parent="background/ScrollContainer/GridContainer/caraway_tree"]
+margin_left = 384.0
+margin_top = 16.0
+margin_right = 482.0
+margin_bottom = 62.0
+custom_fonts/font = SubResource( 6 )
+text = "ค้นหา"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="tarragon_tree" type="Panel" parent="background/ScrollContainer/GridContainer"]
+margin_top = 1056.0
+margin_right = 512.0
+margin_bottom = 1136.0
+rect_min_size = Vector2( 512, 80 )
+custom_styles/panel = SubResource( 3 )
+
+[node name="Panel" type="Panel" parent="background/ScrollContainer/GridContainer/tarragon_tree"]
+margin_left = 34.0
+margin_top = 4.0
+margin_right = 106.0
+margin_bottom = 76.0
+custom_styles/panel = SubResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="background/ScrollContainer/GridContainer/tarragon_tree/Panel"]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 68.0
+margin_bottom = 68.0
+texture = ExtResource( 16 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="name" type="Label" parent="background/ScrollContainer/GridContainer/tarragon_tree"]
+margin_left = 162.0
+margin_top = 28.0
+margin_right = 267.0
+margin_bottom = 54.0
+custom_fonts/font = SubResource( 5 )
+text = "Tarragon"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="find_tarragon_tree" type="Button" parent="background/ScrollContainer/GridContainer/tarragon_tree"]
+margin_left = 384.0
+margin_top = 16.0
+margin_right = 482.0
+margin_bottom = 62.0
+custom_fonts/font = SubResource( 6 )
+text = "ค้นหา"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="horseradish_tree" type="Panel" parent="background/ScrollContainer/GridContainer"]
+margin_top = 1144.0
+margin_right = 512.0
+margin_bottom = 1224.0
+rect_min_size = Vector2( 512, 80 )
+custom_styles/panel = SubResource( 3 )
+
+[node name="Panel" type="Panel" parent="background/ScrollContainer/GridContainer/horseradish_tree"]
+margin_left = 34.0
+margin_top = 4.0
+margin_right = 106.0
+margin_bottom = 76.0
+custom_styles/panel = SubResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="background/ScrollContainer/GridContainer/horseradish_tree/Panel"]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 68.0
+margin_bottom = 68.0
+texture = ExtResource( 17 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="name" type="Label" parent="background/ScrollContainer/GridContainer/horseradish_tree"]
+margin_left = 162.0
+margin_top = 28.0
+margin_right = 297.0
+margin_bottom = 54.0
+custom_fonts/font = SubResource( 5 )
+text = "Horseradish"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="find_horseradish_tree" type="Button" parent="background/ScrollContainer/GridContainer/horseradish_tree"]
+margin_left = 384.0
+margin_top = 16.0
+margin_right = 482.0
+margin_bottom = 62.0
+custom_fonts/font = SubResource( 6 )
+text = "ค้นหา"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="background/close_button" to="." method="_on_close_button_pressed"]
+[connection signal="pressed" from="background/ScrollContainer/GridContainer/mint_tree/find_mint_tree" to="." method="_on_find_mint_tree_pressed"]
+[connection signal="pressed" from="background/ScrollContainer/GridContainer/rosemary_tree/find_rosemary_tree" to="." method="_on_find_rosemary_tree_pressed"]
+[connection signal="pressed" from="background/ScrollContainer/GridContainer/parsley_tree/find_parsley_tree" to="." method="_on_find_parsley_tree_pressed"]
+[connection signal="pressed" from="background/ScrollContainer/GridContainer/thyme_tree/find_thyme_tree" to="." method="_on_find_thyme_tree_pressed"]
+[connection signal="pressed" from="background/ScrollContainer/GridContainer/winter_savory_tree/find_winter_savory_tree" to="." method="_on_find_winter_savory_tree_pressed"]
+[connection signal="pressed" from="background/ScrollContainer/GridContainer/basil_tree/find_basil_tree" to="." method="_on_find_basil_tree_pressed"]
+[connection signal="pressed" from="background/ScrollContainer/GridContainer/sage_tree/find_sage_tree" to="." method="_on_find_sage_tree_pressed"]
+[connection signal="pressed" from="background/ScrollContainer/GridContainer/chives_tree/find_chives_tree" to="." method="_on_find_chives_tree_pressed"]
+[connection signal="pressed" from="background/ScrollContainer/GridContainer/oregano_tree/find_oregano_tree" to="." method="_on_find_oregano_tree_pressed"]
+[connection signal="pressed" from="background/ScrollContainer/GridContainer/catnip_tree/find_catnip_tree" to="." method="_on_find_catnip_tree_pressed"]
+[connection signal="pressed" from="background/ScrollContainer/GridContainer/sorrel_tree/find_sorrel_tree" to="." method="_on_find_sorrel_tree_pressed"]
+[connection signal="pressed" from="background/ScrollContainer/GridContainer/caraway_tree/find_caraway_tree" to="." method="_on_find_caraway_tree_pressed"]
+[connection signal="pressed" from="background/ScrollContainer/GridContainer/tarragon_tree/find_tarragon_tree" to="." method="_on_find_tarragon_tree_pressed"]
+[connection signal="pressed" from="background/ScrollContainer/GridContainer/horseradish_tree/find_horseradish_tree" to="." method="_on_find_horseradish_tree_pressed"]

@@ -1,0 +1,66 @@
+[gd_scene load_steps=3 format=2]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 8.0
+
+[sub_resource type="Animation" id=2]
+resource_name = "walk"
+length = 0.4
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("graphic:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, -8 ), Vector2( 0, 0 ) ]
+}
+
+[node name="cat_npc" type="KinematicBody2D"]
+collision_layer = 0
+
+[node name="graphic" type="Node2D" parent="."]
+
+[node name="body" type="Polygon2D" parent="graphic"]
+color = Color( 0.270588, 0.254902, 0.2, 1 )
+polygon = PoolVector2Array( 16, 0, 16, -16, -16, -16, -16, 0, -10, 0, -10, -6, 10, -6, 10, 0 )
+
+[node name="body2" type="Polygon2D" parent="graphic"]
+color = Color( 0.654902, 0.6, 0.403922, 1 )
+polygon = PoolVector2Array( -16, -8, -16, 0, -10, 0, -10, -5 )
+
+[node name="neck" type="Polygon2D" parent="graphic"]
+color = Color( 0.270588, 0.254902, 0.2, 1 )
+polygon = PoolVector2Array( 3, -15, 15, -21, 19, -14, 14, -9 )
+
+[node name="body3" type="Polygon2D" parent="graphic"]
+color = Color( 0.654902, 0.6, 0.403922, 1 )
+polygon = PoolVector2Array( 10, -4, 10, 0, 16, 0, 16, -4 )
+
+[node name="tail" type="Polygon2D" parent="graphic"]
+color = Color( 0.270588, 0.254902, 0.2, 1 )
+polygon = PoolVector2Array( -10, -16, -24, -4, -27, -8, -12, -18 )
+
+[node name="tail2" type="Polygon2D" parent="graphic"]
+color = Color( 0.654902, 0.6, 0.403922, 1 )
+polygon = PoolVector2Array( -19, -8, -24, -4, -27, -8, -22, -11 )
+
+[node name="head" type="Polygon2D" parent="graphic"]
+color = Color( 0.270588, 0.254902, 0.2, 1 )
+polygon = PoolVector2Array( 18, -14, 15, -21, 28, -18, 27, -14 )
+
+[node name="head2" type="Polygon2D" parent="graphic"]
+color = Color( 0.654902, 0.6, 0.403922, 1 )
+polygon = PoolVector2Array( 14, -26, 12, -17, 18, -16 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -7 )
+shape = SubResource( 1 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "walk"
+anims/walk = SubResource( 2 )

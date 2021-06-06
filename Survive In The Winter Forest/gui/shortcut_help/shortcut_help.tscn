@@ -1,0 +1,386 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://assets/fonts/supermarket.ttf" type="DynamicFontData" id=1]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0, 0, 0, 0.196078 )
+border_width_top = 32
+border_color = Color( 0.8, 0.8, 0.8, 0.196078 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 32
+extra_spacing_top = 4
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxEmpty" id=3]
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.937255, 0.811765, 0.266667, 0.588235 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 24
+extra_spacing_top = 8
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 24
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 32
+font_data = ExtResource( 1 )
+
+[node name="shortcut_help" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -496.0
+margin_top = -284.0
+margin_right = 497.0
+margin_bottom = 284.0
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel"]
+margin_right = 992.0
+margin_bottom = 32.0
+custom_fonts/font = SubResource( 2 )
+text = "Key Shortcut"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GridContainer" type="GridContainer" parent="Panel"]
+margin_left = 96.0
+margin_top = 80.0
+margin_right = 900.0
+margin_bottom = 432.0
+custom_constants/vseparation = 32
+columns = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="b_menu" type="Panel" parent="Panel/GridContainer"]
+margin_right = 400.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 400, 64 )
+custom_styles/panel = SubResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="b" type="Label" parent="Panel/GridContainer/b_menu"]
+margin_left = 96.0
+margin_top = 16.0
+margin_right = 176.0
+margin_bottom = 48.0
+custom_styles/normal = SubResource( 4 )
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "B"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/GridContainer/b_menu"]
+self_modulate = Color( 1, 1, 1, 0.588235 )
+margin_left = 208.0
+margin_top = 24.0
+margin_right = 272.0
+margin_bottom = 43.0
+custom_fonts/font = SubResource( 6 )
+text = "เมนูหลัก"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="t" type="Panel" parent="Panel/GridContainer"]
+margin_left = 404.0
+margin_right = 804.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 400, 64 )
+custom_styles/panel = SubResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="t" type="Label" parent="Panel/GridContainer/t"]
+margin_left = 96.0
+margin_top = 16.0
+margin_right = 176.0
+margin_bottom = 48.0
+custom_styles/normal = SubResource( 4 )
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "T"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/GridContainer/t"]
+self_modulate = Color( 1, 1, 1, 0.588235 )
+margin_left = 208.0
+margin_top = 24.0
+margin_right = 272.0
+margin_bottom = 43.0
+custom_fonts/font = SubResource( 6 )
+text = "กางเต็นท์"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="g" type="Panel" parent="Panel/GridContainer"]
+margin_top = 96.0
+margin_right = 400.0
+margin_bottom = 160.0
+rect_min_size = Vector2( 400, 64 )
+custom_styles/panel = SubResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="key" type="Label" parent="Panel/GridContainer/g"]
+margin_left = 96.0
+margin_top = 16.0
+margin_right = 176.0
+margin_bottom = 48.0
+custom_styles/normal = SubResource( 4 )
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "G"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/GridContainer/g"]
+self_modulate = Color( 1, 1, 1, 0.588235 )
+margin_left = 208.0
+margin_top = 24.0
+margin_right = 272.0
+margin_bottom = 43.0
+custom_fonts/font = SubResource( 6 )
+text = "นำทางไปหาสมุนไพร"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="I" type="Panel" parent="Panel/GridContainer"]
+margin_left = 404.0
+margin_top = 96.0
+margin_right = 804.0
+margin_bottom = 160.0
+rect_min_size = Vector2( 400, 64 )
+custom_styles/panel = SubResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="key" type="Label" parent="Panel/GridContainer/I"]
+margin_left = 96.0
+margin_top = 16.0
+margin_right = 176.0
+margin_bottom = 48.0
+custom_styles/normal = SubResource( 4 )
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "I"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/GridContainer/I"]
+self_modulate = Color( 1, 1, 1, 0.588235 )
+margin_left = 208.0
+margin_top = 24.0
+margin_right = 272.0
+margin_bottom = 43.0
+custom_fonts/font = SubResource( 6 )
+text = "เปิดกระเป๋า"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="L" type="Panel" parent="Panel/GridContainer"]
+margin_top = 192.0
+margin_right = 400.0
+margin_bottom = 256.0
+rect_min_size = Vector2( 400, 64 )
+custom_styles/panel = SubResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="key" type="Label" parent="Panel/GridContainer/L"]
+margin_left = 96.0
+margin_top = 16.0
+margin_right = 176.0
+margin_bottom = 48.0
+custom_styles/normal = SubResource( 4 )
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "L"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/GridContainer/L"]
+self_modulate = Color( 1, 1, 1, 0.588235 )
+margin_left = 208.0
+margin_top = 24.0
+margin_right = 272.0
+margin_bottom = 43.0
+custom_fonts/font = SubResource( 6 )
+text = "เควส"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="K" type="Panel" parent="Panel/GridContainer"]
+margin_left = 404.0
+margin_top = 192.0
+margin_right = 804.0
+margin_bottom = 256.0
+rect_min_size = Vector2( 400, 64 )
+custom_styles/panel = SubResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="key" type="Label" parent="Panel/GridContainer/K"]
+margin_left = 96.0
+margin_top = 16.0
+margin_right = 176.0
+margin_bottom = 48.0
+custom_styles/normal = SubResource( 4 )
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "K"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/GridContainer/K"]
+self_modulate = Color( 1, 1, 1, 0.588235 )
+margin_left = 208.0
+margin_top = 24.0
+margin_right = 272.0
+margin_bottom = 43.0
+custom_fonts/font = SubResource( 6 )
+text = "เพิ่มทักษะ"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="U" type="Panel" parent="Panel/GridContainer"]
+margin_top = 288.0
+margin_right = 400.0
+margin_bottom = 352.0
+rect_min_size = Vector2( 400, 64 )
+custom_styles/panel = SubResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="key" type="Label" parent="Panel/GridContainer/U"]
+margin_left = 96.0
+margin_top = 16.0
+margin_right = 176.0
+margin_bottom = 48.0
+custom_styles/normal = SubResource( 4 )
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "U"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/GridContainer/U"]
+self_modulate = Color( 1, 1, 1, 0.588235 )
+margin_left = 208.0
+margin_top = 24.0
+margin_right = 272.0
+margin_bottom = 43.0
+custom_fonts/font = SubResource( 6 )
+text = "จัดการอุปกรณ์"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="P" type="Panel" parent="Panel/GridContainer"]
+margin_left = 404.0
+margin_top = 288.0
+margin_right = 804.0
+margin_bottom = 352.0
+rect_min_size = Vector2( 400, 64 )
+custom_styles/panel = SubResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="key" type="Label" parent="Panel/GridContainer/P"]
+margin_left = 96.0
+margin_top = 16.0
+margin_right = 176.0
+margin_bottom = 48.0
+custom_styles/normal = SubResource( 4 )
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "P"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/GridContainer/P"]
+self_modulate = Color( 1, 1, 1, 0.588235 )
+margin_left = 208.0
+margin_top = 24.0
+margin_right = 272.0
+margin_bottom = 43.0
+custom_fonts/font = SubResource( 6 )
+text = "ข้อมูลตัวละคร"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="Panel"]
+self_modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 704.0
+margin_top = 512.0
+margin_right = 992.0
+margin_bottom = 568.0
+custom_fonts/font = SubResource( 7 )
+text = "กด H เพื่อปิดหน้าต่าง"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}

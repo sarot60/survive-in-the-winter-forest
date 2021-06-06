@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/labrador-barking-daniel_simon.wav-349975842eff4457426782e2080c6200.sample"
+
+[deps]
+
+source_file="res://assets/sfx/labrador-barking-daniel_simon.wav"
+dest_files=[ "res://.import/labrador-barking-daniel_simon.wav-349975842eff4457426782e2080c6200.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

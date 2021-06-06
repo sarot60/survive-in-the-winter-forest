@@ -1,0 +1,1357 @@
+[gd_scene load_steps=66 format=2]
+
+[ext_resource path="res://assets/fonts/supermarket.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://assets/other/white_circle_64x64.png" type="Texture" id=2]
+[ext_resource path="res://assets/icons/white-cancel-icon_24x24.png" type="Texture" id=3]
+[ext_resource path="res://gui/manage_equipment/manage_equipment.gd" type="Script" id=4]
+[ext_resource path="res://assets/fonts/FC Galaxy Italic.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://gui/manage_equipment/change_rifle_dialog.gd" type="Script" id=6]
+[ext_resource path="res://assets/other/white-32x32.png" type="Texture" id=7]
+[ext_resource path="res://gui/manage_equipment/change_pistol_dialog.gd" type="Script" id=8]
+[ext_resource path="res://gui/manage_equipment/change_calling_device_dialog.gd" type="Script" id=9]
+[ext_resource path="res://assets/equipment/rifle/winchester_xpr.png" type="Texture" id=10]
+[ext_resource path="res://assets/equipment/rifle/remington_700_SPS.png" type="Texture" id=11]
+[ext_resource path="res://assets/equipment/rifle/savage_12_LRP.png" type="Texture" id=12]
+[ext_resource path="res://assets/equipment_interface/pistol/m1911_interface.png" type="Texture" id=13]
+[ext_resource path="res://assets/equipment_interface/pistol/sig_sauer_p320sp_interface.png" type="Texture" id=14]
+[ext_resource path="res://assets/equipment_interface/pistol/cz75_interface.png" type="Texture" id=15]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0, 0, 0, 0.784314 )
+border_width_top = 40
+border_color = Color( 0.945098, 0.819608, 0.266667, 1 )
+shadow_size = 32
+
+[sub_resource type="DynamicFont" id=2]
+size = 28
+extra_spacing_top = 8
+extra_spacing_char = 4
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.196078, 0.196078, 0.196078, 1 )
+corner_radius_top_left = 32
+shadow_color = Color( 1, 1, 1, 0.6 )
+shadow_size = 16
+shadow_offset = Vector2( 8, 8 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 32
+extra_spacing_char = 4
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 48
+outline_size = 1
+font_data = ExtResource( 5 )
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.6, 0.6, 0.6, 0.588235 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+
+[sub_resource type="DynamicFont" id=7]
+size = 24
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=8]
+size = 20
+extra_spacing_top = 8
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=9]
+bg_color = Color( 0.196078, 0.196078, 0.196078, 1 )
+corner_radius_top_left = 32
+shadow_color = Color( 1, 1, 1, 0.6 )
+shadow_size = 16
+shadow_offset = Vector2( 8, 8 )
+
+[sub_resource type="DynamicFont" id=10]
+size = 32
+extra_spacing_char = 4
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=11]
+size = 48
+outline_size = 1
+font_data = ExtResource( 5 )
+
+[sub_resource type="StyleBoxFlat" id=12]
+bg_color = Color( 0.6, 0.6, 0.6, 0.588235 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+
+[sub_resource type="DynamicFont" id=13]
+size = 24
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=14]
+size = 20
+extra_spacing_top = 8
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=15]
+bg_color = Color( 0.196078, 0.196078, 0.196078, 1 )
+corner_radius_top_left = 32
+shadow_color = Color( 1, 1, 1, 0.6 )
+shadow_size = 16
+shadow_offset = Vector2( 8, 8 )
+
+[sub_resource type="DynamicFont" id=16]
+size = 32
+extra_spacing_char = 4
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=17]
+size = 48
+outline_size = 1
+font_data = ExtResource( 5 )
+
+[sub_resource type="StyleBoxFlat" id=18]
+bg_color = Color( 0.6, 0.6, 0.6, 0.588235 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+
+[sub_resource type="DynamicFont" id=19]
+size = 24
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=20]
+bg_color = Color( 0.196078, 0.196078, 0.196078, 1 )
+corner_radius_top_left = 32
+shadow_color = Color( 1, 1, 1, 0.6 )
+shadow_size = 16
+shadow_offset = Vector2( 8, 8 )
+
+[sub_resource type="DynamicFont" id=21]
+size = 32
+extra_spacing_char = 4
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=22]
+size = 48
+outline_size = 1
+font_data = ExtResource( 5 )
+
+[sub_resource type="StyleBoxFlat" id=23]
+bg_color = Color( 0.6, 0.6, 0.6, 0.588235 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+
+[sub_resource type="DynamicFont" id=24]
+size = 24
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=25]
+bg_color = Color( 0.196078, 0.196078, 0.196078, 1 )
+corner_radius_top_left = 32
+shadow_color = Color( 1, 1, 1, 0.6 )
+shadow_size = 16
+shadow_offset = Vector2( 8, 8 )
+
+[sub_resource type="DynamicFont" id=26]
+size = 32
+extra_spacing_char = 4
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=27]
+size = 48
+outline_size = 1
+font_data = ExtResource( 5 )
+
+[sub_resource type="StyleBoxFlat" id=28]
+bg_color = Color( 0.6, 0.6, 0.6, 0.588235 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+
+[sub_resource type="DynamicFont" id=29]
+size = 24
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=30]
+size = 20
+extra_spacing_top = 8
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=31]
+bg_color = Color( 0.196078, 0.196078, 0.196078, 1 )
+corner_radius_top_left = 32
+shadow_color = Color( 1, 1, 1, 0.6 )
+shadow_size = 16
+shadow_offset = Vector2( 8, 8 )
+
+[sub_resource type="DynamicFont" id=32]
+size = 32
+extra_spacing_char = 4
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=33]
+size = 48
+outline_size = 1
+font_data = ExtResource( 5 )
+
+[sub_resource type="StyleBoxFlat" id=34]
+bg_color = Color( 0.6, 0.6, 0.6, 0.588235 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+
+[sub_resource type="DynamicFont" id=35]
+size = 24
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=36]
+size = 32
+extra_spacing_top = 8
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=37]
+bg_color = Color( 0, 0, 0, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="DynamicFont" id=38]
+size = 24
+extra_spacing_top = 16
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=39]
+size = 32
+extra_spacing_top = 8
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=48]
+bg_color = Color( 0.737255, 0.160784, 0.160784, 0.588235 )
+
+[sub_resource type="StyleBoxFlat" id=49]
+bg_color = Color( 0.239216, 0.239216, 0.239216, 1 )
+
+[sub_resource type="DynamicFont" id=50]
+size = 24
+extra_spacing_top = 8
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=40]
+size = 32
+extra_spacing_top = 8
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=41]
+size = 32
+extra_spacing_top = 8
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=42]
+size = 32
+extra_spacing_top = 8
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=43]
+size = 32
+extra_spacing_top = 8
+font_data = ExtResource( 1 )
+
+[sub_resource type="Gradient" id=44]
+offsets = PoolRealArray( 0, 0.3, 1 )
+colors = PoolColorArray( 0.945098, 0.819608, 0.266667, 1, 0.223529, 0.215686, 0.121569, 1, 0, 0, 0, 1 )
+
+[sub_resource type="GradientTexture" id=45]
+gradient = SubResource( 44 )
+
+[sub_resource type="StyleBoxTexture" id=46]
+texture = SubResource( 45 )
+region_rect = Rect2( 0, 0, 2048, 1 )
+
+[sub_resource type="DynamicFont" id=47]
+size = 52
+outline_size = 1
+extra_spacing_char = 4
+font_data = ExtResource( 5 )
+
+[node name="manage_equipment" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -496.0
+margin_top = -284.0
+margin_right = 496.0
+margin_bottom = 212.0
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel"]
+margin_left = 16.0
+margin_right = 288.0
+margin_bottom = 40.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "MANAGE EQUIPMENT"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="close_button" type="TextureButton" parent="Panel"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -40.0
+margin_top = 4.0
+margin_right = 24.0
+margin_bottom = 68.0
+rect_scale = Vector2( 0.5, 0.5 )
+texture_normal = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="Panel/close_button"]
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = 12.0
+margin_top = 12.0
+margin_right = 52.0
+margin_bottom = 52.0
+texture = ExtResource( 3 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GridContainer" type="GridContainer" parent="Panel"]
+margin_left = 24.0
+margin_top = 56.0
+margin_right = 952.0
+margin_bottom = 456.0
+custom_constants/vseparation = 32
+custom_constants/hseparation = 32
+columns = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="rifle" type="Panel" parent="Panel/GridContainer"]
+margin_right = 288.0
+margin_bottom = 184.0
+rect_min_size = Vector2( 288, 184 )
+custom_styles/panel = SubResource( 3 )
+
+[node name="type" type="Label" parent="Panel/GridContainer/rifle"]
+margin_left = 8.0
+margin_top = 152.0
+margin_right = 62.0
+margin_bottom = 186.0
+custom_fonts/font = SubResource( 4 )
+text = "Rifle"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="no" type="TextureRect" parent="Panel/GridContainer/rifle"]
+self_modulate = Color( 1, 1, 1, 0.196078 )
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 72.0
+margin_bottom = 72.0
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/GridContainer/rifle/no"]
+margin_left = 24.0
+margin_top = 8.0
+margin_right = 34.0
+margin_bottom = 59.0
+custom_fonts/font = SubResource( 5 )
+text = "1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="equ_background" type="Panel" parent="Panel/GridContainer/rifle"]
+margin_left = 88.0
+margin_top = 8.0
+margin_right = 280.0
+margin_bottom = 104.0
+focus_mode = 1
+custom_styles/panel = SubResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="Panel/GridContainer/rifle/equ_background"]
+margin_left = 32.0
+margin_top = 29.0
+margin_right = 160.0
+margin_bottom = 69.0
+texture = ExtResource( 7 )
+expand = true
+stretch_mode = 4
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="name" type="Label" parent="Panel/GridContainer/rifle"]
+margin_left = 88.0
+margin_top = 120.0
+margin_right = 190.0
+margin_bottom = 139.0
+custom_fonts/font = SubResource( 7 )
+text = "name XXX"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="change_rifle_button" type="Button" parent="Panel/GridContainer/rifle"]
+margin_left = 208.0
+margin_top = 144.0
+margin_right = 280.0
+margin_bottom = 176.0
+custom_fonts/font = SubResource( 8 )
+text = "เปลี่ยน"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="pistol" type="Panel" parent="Panel/GridContainer"]
+margin_left = 320.0
+margin_right = 608.0
+margin_bottom = 184.0
+rect_min_size = Vector2( 288, 184 )
+custom_styles/panel = SubResource( 9 )
+
+[node name="type" type="Label" parent="Panel/GridContainer/pistol"]
+margin_left = 8.0
+margin_top = 152.0
+margin_right = 75.0
+margin_bottom = 186.0
+custom_fonts/font = SubResource( 10 )
+text = "Pistol"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="no" type="TextureRect" parent="Panel/GridContainer/pistol"]
+self_modulate = Color( 1, 1, 1, 0.196078 )
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 72.0
+margin_bottom = 72.0
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/GridContainer/pistol/no"]
+margin_left = 24.0
+margin_top = 8.0
+margin_right = 40.0
+margin_bottom = 59.0
+custom_fonts/font = SubResource( 11 )
+text = "2"
+
+[node name="equ_background" type="Panel" parent="Panel/GridContainer/pistol"]
+margin_left = 88.0
+margin_top = 8.0
+margin_right = 280.0
+margin_bottom = 104.0
+custom_styles/panel = SubResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="Panel/GridContainer/pistol/equ_background"]
+margin_left = 32.0
+margin_top = 16.0
+margin_right = 160.0
+margin_bottom = 80.0
+texture = ExtResource( 7 )
+expand = true
+
+[node name="name" type="Label" parent="Panel/GridContainer/pistol"]
+margin_left = 88.0
+margin_top = 120.0
+margin_right = 154.0
+margin_bottom = 134.0
+custom_fonts/font = SubResource( 13 )
+text = "Name XXX"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="change_pistol_button" type="Button" parent="Panel/GridContainer/pistol"]
+margin_left = 208.0
+margin_top = 144.0
+margin_right = 280.0
+margin_bottom = 176.0
+custom_fonts/font = SubResource( 14 )
+text = "เปลี่ยน"
+
+[node name="knife" type="Panel" parent="Panel/GridContainer"]
+margin_left = 640.0
+margin_right = 928.0
+margin_bottom = 184.0
+rect_min_size = Vector2( 288, 184 )
+custom_styles/panel = SubResource( 15 )
+
+[node name="type" type="Label" parent="Panel/GridContainer/knife"]
+margin_left = 8.0
+margin_top = 152.0
+margin_right = 67.0
+margin_bottom = 186.0
+custom_fonts/font = SubResource( 16 )
+text = "Knife"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="no" type="TextureRect" parent="Panel/GridContainer/knife"]
+self_modulate = Color( 1, 1, 1, 0.196078 )
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 72.0
+margin_bottom = 72.0
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/GridContainer/knife/no"]
+margin_left = 24.0
+margin_top = 8.0
+margin_right = 40.0
+margin_bottom = 59.0
+custom_fonts/font = SubResource( 17 )
+text = "3"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="equ_background" type="Panel" parent="Panel/GridContainer/knife"]
+margin_left = 88.0
+margin_top = 8.0
+margin_right = 280.0
+margin_bottom = 104.0
+custom_styles/panel = SubResource( 18 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="Panel/GridContainer/knife/equ_background"]
+margin_left = 32.0
+margin_top = 32.0
+margin_right = 160.0
+margin_bottom = 64.0
+texture = ExtResource( 7 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="name" type="Label" parent="Panel/GridContainer/knife"]
+margin_left = 88.0
+margin_top = 120.0
+margin_right = 154.0
+margin_bottom = 134.0
+custom_fonts/font = SubResource( 19 )
+text = "Name XXX"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="binoculars" type="Panel" parent="Panel/GridContainer"]
+margin_top = 216.0
+margin_right = 288.0
+margin_bottom = 400.0
+rect_min_size = Vector2( 288, 184 )
+custom_styles/panel = SubResource( 20 )
+
+[node name="type" type="Label" parent="Panel/GridContainer/binoculars"]
+margin_left = 8.0
+margin_top = 152.0
+margin_right = 131.0
+margin_bottom = 186.0
+custom_fonts/font = SubResource( 21 )
+text = "Binoculars"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="no" type="TextureRect" parent="Panel/GridContainer/binoculars"]
+self_modulate = Color( 1, 1, 1, 0.196078 )
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 72.0
+margin_bottom = 72.0
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/GridContainer/binoculars/no"]
+margin_left = 24.0
+margin_top = 8.0
+margin_right = 39.0
+margin_bottom = 59.0
+custom_fonts/font = SubResource( 22 )
+text = "4"
+
+[node name="equ_background" type="Panel" parent="Panel/GridContainer/binoculars"]
+margin_left = 88.0
+margin_top = 8.0
+margin_right = 280.0
+margin_bottom = 104.0
+custom_styles/panel = SubResource( 23 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="Panel/GridContainer/binoculars/equ_background"]
+margin_left = 32.0
+margin_top = 16.0
+margin_right = 160.0
+margin_bottom = 80.0
+texture = ExtResource( 7 )
+expand = true
+
+[node name="name" type="Label" parent="Panel/GridContainer/binoculars"]
+margin_left = 88.0
+margin_top = 120.0
+margin_right = 154.0
+margin_bottom = 134.0
+custom_fonts/font = SubResource( 24 )
+text = "Name XXX"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="calling_device" type="Panel" parent="Panel/GridContainer"]
+margin_left = 320.0
+margin_top = 216.0
+margin_right = 608.0
+margin_bottom = 400.0
+rect_min_size = Vector2( 288, 184 )
+custom_styles/panel = SubResource( 25 )
+
+[node name="type" type="Label" parent="Panel/GridContainer/calling_device"]
+margin_left = 8.0
+margin_top = 152.0
+margin_right = 177.0
+margin_bottom = 186.0
+custom_fonts/font = SubResource( 26 )
+text = "Calling Device"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="no" type="TextureRect" parent="Panel/GridContainer/calling_device"]
+self_modulate = Color( 1, 1, 1, 0.196078 )
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 72.0
+margin_bottom = 72.0
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/GridContainer/calling_device/no"]
+margin_left = 24.0
+margin_top = 8.0
+margin_right = 40.0
+margin_bottom = 59.0
+custom_fonts/font = SubResource( 27 )
+text = "5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="equ_background" type="Panel" parent="Panel/GridContainer/calling_device"]
+margin_left = 88.0
+margin_top = 8.0
+margin_right = 280.0
+margin_bottom = 104.0
+custom_styles/panel = SubResource( 28 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="Panel/GridContainer/calling_device/equ_background"]
+margin_left = 32.0
+margin_top = 16.0
+margin_right = 160.0
+margin_bottom = 80.0
+texture = ExtResource( 7 )
+expand = true
+
+[node name="name" type="Label" parent="Panel/GridContainer/calling_device"]
+margin_left = 88.0
+margin_top = 120.0
+margin_right = 154.0
+margin_bottom = 134.0
+custom_fonts/font = SubResource( 29 )
+text = "Name XXX"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="change_calling_device_button" type="Button" parent="Panel/GridContainer/calling_device"]
+visible = false
+margin_left = 208.0
+margin_top = 144.0
+margin_right = 280.0
+margin_bottom = 176.0
+custom_fonts/font = SubResource( 30 )
+text = "เปลี่ยน"
+
+[node name="shovel" type="Panel" parent="Panel/GridContainer"]
+margin_left = 640.0
+margin_top = 216.0
+margin_right = 928.0
+margin_bottom = 400.0
+rect_min_size = Vector2( 288, 184 )
+custom_styles/panel = SubResource( 31 )
+
+[node name="type" type="Label" parent="Panel/GridContainer/shovel"]
+margin_left = 8.0
+margin_top = 152.0
+margin_right = 80.0
+margin_bottom = 186.0
+custom_fonts/font = SubResource( 32 )
+text = "Shovel"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="no" type="TextureRect" parent="Panel/GridContainer/shovel"]
+self_modulate = Color( 1, 1, 1, 0.196078 )
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 72.0
+margin_bottom = 72.0
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/GridContainer/shovel/no"]
+margin_left = 24.0
+margin_top = 8.0
+margin_right = 40.0
+margin_bottom = 59.0
+custom_fonts/font = SubResource( 33 )
+text = "6"
+
+[node name="equ_background" type="Panel" parent="Panel/GridContainer/shovel"]
+margin_left = 88.0
+margin_top = 8.0
+margin_right = 280.0
+margin_bottom = 104.0
+custom_styles/panel = SubResource( 34 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="Panel/GridContainer/shovel/equ_background"]
+margin_left = 32.0
+margin_top = 16.0
+margin_right = 160.0
+margin_bottom = 80.0
+texture = ExtResource( 7 )
+expand = true
+
+[node name="name" type="Label" parent="Panel/GridContainer/shovel"]
+margin_left = 88.0
+margin_top = 120.0
+margin_right = 154.0
+margin_bottom = 134.0
+custom_fonts/font = SubResource( 35 )
+text = "Name XXX"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="change_rifle_dialog" type="WindowDialog" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -450.0
+margin_top = -226.0
+margin_right = 454.0
+margin_bottom = 198.0
+window_title = "Change Rifle"
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ScrollContainer" type="ScrollContainer" parent="change_rifle_dialog"]
+margin_left = 68.0
+margin_top = 8.0
+margin_right = 840.0
+margin_bottom = 416.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="change_rifle_dialog/ScrollContainer"]
+margin_right = 768.0
+margin_bottom = 400.0
+custom_constants/separation = 8
+
+[node name="rifle_1" type="Panel" parent="change_rifle_dialog/ScrollContainer/VBoxContainer"]
+margin_right = 768.0
+margin_bottom = 128.0
+rect_min_size = Vector2( 768, 128 )
+
+[node name="rifle_1_change" type="Button" parent="change_rifle_dialog/ScrollContainer/VBoxContainer/rifle_1"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -160.0
+margin_top = -24.0
+margin_right = -24.0001
+margin_bottom = 24.0
+custom_fonts/font = SubResource( 36 )
+text = "เลือก"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="change_rifle_dialog/ScrollContainer/VBoxContainer/rifle_1"]
+margin_left = 30.0
+margin_top = 16.0
+margin_right = 240.0
+margin_bottom = 112.0
+custom_styles/panel = SubResource( 37 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="change_rifle_dialog/ScrollContainer/VBoxContainer/rifle_1/Panel"]
+margin_left = 42.0
+margin_top = 26.0
+margin_right = 170.0
+margin_bottom = 64.0
+texture = ExtResource( 10 )
+stretch_mode = 4
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="change_rifle_dialog/ScrollContainer/VBoxContainer/rifle_1"]
+margin_left = 288.0
+margin_top = 40.0
+margin_right = 592.0
+margin_bottom = 88.0
+custom_fonts/normal_font = SubResource( 38 )
+text = "Winchester XPR"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="rifle_2" type="Panel" parent="change_rifle_dialog/ScrollContainer/VBoxContainer"]
+margin_top = 136.0
+margin_right = 768.0
+margin_bottom = 264.0
+rect_min_size = Vector2( 768, 128 )
+
+[node name="Panel" type="Panel" parent="change_rifle_dialog/ScrollContainer/VBoxContainer/rifle_2"]
+margin_left = 32.0
+margin_top = 16.0
+margin_right = 242.0
+margin_bottom = 112.0
+custom_styles/panel = SubResource( 37 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="change_rifle_dialog/ScrollContainer/VBoxContainer/rifle_2/Panel"]
+margin_left = 42.0
+margin_top = 26.0
+margin_right = 170.0
+margin_bottom = 64.0
+texture = ExtResource( 12 )
+stretch_mode = 4
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="change_rifle_dialog/ScrollContainer/VBoxContainer/rifle_2"]
+margin_left = 288.0
+margin_top = 42.0
+margin_right = 592.0
+margin_bottom = 90.0
+custom_fonts/normal_font = SubResource( 38 )
+text = "Savage 12 LRP"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="rifle_2_change" type="Button" parent="change_rifle_dialog/ScrollContainer/VBoxContainer/rifle_2"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -160.0
+margin_top = -24.0
+margin_right = -24.0
+margin_bottom = 24.0
+custom_fonts/font = SubResource( 39 )
+text = "เลือก"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel2" type="Panel" parent="change_rifle_dialog/ScrollContainer/VBoxContainer/rifle_2"]
+margin_right = 768.0
+margin_bottom = 128.0
+custom_styles/panel = SubResource( 48 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="change_rifle_dialog/ScrollContainer/VBoxContainer/rifle_2/Panel2"]
+margin_left = 542.0
+margin_top = 38.0
+margin_right = 750.0
+margin_bottom = 86.0
+custom_styles/normal = SubResource( 49 )
+custom_fonts/font = SubResource( 50 )
+text = "ปลดล็อคเมื่อ Level 10"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="rifle_3" type="Panel" parent="change_rifle_dialog/ScrollContainer/VBoxContainer"]
+margin_top = 272.0
+margin_right = 768.0
+margin_bottom = 400.0
+rect_min_size = Vector2( 768, 128 )
+
+[node name="Panel" type="Panel" parent="change_rifle_dialog/ScrollContainer/VBoxContainer/rifle_3"]
+margin_left = 32.0
+margin_top = 16.0
+margin_right = 242.0
+margin_bottom = 112.0
+custom_styles/panel = SubResource( 37 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="change_rifle_dialog/ScrollContainer/VBoxContainer/rifle_3/Panel"]
+margin_left = 42.0
+margin_top = 26.0
+margin_right = 170.0
+margin_bottom = 64.0
+texture = ExtResource( 11 )
+stretch_mode = 4
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="change_rifle_dialog/ScrollContainer/VBoxContainer/rifle_3"]
+margin_left = 288.0
+margin_top = 40.0
+margin_right = 592.0
+margin_bottom = 88.0
+custom_fonts/normal_font = SubResource( 38 )
+text = "Remington 700 SPS"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="rifle_3_change" type="Button" parent="change_rifle_dialog/ScrollContainer/VBoxContainer/rifle_3"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -160.0
+margin_top = -24.0
+margin_right = -24.0001
+margin_bottom = 24.0
+custom_fonts/font = SubResource( 40 )
+text = "เลือก"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel2" type="Panel" parent="change_rifle_dialog/ScrollContainer/VBoxContainer/rifle_3"]
+margin_right = 768.0
+margin_bottom = 128.0
+custom_styles/panel = SubResource( 48 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="change_rifle_dialog/ScrollContainer/VBoxContainer/rifle_3/Panel2"]
+margin_left = 542.0
+margin_top = 40.0
+margin_right = 750.0
+margin_bottom = 88.0
+custom_styles/normal = SubResource( 49 )
+custom_fonts/font = SubResource( 50 )
+text = "ปลดล็อคเมื่อ Level 20"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="change_pistol_dialog" type="WindowDialog" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -450.0
+margin_top = -224.0
+margin_right = 454.0
+margin_bottom = 200.0
+window_title = "Change Pistol"
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ScrollContainer" type="ScrollContainer" parent="change_pistol_dialog"]
+margin_left = 68.0
+margin_top = 8.0
+margin_right = 840.0
+margin_bottom = 416.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="change_pistol_dialog/ScrollContainer"]
+margin_right = 768.0
+margin_bottom = 400.0
+custom_constants/separation = 8
+
+[node name="pistol_1" type="Panel" parent="change_pistol_dialog/ScrollContainer/VBoxContainer"]
+margin_right = 768.0
+margin_bottom = 128.0
+rect_min_size = Vector2( 768, 128 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="change_pistol_dialog/ScrollContainer/VBoxContainer/pistol_1"]
+margin_left = 286.0
+margin_top = 40.0
+margin_right = 576.0
+margin_bottom = 88.0
+custom_fonts/normal_font = SubResource( 38 )
+text = "Colt M1911A1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="change_pistol_dialog/ScrollContainer/VBoxContainer/pistol_1"]
+margin_left = 30.0
+margin_top = 16.0
+margin_right = 240.0
+margin_bottom = 112.0
+custom_styles/panel = SubResource( 37 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="change_pistol_dialog/ScrollContainer/VBoxContainer/pistol_1/Panel"]
+margin_left = 42.0
+margin_top = 16.0
+margin_right = 170.0
+margin_bottom = 80.0
+texture = ExtResource( 13 )
+expand = true
+stretch_mode = 4
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="pistol_1_change" type="Button" parent="change_pistol_dialog/ScrollContainer/VBoxContainer/pistol_1"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -160.0
+margin_top = -24.0
+margin_right = -24.0001
+margin_bottom = 24.0
+custom_fonts/font = SubResource( 41 )
+text = "เลือก"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="pistol_2" type="Panel" parent="change_pistol_dialog/ScrollContainer/VBoxContainer"]
+margin_top = 136.0
+margin_right = 768.0
+margin_bottom = 264.0
+rect_min_size = Vector2( 768, 128 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="change_pistol_dialog/ScrollContainer/VBoxContainer/pistol_2"]
+margin_left = 288.0
+margin_top = 40.0
+margin_right = 592.0
+margin_bottom = 88.0
+custom_fonts/normal_font = SubResource( 38 )
+text = "CZ75"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="change_pistol_dialog/ScrollContainer/VBoxContainer/pistol_2"]
+margin_left = 32.0
+margin_top = 16.0
+margin_right = 242.0
+margin_bottom = 112.0
+custom_styles/panel = SubResource( 37 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="change_pistol_dialog/ScrollContainer/VBoxContainer/pistol_2/Panel"]
+margin_left = 42.0
+margin_top = 16.0
+margin_right = 170.0
+margin_bottom = 80.0
+texture = ExtResource( 15 )
+expand = true
+stretch_mode = 4
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="pistol_2_change" type="Button" parent="change_pistol_dialog/ScrollContainer/VBoxContainer/pistol_2"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -160.0
+margin_top = -24.0
+margin_right = -24.0001
+margin_bottom = 24.0
+custom_fonts/font = SubResource( 42 )
+text = "เลือก"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel2" type="Panel" parent="change_pistol_dialog/ScrollContainer/VBoxContainer/pistol_2"]
+margin_right = 768.0
+margin_bottom = 128.0
+custom_styles/panel = SubResource( 48 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="change_pistol_dialog/ScrollContainer/VBoxContainer/pistol_2/Panel2"]
+margin_left = 542.0
+margin_top = 38.0
+margin_right = 750.0
+margin_bottom = 86.0
+custom_styles/normal = SubResource( 49 )
+custom_fonts/font = SubResource( 50 )
+text = "ปลดล็อคเมื่อ Level 5"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="pistol_3" type="Panel" parent="change_pistol_dialog/ScrollContainer/VBoxContainer"]
+margin_top = 272.0
+margin_right = 768.0
+margin_bottom = 400.0
+rect_min_size = Vector2( 768, 128 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="change_pistol_dialog/ScrollContainer/VBoxContainer/pistol_3"]
+margin_left = 284.0
+margin_top = 40.0
+margin_right = 588.0
+margin_bottom = 88.0
+custom_fonts/normal_font = SubResource( 38 )
+text = "SIG Sauer P320sp"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="change_pistol_dialog/ScrollContainer/VBoxContainer/pistol_3"]
+margin_left = 34.0
+margin_top = 18.0
+margin_right = 244.0
+margin_bottom = 114.0
+custom_styles/panel = SubResource( 37 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="change_pistol_dialog/ScrollContainer/VBoxContainer/pistol_3/Panel"]
+margin_left = 42.0
+margin_top = 18.0
+margin_right = 170.0
+margin_bottom = 82.0
+texture = ExtResource( 14 )
+stretch_mode = 4
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="pistol_3_change" type="Button" parent="change_pistol_dialog/ScrollContainer/VBoxContainer/pistol_3"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -160.0
+margin_top = -24.0
+margin_right = -24.0001
+margin_bottom = 24.0
+custom_fonts/font = SubResource( 43 )
+text = "เลือก"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel2" type="Panel" parent="change_pistol_dialog/ScrollContainer/VBoxContainer/pistol_3"]
+margin_right = 768.0
+margin_bottom = 128.0
+custom_styles/panel = SubResource( 48 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="change_pistol_dialog/ScrollContainer/VBoxContainer/pistol_3/Panel2"]
+margin_left = 542.0
+margin_top = 38.0
+margin_right = 750.0
+margin_bottom = 86.0
+custom_styles/normal = SubResource( 49 )
+custom_fonts/font = SubResource( 50 )
+text = "ปลดล็อคเมื่อ Level 10"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="change_calling_device_dialog" type="WindowDialog" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -452.0
+margin_top = -212.0
+margin_right = 452.0
+margin_bottom = 212.0
+window_title = "Change Calling Device"
+script = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ScrollContainer" type="ScrollContainer" parent="change_calling_device_dialog"]
+margin_left = 68.0
+margin_top = 8.0
+margin_right = 840.0
+margin_bottom = 416.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="change_calling_device_dialog/ScrollContainer"]
+margin_right = 768.0
+margin_bottom = 264.0
+custom_constants/separation = 8
+
+[node name="calling_device_1" type="Panel" parent="change_calling_device_dialog/ScrollContainer/VBoxContainer"]
+margin_right = 768.0
+margin_bottom = 128.0
+rect_min_size = Vector2( 768, 128 )
+
+[node name="calling_device_1_change" type="Button" parent="change_calling_device_dialog/ScrollContainer/VBoxContainer/calling_device_1"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -160.0
+margin_top = -24.0
+margin_right = -24.0001
+margin_bottom = 24.0
+text = "CHANGE"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="calling_device_2" type="Panel" parent="change_calling_device_dialog/ScrollContainer/VBoxContainer"]
+margin_top = 136.0
+margin_right = 768.0
+margin_bottom = 264.0
+rect_min_size = Vector2( 768, 128 )
+
+[node name="calling_device_2_change" type="Button" parent="change_calling_device_dialog/ScrollContainer/VBoxContainer/calling_device_2"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -160.0
+margin_top = -24.0
+margin_right = -24.0001
+margin_bottom = 24.0
+text = "CHANGE"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="bottom_bar" type="Panel" parent="."]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -64.0
+custom_styles/panel = SubResource( 46 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="bottom_bar"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -304.0
+margin_top = -32.0
+margin_right = -17.0
+margin_bottom = 32.0
+custom_fonts/font = SubResource( 47 )
+text = "Press B to close"
+[connection signal="pressed" from="Panel/close_button" to="." method="_on_close_button_pressed"]
+[connection signal="pressed" from="Panel/GridContainer/rifle/change_rifle_button" to="." method="_on_change_rifle_button_pressed"]
+[connection signal="pressed" from="Panel/GridContainer/pistol/change_pistol_button" to="." method="_on_change_pistol_button_pressed"]
+[connection signal="pressed" from="Panel/GridContainer/calling_device/change_calling_device_button" to="." method="_on_change_calling_device_button_pressed"]

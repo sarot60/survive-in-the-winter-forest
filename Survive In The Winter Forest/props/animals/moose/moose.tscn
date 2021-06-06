@@ -1,0 +1,264 @@
+[gd_scene load_steps=20 format=2]
+
+[ext_resource path="res://assets/animals/moose/moose_male_01.png" type="Texture" id=1]
+[ext_resource path="res://props/animals/moose/moose.gd" type="Script" id=2]
+[ext_resource path="res://assets/icons/call_icon/call_icon_1.png" type="Texture" id=3]
+[ext_resource path="res://props/animals/moose/off_screen_moose.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/sfx/from_soundbible/Red_stag_roar-Juan_Carlos_-2004708707.wav" type="AudioStream" id=5]
+[ext_resource path="res://assets/icons/call_icon/call_icon_3.png" type="Texture" id=6]
+[ext_resource path="res://assets/icons/call_icon/call_icon_4.png" type="Texture" id=7]
+[ext_resource path="res://assets/icons/call_icon/call_icon_2.png" type="Texture" id=8]
+[ext_resource path="res://assets/other/white_circle_64x64.png" type="Texture" id=9]
+[ext_resource path="res://effects/death_blood/death_blood.tscn" type="PackedScene" id=10]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 12.0
+
+[sub_resource type="CircleShape2D" id=2]
+
+[sub_resource type="CanvasItemMaterial" id=3]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id=4]
+light_mode = 1
+
+[sub_resource type="Animation" id=5]
+resource_name = "start_call"
+length = 0.4
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 3 ), ExtResource( 8 ), ExtResource( 6 ), ExtResource( 7 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sprite2:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 3 ), ExtResource( 8 ), ExtResource( 6 ), ExtResource( 7 ) ]
+}
+
+[sub_resource type="Animation" id=6]
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("graphic:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=7]
+length = 0.2
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, -20 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("graphic:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, -10 ), Vector2( 0, 0 ) ]
+}
+
+[sub_resource type="CircleShape2D" id=8]
+radius = 72.1734
+
+[sub_resource type="CircleShape2D" id=9]
+
+[node name="moose_1" type="KinematicBody2D"]
+collision_layer = 8
+script = ExtResource( 2 )
+
+[node name="shadow" type="Sprite" parent="."]
+self_modulate = Color( 0, 0, 0, 0.196078 )
+scale = Vector2( 1, 0.34375 )
+texture = ExtResource( 9 )
+
+[node name="Sprite" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 1 )
+offset = Vector2( 18, -48 )
+
+[node name="graphic" type="Node2D" parent="."]
+
+[node name="body" type="Polygon2D" parent="graphic"]
+color = Color( 0.380392, 0.243137, 0.113725, 1 )
+polygon = PoolVector2Array( 32, 0, 32, -48, -32, -48, -32, 0, -24, 0, -24, -20, -12, -24, 12, -24, 24, -21, 24, 0 )
+
+[node name="neck" type="Polygon2D" parent="graphic"]
+color = Color( 0.380392, 0.243137, 0.113725, 1 )
+polygon = PoolVector2Array( 8, -43, 34, -60, 44, -50, 30, -27 )
+
+[node name="body3" type="Polygon2D" parent="graphic"]
+color = Color( 0.643137, 0.521569, 0.403922, 1 )
+polygon = PoolVector2Array( 4, -48, 15, -48, 25, -54, 27, -45, 12, -40 )
+
+[node name="body2" type="Polygon2D" parent="graphic"]
+color = Color( 0.643137, 0.517647, 0.396078, 1 )
+polygon = PoolVector2Array( 32, 0, 32, -31, 39, -42, 3, -28, -32, -30, -32, 0, -24, 0, -24, -20, -12, -24, 12, -24, 24, -21, 24, 0 )
+
+[node name="tail" type="Polygon2D" parent="graphic"]
+color = Color( 0.380392, 0.243137, 0.113725, 1 )
+polygon = PoolVector2Array( -25, -50, -44, -34, -56, -16, -44, -10, -37, -31, -22, -44 )
+
+[node name="tail2" type="Polygon2D" parent="graphic"]
+color = Color( 0.603922, 0.490196, 0.380392, 1 )
+polygon = PoolVector2Array( -41, -32, -48, -28, -56, -16, -44, -10, -39, -24 )
+
+[node name="head3" type="Polygon2D" parent="graphic"]
+color = Color( 0.6, 0.486275, 0.380392, 1 )
+polygon = PoolVector2Array( 67, -89, 60, -78, 55, -87, 57, -73, 49, -81, 53, -70, 43, -63, 48, -61, 64, -70 )
+
+[node name="head" type="Polygon2D" parent="graphic"]
+color = Color( 0.380392, 0.243137, 0.113725, 1 )
+polygon = PoolVector2Array( 28, -56, 42, -67, 65, -57, 61, -48, 37, -48 )
+
+[node name="head2" type="Polygon2D" parent="graphic"]
+color = Color( 0.129412, 0.113725, 0.0980392, 1 )
+polygon = PoolVector2Array( 7, -86, 17, -75, 22, -86, 24, -72, 30, -80, 31, -69, 43, -63, 39, -59, 17, -66 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -12 )
+shape = SubResource( 1 )
+
+[node name="foot_step" type="Position2D" parent="."]
+position = Vector2( -4, 0 )
+
+[node name="player_detection" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 6144
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="player_detection"]
+shape = SubResource( 2 )
+
+[node name="calling_callback" type="Node2D" parent="."]
+visible = false
+
+[node name="Sprite" type="Sprite" parent="calling_callback"]
+material = SubResource( 3 )
+position = Vector2( 112, -80 )
+scale = Vector2( 2, 2 )
+z_index = 10
+texture = ExtResource( 3 )
+
+[node name="Sprite2" type="Sprite" parent="calling_callback"]
+material = SubResource( 4 )
+position = Vector2( -48, -80 )
+scale = Vector2( -2, 2 )
+z_index = 10
+texture = ExtResource( 3 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="calling_callback"]
+anims/start_call = SubResource( 5 )
+
+[node name="escape_timer" type="Timer" parent="."]
+process_mode = 0
+one_shot = true
+
+[node name="interested_timer" type="Timer" parent="."]
+process_mode = 0
+one_shot = true
+
+[node name="foraging_timer" type="Timer" parent="."]
+process_mode = 0
+one_shot = true
+
+[node name="queue_free_timer" type="Timer" parent="."]
+process_mode = 0
+one_shot = true
+
+[node name="shocked_timer" type="Timer" parent="."]
+process_mode = 0
+one_shot = true
+
+[node name="hurtbox" type="Area2D" parent="."]
+collision_layer = 32
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="hurtbox"]
+visible = false
+polygon = PoolVector2Array( -32, 0, -32, -36, -37, -31, -44, -10, -56, -16, -44, -34, -27, -48, 16, -48, 25, -54, 42, -67, 65, -57, 61, -48, 43, -48, 32, -31, 32, 0, 24, 0, 24, -21, 12, -24, -14, -24, -24, -20, -24, 0 )
+
+[node name="off_screen_moose" parent="." instance=ExtResource( 4 )]
+
+[node name="callback_sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 5 )
+max_distance = 5000.0
+bus = "SFX"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "idle"
+anims/idle = SubResource( 6 )
+anims/run = SubResource( 7 )
+
+[node name="drop_item_check_player" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="drop_item_check_player"]
+self_modulate = Color( 0.552941, 0.552941, 0.552941, 1 )
+shape = SubResource( 8 )
+disabled = true
+
+[node name="check_sound_gun" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 196608
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="check_sound_gun"]
+shape = SubResource( 9 )
+
+[node name="death_blood" parent="." instance=ExtResource( 10 )]
+[connection signal="area_entered" from="player_detection" to="." method="_on_player_detection_area_entered"]
+[connection signal="timeout" from="escape_timer" to="." method="_on_escape_timer_timeout"]
+[connection signal="timeout" from="interested_timer" to="." method="_on_interested_timer_timeout"]
+[connection signal="timeout" from="foraging_timer" to="." method="_on_foraging_timer_timeout"]
+[connection signal="timeout" from="queue_free_timer" to="." method="_on_queue_free_timer_timeout"]
+[connection signal="timeout" from="shocked_timer" to="." method="_on_shocked_timer_timeout"]
+[connection signal="body_entered" from="drop_item_check_player" to="." method="_on_drop_item_check_player_body_entered"]
+[connection signal="body_exited" from="drop_item_check_player" to="." method="_on_drop_item_check_player_body_exited"]
+[connection signal="area_entered" from="check_sound_gun" to="." method="_on_check_sound_gun_area_entered"]

@@ -1,0 +1,71 @@
+[gd_scene load_steps=7 format=2]
+
+[sub_resource type="Curve" id=1]
+_data = [ Vector2( 0, 1 ), 0.0, 0.0, 0, 0, Vector2( 1, 0.493182 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="Gradient" id=2]
+offsets = PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1 )
+colors = PoolColorArray( 0.196078, 0.196078, 0.196078, 0.0784314, 0.666667, 0.666667, 0.666667, 0.431373, 0.556863, 0.556863, 0.556863, 0.54902, 0.607843, 0.607843, 0.607843, 0.627451, 0.65098, 0.65098, 0.65098, 0.54902, 0.505882, 0.505882, 0.505882, 0.470588 )
+
+[sub_resource type="Curve" id=3]
+_data = [ Vector2( 0, 1 ), 0.0, -1.77013, 0, 0, Vector2( 1, 0.468182 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="Gradient" id=4]
+offsets = PoolRealArray( 0, 0.15, 0.5, 0.7, 0.9, 1 )
+colors = PoolColorArray( 0.901961, 0.156863, 0.0392157, 1, 0.941176, 0.196078, 0.0196078, 0.784314, 1, 0.803922, 0.333333, 0.705882, 0.901961, 0.298039, 0.0588235, 1, 1, 0.0980392, 0.0392157, 0.54902, 0.156863, 0.0784314, 0.0784314, 0.27451 )
+
+[sub_resource type="Curve" id=5]
+min_value = -2.0
+max_value = 2.0
+_data = [ Vector2( 0, 0.127273 ), 0.0, 0.0, 0, 0, Vector2( 0.241379, 1 ), 0.0, 0.0, 0, 0, Vector2( 0.758621, -0.418182 ), 0.0, 0.0, 0, 0, Vector2( 1, 0.0545456 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="Gradient" id=6]
+offsets = PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1 )
+colors = PoolColorArray( 1, 0.823529, 0.333333, 0.27451, 1, 0.509804, 0.156863, 0.745098, 0.901961, 0.313726, 0.0588235, 1, 0.823529, 0.156863, 0.00392157, 0.784314, 0.823529, 0.117647, 0.0196078, 0.745098, 0.156863, 0.0784314, 0.0784314, 0.196078 )
+
+[node name="fire_menu" type="Node2D"]
+
+[node name="CPUParticles2D3" type="CPUParticles2D" parent="."]
+amount = 30
+lifetime = 5.0
+preprocess = 30.0
+speed_scale = 0.5
+emission_shape = 1
+emission_sphere_radius = 10.0
+spread = 180.0
+gravity = Vector2( 0, -30 )
+orbit_velocity = -0.2
+orbit_velocity_random = 1.0
+scale_amount = 30.0
+scale_amount_random = 0.5
+scale_amount_curve = SubResource( 1 )
+color_ramp = SubResource( 2 )
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+amount = 40
+lifetime = 0.6
+emission_shape = 1
+emission_sphere_radius = 7.0
+spread = 180.0
+gravity = Vector2( 0, -30 )
+orbit_velocity = -0.42
+orbit_velocity_random = 1.0
+scale_amount = 10.0
+scale_amount_random = 0.3
+scale_amount_curve = SubResource( 3 )
+color_ramp = SubResource( 4 )
+
+[node name="CPUParticles2D2" type="CPUParticles2D" parent="."]
+position = Vector2( 0, -3 )
+amount = 15
+speed_scale = 0.7
+emission_shape = 1
+emission_sphere_radius = 5.0
+spread = 180.0
+gravity = Vector2( 0, -30 )
+orbit_velocity = -0.2
+orbit_velocity_random = 1.0
+orbit_velocity_curve = SubResource( 5 )
+scale_amount = 10.0
+scale_amount_random = 0.3
+color_ramp = SubResource( 6 )

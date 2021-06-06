@@ -1,0 +1,208 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://assets/animals/wolf/wolf.png" type="Texture" id=1]
+[ext_resource path="res://props/animals/boss_wolf/boss_wolf.gd" type="Script" id=2]
+[ext_resource path="res://assets/other/white_circle_64x64.png" type="Texture" id=3]
+[ext_resource path="res://assets/fonts/supermarket.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://effects/death_blood/death_blood.tscn" type="PackedScene" id=5]
+[ext_resource path="res://props/animals/wolf/tooth_hitbox.gd" type="Script" id=6]
+
+[sub_resource type="CanvasItemMaterial" id=1]
+light_mode = 1
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 13.1529
+
+[sub_resource type="CircleShape2D" id=3]
+custom_solver_bias = 1.0
+radius = 734.813
+
+[sub_resource type="DynamicFont" id=4]
+font_data = ExtResource( 4 )
+
+[sub_resource type="CircleShape2D" id=5]
+radius = 50.0
+
+[sub_resource type="Animation" id=6]
+tracks/0/type = "value"
+tracks/0/path = NodePath("graphic:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=7]
+length = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("graphic:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, -10 ), Vector2( 0, 0 ) ]
+}
+
+[node name="boss_wolf_1" type="KinematicBody2D"]
+collision_layer = 8
+collision_mask = 3
+script = ExtResource( 2 )
+
+[node name="shadow" type="Sprite" parent="."]
+self_modulate = Color( 0, 0, 0, 0.196078 )
+position = Vector2( -1, 0 )
+scale = Vector2( 0.90625, 0.261719 )
+texture = ExtResource( 3 )
+
+[node name="graphic" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="graphic"]
+visible = false
+texture = ExtResource( 1 )
+offset = Vector2( 0, -48 )
+flip_h = true
+
+[node name="Polygon2D" type="Polygon2D" parent="graphic"]
+visible = false
+position = Vector2( 0, -33 )
+color = Color( 0, 0, 0, 1 )
+polygon = PoolVector2Array( -16, -3, 16, -4, 32, -13, 42, -11, 45, -5, 58, -2, 57, 3, 37, 3, 28, 10, 27, 33, 19, 33, 19, 13, -14, 13, -14, 33, -25, 33, -25, 8, -49, 20, -48, 5 )
+
+[node name="body" type="Polygon2D" parent="graphic"]
+visible = false
+color = Color( 0.180392, 0.25098, 0.341176, 1 )
+polygon = PoolVector2Array( -24, 0, -24, -30, 24, -30, 24, 0, 17, 0, 17, -12, -17, -12, -17, 0 )
+
+[node name="body3" type="Polygon2D" parent="graphic"]
+color = Color( 0.537255, 0.192157, 0.184314, 1 )
+polygon = PoolVector2Array( -24, 0, -24, -30, 24, -30, 24, 0, 17, 0, 17, -12, -17, -12, -17, 0 )
+
+[node name="neck" type="Polygon2D" parent="graphic"]
+visible = false
+color = Color( 0.180392, 0.25098, 0.341176, 1 )
+polygon = PoolVector2Array( 8, -28, 22, -40, 28, -27, 19, -14 )
+
+[node name="neck2" type="Polygon2D" parent="graphic"]
+color = Color( 0.537255, 0.192157, 0.184314, 1 )
+polygon = PoolVector2Array( 8, -28, 22, -40, 28, -27, 19, -14 )
+
+[node name="body2" type="Polygon2D" parent="graphic"]
+color = Color( 0.282353, 0.34902, 0.435294, 1 )
+polygon = PoolVector2Array( -24, 0, -24, -17, -10, -15, 6, -18, 14, -23, 24, -18, 24, 0, 17, 0, 17, -12, -17, -12, -17, 0 )
+
+[node name="tail" type="Polygon2D" parent="graphic"]
+visible = false
+color = Color( 0.180392, 0.25098, 0.341176, 1 )
+polygon = PoolVector2Array( -44, -18, -16, -31, -14, -25, -39, -8 )
+
+[node name="tail3" type="Polygon2D" parent="graphic"]
+color = Color( 0.537255, 0.192157, 0.184314, 1 )
+polygon = PoolVector2Array( -44, -18, -16, -31, -14, -25, -39, -8 )
+
+[node name="tail2" type="Polygon2D" parent="graphic"]
+color = Color( 0.282353, 0.34902, 0.435294, 1 )
+polygon = PoolVector2Array( -44, -18, -35, -22, -28, -22, -30, -14, -39, -8 )
+
+[node name="head" type="Polygon2D" parent="graphic"]
+visible = false
+color = Color( 0.180392, 0.25098, 0.341176, 1 )
+polygon = PoolVector2Array( 22, -27, 40, -27, 43, -32, 28, -38, 27, -40, 22, -40 )
+
+[node name="head3" type="Polygon2D" parent="graphic"]
+color = Color( 0.537255, 0.192157, 0.184314, 1 )
+polygon = PoolVector2Array( 22, -27, 40, -27, 43, -32, 28, -38, 27, -40, 22, -40 )
+
+[node name="head2" type="Polygon2D" parent="graphic"]
+color = Color( 0.282353, 0.34902, 0.435294, 1 )
+polygon = PoolVector2Array( 18, -32, 24, -28, 30, -34, 28, -38, 27, -46, 22, -48 )
+
+[node name="eye" type="Polygon2D" parent="graphic"]
+material = SubResource( 1 )
+color = Color( 0.921569, 0.207843, 0.0941176, 1 )
+polygon = PoolVector2Array( 37, -33, 32, -35, 31, -31, 36, -31 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -13 )
+shape = SubResource( 2 )
+
+[node name="foraging_timer" type="Timer" parent="."]
+one_shot = true
+
+[node name="queue_free_timer" type="Timer" parent="."]
+one_shot = true
+
+[node name="seek_player" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="seek_player"]
+self_modulate = Color( 0.364706, 0.117647, 0.662745, 0.196078 )
+position = Vector2( 0.187286, 0 )
+shape = SubResource( 3 )
+
+[node name="head_debug" type="Label" parent="."]
+visible = false
+margin_left = -19.0
+margin_top = -69.0
+margin_right = 19.0
+margin_bottom = -51.0
+custom_fonts/font = SubResource( 4 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="hurtbox" type="Area2D" parent="."]
+collision_layer = 32
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="hurtbox"]
+visible = false
+polygon = PoolVector2Array( 10, -30, 20, -38, 22, -48, 27, -46, 28, -38, 43, -32, 40, -27, 28, -27, 24, -19, 24, 0, 17, 0, 17, -12, -16, -12, -16, 0, -24, 0, -24, -18, -39, -8, -44, -18, -23, -29 )
+
+[node name="hitbox" type="Position2D" parent="."]
+position = Vector2( 0, -30 )
+
+[node name="tooth_hitbox" type="Area2D" parent="hitbox"]
+collision_layer = 0
+collision_mask = 16
+script = ExtResource( 6 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="hitbox/tooth_hitbox"]
+visible = false
+polygon = PoolVector2Array( 18, -7, 22, -18, 43, -3, 26, 30 )
+
+[node name="drop_item_check_player" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="drop_item_check_player"]
+self_modulate = Color( 1, 1, 1, 0.27451 )
+shape = SubResource( 5 )
+disabled = true
+
+[node name="death_blood" parent="." instance=ExtResource( 5 )]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "idle"
+anims/idle = SubResource( 6 )
+anims/walk = SubResource( 7 )
+[connection signal="timeout" from="foraging_timer" to="." method="_on_foraging_timer_timeout"]
+[connection signal="timeout" from="queue_free_timer" to="." method="_on_queue_free_timer_timeout"]
+[connection signal="body_entered" from="seek_player" to="." method="_on_seek_player_body_entered"]
+[connection signal="body_exited" from="seek_player" to="." method="_on_seek_player_body_exited"]
+[connection signal="area_entered" from="hurtbox" to="." method="_on_hurtbox_area_entered"]
+[connection signal="area_entered" from="hitbox/tooth_hitbox" to="." method="_on_tooth_hitbox_area_entered"]
+[connection signal="body_entered" from="drop_item_check_player" to="." method="_on_drop_item_check_player_body_entered"]
+[connection signal="body_exited" from="drop_item_check_player" to="." method="_on_drop_item_check_player_body_exited"]

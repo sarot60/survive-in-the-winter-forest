@@ -1,0 +1,630 @@
+[gd_scene load_steps=45 format=2]
+
+[ext_resource path="res://gui/B_menu/B_menu.gd" type="Script" id=1]
+[ext_resource path="res://assets/icons/inventory_icon.png" type="Texture" id=2]
+[ext_resource path="res://assets/sfx/open_gui.wav" type="AudioStream" id=3]
+[ext_resource path="res://assets/fonts/FC Galaxy Italic.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://assets/icons/equipment_logo_64x64.png" type="Texture" id=5]
+[ext_resource path="res://assets/icons/book_perk_64x64.png" type="Texture" id=6]
+[ext_resource path="res://assets/icons/quest_icon_64x64.png" type="Texture" id=7]
+[ext_resource path="res://assets/icons/player_detail_icon.png" type="Texture" id=8]
+[ext_resource path="res://assets/fonts/supermarket.ttf" type="DynamicFontData" id=9]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.945098, 0.819608, 0.270588, 1 )
+border_width_left = 16
+border_width_top = 16
+border_width_right = 16
+border_width_bottom = 16
+border_blend = true
+corner_radius_top_left = 64
+corner_radius_top_right = 64
+corner_radius_bottom_right = 64
+corner_radius_bottom_left = 64
+corner_detail = 20
+shadow_size = 32
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.945098, 0.819608, 0.270588, 1 )
+border_width_left = 16
+border_width_top = 16
+border_width_right = 16
+border_width_bottom = 16
+border_blend = true
+corner_radius_top_left = 64
+corner_radius_top_right = 64
+corner_radius_bottom_right = 64
+corner_radius_bottom_left = 64
+corner_detail = 20
+shadow_size = 16
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.945098, 0.819608, 0.270588, 1 )
+border_width_left = 16
+border_width_top = 16
+border_width_right = 16
+border_width_bottom = 16
+border_blend = true
+corner_radius_top_left = 64
+corner_radius_top_right = 64
+corner_radius_bottom_right = 64
+corner_radius_bottom_left = 64
+corner_detail = 20
+shadow_size = 16
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.313726, 0.313726, 0.313726, 1 )
+border_width_left = 16
+border_width_top = 16
+border_width_right = 16
+border_width_bottom = 16
+border_blend = true
+corner_radius_top_left = 64
+corner_radius_top_right = 64
+corner_radius_bottom_right = 64
+corner_radius_bottom_left = 64
+corner_detail = 20
+shadow_color = Color( 0, 0, 0, 0.392157 )
+shadow_size = 16
+
+[sub_resource type="DynamicFont" id=5]
+size = 32
+outline_size = 2
+extra_spacing_char = 4
+font_data = ExtResource( 4 )
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.937255, 0.811765, 0.266667, 1 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 24
+extra_spacing_top = 6
+font_data = ExtResource( 9 )
+
+[sub_resource type="StyleBoxFlat" id=8]
+bg_color = Color( 0.945098, 0.819608, 0.270588, 1 )
+border_width_left = 16
+border_width_top = 16
+border_width_right = 16
+border_width_bottom = 16
+border_blend = true
+corner_radius_top_left = 64
+corner_radius_top_right = 64
+corner_radius_bottom_right = 64
+corner_radius_bottom_left = 64
+corner_detail = 20
+shadow_size = 32
+
+[sub_resource type="StyleBoxFlat" id=9]
+bg_color = Color( 0.945098, 0.819608, 0.270588, 1 )
+border_width_left = 16
+border_width_top = 16
+border_width_right = 16
+border_width_bottom = 16
+border_blend = true
+corner_radius_top_left = 64
+corner_radius_top_right = 64
+corner_radius_bottom_right = 64
+corner_radius_bottom_left = 64
+corner_detail = 20
+shadow_size = 16
+
+[sub_resource type="StyleBoxFlat" id=10]
+bg_color = Color( 0.945098, 0.819608, 0.270588, 1 )
+border_width_left = 16
+border_width_top = 16
+border_width_right = 16
+border_width_bottom = 16
+border_blend = true
+corner_radius_top_left = 64
+corner_radius_top_right = 64
+corner_radius_bottom_right = 64
+corner_radius_bottom_left = 64
+corner_detail = 20
+shadow_size = 16
+
+[sub_resource type="StyleBoxFlat" id=11]
+bg_color = Color( 0.313726, 0.313726, 0.313726, 1 )
+border_width_left = 16
+border_width_top = 16
+border_width_right = 16
+border_width_bottom = 16
+border_blend = true
+corner_radius_top_left = 64
+corner_radius_top_right = 64
+corner_radius_bottom_right = 64
+corner_radius_bottom_left = 64
+corner_detail = 20
+shadow_color = Color( 0, 0, 0, 0.392157 )
+shadow_size = 16
+
+[sub_resource type="DynamicFont" id=12]
+size = 32
+outline_size = 2
+extra_spacing_char = 4
+font_data = ExtResource( 4 )
+
+[sub_resource type="StyleBoxFlat" id=13]
+bg_color = Color( 0.937255, 0.811765, 0.266667, 1 )
+
+[sub_resource type="DynamicFont" id=14]
+size = 24
+extra_spacing_top = 6
+font_data = ExtResource( 9 )
+
+[sub_resource type="StyleBoxFlat" id=15]
+bg_color = Color( 0.945098, 0.819608, 0.270588, 1 )
+border_width_left = 16
+border_width_top = 16
+border_width_right = 16
+border_width_bottom = 16
+border_blend = true
+corner_radius_top_left = 64
+corner_radius_top_right = 64
+corner_radius_bottom_right = 64
+corner_radius_bottom_left = 64
+corner_detail = 20
+shadow_size = 32
+
+[sub_resource type="StyleBoxFlat" id=16]
+bg_color = Color( 0.945098, 0.819608, 0.270588, 1 )
+border_width_left = 16
+border_width_top = 16
+border_width_right = 16
+border_width_bottom = 16
+border_blend = true
+corner_radius_top_left = 64
+corner_radius_top_right = 64
+corner_radius_bottom_right = 64
+corner_radius_bottom_left = 64
+corner_detail = 20
+shadow_size = 16
+
+[sub_resource type="StyleBoxFlat" id=17]
+bg_color = Color( 0.945098, 0.819608, 0.270588, 1 )
+border_width_left = 16
+border_width_top = 16
+border_width_right = 16
+border_width_bottom = 16
+border_blend = true
+corner_radius_top_left = 64
+corner_radius_top_right = 64
+corner_radius_bottom_right = 64
+corner_radius_bottom_left = 64
+corner_detail = 20
+shadow_size = 16
+
+[sub_resource type="StyleBoxFlat" id=18]
+bg_color = Color( 0.313726, 0.313726, 0.313726, 1 )
+border_width_left = 16
+border_width_top = 16
+border_width_right = 16
+border_width_bottom = 16
+border_blend = true
+corner_radius_top_left = 64
+corner_radius_top_right = 64
+corner_radius_bottom_right = 64
+corner_radius_bottom_left = 64
+corner_detail = 20
+shadow_color = Color( 0, 0, 0, 0.392157 )
+shadow_size = 16
+
+[sub_resource type="DynamicFont" id=19]
+size = 32
+outline_size = 2
+extra_spacing_char = 4
+font_data = ExtResource( 4 )
+
+[sub_resource type="StyleBoxFlat" id=20]
+bg_color = Color( 0.937255, 0.811765, 0.266667, 1 )
+
+[sub_resource type="DynamicFont" id=21]
+size = 24
+extra_spacing_top = 6
+font_data = ExtResource( 9 )
+
+[sub_resource type="StyleBoxFlat" id=22]
+bg_color = Color( 0.945098, 0.819608, 0.270588, 1 )
+border_width_left = 16
+border_width_top = 16
+border_width_right = 16
+border_width_bottom = 16
+border_blend = true
+corner_radius_top_left = 64
+corner_radius_top_right = 64
+corner_radius_bottom_right = 64
+corner_radius_bottom_left = 64
+corner_detail = 20
+shadow_size = 32
+
+[sub_resource type="StyleBoxFlat" id=23]
+bg_color = Color( 0.945098, 0.819608, 0.270588, 1 )
+border_width_left = 16
+border_width_top = 16
+border_width_right = 16
+border_width_bottom = 16
+border_blend = true
+corner_radius_top_left = 64
+corner_radius_top_right = 64
+corner_radius_bottom_right = 64
+corner_radius_bottom_left = 64
+corner_detail = 20
+shadow_size = 16
+
+[sub_resource type="StyleBoxFlat" id=24]
+bg_color = Color( 0.945098, 0.819608, 0.270588, 1 )
+border_width_left = 16
+border_width_top = 16
+border_width_right = 16
+border_width_bottom = 16
+border_blend = true
+corner_radius_top_left = 64
+corner_radius_top_right = 64
+corner_radius_bottom_right = 64
+corner_radius_bottom_left = 64
+corner_detail = 20
+shadow_size = 16
+
+[sub_resource type="StyleBoxFlat" id=25]
+bg_color = Color( 0.313726, 0.313726, 0.313726, 1 )
+border_width_left = 16
+border_width_top = 16
+border_width_right = 16
+border_width_bottom = 16
+border_blend = true
+corner_radius_top_left = 64
+corner_radius_top_right = 64
+corner_radius_bottom_right = 64
+corner_radius_bottom_left = 64
+corner_detail = 20
+shadow_color = Color( 0, 0, 0, 0.392157 )
+shadow_size = 16
+
+[sub_resource type="DynamicFont" id=26]
+size = 32
+outline_size = 2
+extra_spacing_char = 4
+font_data = ExtResource( 4 )
+
+[sub_resource type="StyleBoxFlat" id=27]
+bg_color = Color( 0.937255, 0.811765, 0.266667, 1 )
+
+[sub_resource type="DynamicFont" id=28]
+size = 24
+extra_spacing_top = 6
+font_data = ExtResource( 9 )
+
+[sub_resource type="StyleBoxFlat" id=29]
+bg_color = Color( 0.945098, 0.819608, 0.270588, 1 )
+border_width_left = 16
+border_width_top = 16
+border_width_right = 16
+border_width_bottom = 16
+border_blend = true
+corner_radius_top_left = 64
+corner_radius_top_right = 64
+corner_radius_bottom_right = 64
+corner_radius_bottom_left = 64
+corner_detail = 20
+shadow_size = 32
+
+[sub_resource type="StyleBoxFlat" id=30]
+bg_color = Color( 0.945098, 0.819608, 0.270588, 1 )
+border_width_left = 16
+border_width_top = 16
+border_width_right = 16
+border_width_bottom = 16
+border_blend = true
+corner_radius_top_left = 64
+corner_radius_top_right = 64
+corner_radius_bottom_right = 64
+corner_radius_bottom_left = 64
+corner_detail = 20
+shadow_size = 16
+
+[sub_resource type="StyleBoxFlat" id=31]
+bg_color = Color( 0.945098, 0.819608, 0.270588, 1 )
+border_width_left = 16
+border_width_top = 16
+border_width_right = 16
+border_width_bottom = 16
+border_blend = true
+corner_radius_top_left = 64
+corner_radius_top_right = 64
+corner_radius_bottom_right = 64
+corner_radius_bottom_left = 64
+corner_detail = 20
+shadow_size = 16
+
+[sub_resource type="StyleBoxFlat" id=32]
+bg_color = Color( 0.313726, 0.313726, 0.313726, 1 )
+border_width_left = 16
+border_width_top = 16
+border_width_right = 16
+border_width_bottom = 16
+border_blend = true
+corner_radius_top_left = 64
+corner_radius_top_right = 64
+corner_radius_bottom_right = 64
+corner_radius_bottom_left = 64
+shadow_color = Color( 0, 0, 0, 0.392157 )
+shadow_size = 16
+
+[sub_resource type="DynamicFont" id=33]
+size = 32
+outline_size = 2
+extra_spacing_char = 4
+font_data = ExtResource( 4 )
+
+[sub_resource type="StyleBoxFlat" id=34]
+bg_color = Color( 0.937255, 0.811765, 0.266667, 1 )
+
+[sub_resource type="DynamicFont" id=35]
+size = 24
+extra_spacing_top = 6
+font_data = ExtResource( 9 )
+
+[node name="B_menu" type="Control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -64.0
+margin_top = -64.0
+margin_right = 64.0
+margin_bottom = 64.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="menu_buttons" type="Control" parent="."]
+margin_left = -448.0
+margin_top = -236.0
+margin_right = -320.0
+margin_bottom = -108.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="inventory_button" type="Button" parent="menu_buttons"]
+margin_right = 128.0
+margin_bottom = 128.0
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/focus = SubResource( 3 )
+custom_styles/normal = SubResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="menu_buttons/inventory_button"]
+margin_left = 32.0
+margin_top = 32.0
+margin_right = 96.0
+margin_bottom = 96.0
+texture = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="menu_buttons/inventory_button"]
+margin_left = 8.0
+margin_top = 144.0
+margin_right = 118.0
+margin_bottom = 178.0
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Inventory"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="press_I" type="Label" parent="menu_buttons/inventory_button"]
+margin_left = -24.0
+margin_right = 24.0
+margin_bottom = 25.0
+custom_styles/normal = SubResource( 6 )
+custom_fonts/font = SubResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "I"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="quest_button" type="Button" parent="menu_buttons"]
+margin_right = 128.0
+margin_bottom = 128.0
+custom_styles/hover = SubResource( 8 )
+custom_styles/pressed = SubResource( 9 )
+custom_styles/focus = SubResource( 10 )
+custom_styles/normal = SubResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="menu_buttons/quest_button"]
+margin_left = 32.0
+margin_top = 32.0
+margin_right = 96.0
+margin_bottom = 96.0
+texture = ExtResource( 7 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="menu_buttons/quest_button"]
+margin_left = 32.0
+margin_top = 144.0
+margin_right = 94.0
+margin_bottom = 178.0
+custom_fonts/font = SubResource( 12 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Quest"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="press_L" type="Label" parent="menu_buttons/quest_button"]
+margin_left = -24.0
+margin_right = 24.0
+margin_bottom = 25.0
+custom_styles/normal = SubResource( 13 )
+custom_fonts/font = SubResource( 14 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "L"
+align = 1
+valign = 1
+
+[node name="perk_button" type="Button" parent="menu_buttons"]
+margin_right = 128.0
+margin_bottom = 128.0
+custom_styles/hover = SubResource( 15 )
+custom_styles/pressed = SubResource( 16 )
+custom_styles/focus = SubResource( 17 )
+custom_styles/normal = SubResource( 18 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="menu_buttons/perk_button"]
+margin_left = 32.0
+margin_top = 32.0
+margin_right = 96.0
+margin_bottom = 96.0
+texture = ExtResource( 6 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="menu_buttons/perk_button"]
+margin_left = 40.0
+margin_top = 144.0
+margin_right = 88.0
+margin_bottom = 178.0
+custom_fonts/font = SubResource( 19 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Perk"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="press_K" type="Label" parent="menu_buttons/perk_button"]
+margin_left = -24.0
+margin_right = 24.0
+margin_bottom = 25.0
+custom_styles/normal = SubResource( 20 )
+custom_fonts/font = SubResource( 21 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "K"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="manage_equ_button" type="Button" parent="menu_buttons"]
+margin_right = 128.0
+margin_bottom = 128.0
+custom_styles/hover = SubResource( 22 )
+custom_styles/pressed = SubResource( 23 )
+custom_styles/focus = SubResource( 24 )
+custom_styles/normal = SubResource( 25 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="menu_buttons/manage_equ_button"]
+margin_left = 32.0
+margin_top = 32.0
+margin_right = 96.0
+margin_bottom = 96.0
+texture = ExtResource( 5 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="menu_buttons/manage_equ_button"]
+margin_left = 8.0
+margin_top = 144.0
+margin_right = 121.0
+margin_bottom = 178.0
+custom_fonts/font = SubResource( 26 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Equipment"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="press_U" type="Label" parent="menu_buttons/manage_equ_button"]
+margin_left = -24.0
+margin_right = 24.0
+margin_bottom = 25.0
+custom_styles/normal = SubResource( 27 )
+custom_fonts/font = SubResource( 28 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "U"
+align = 1
+valign = 1
+
+[node name="player_detail" type="Button" parent="menu_buttons"]
+margin_right = 128.0
+margin_bottom = 128.0
+custom_styles/hover = SubResource( 29 )
+custom_styles/pressed = SubResource( 30 )
+custom_styles/focus = SubResource( 31 )
+custom_styles/normal = SubResource( 32 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="menu_buttons/player_detail"]
+margin_left = 48.0
+margin_top = 32.0
+margin_right = 80.0
+margin_bottom = 96.0
+texture = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="menu_buttons/player_detail"]
+margin_left = -16.0
+margin_top = 144.0
+margin_right = 140.0
+margin_bottom = 178.0
+custom_fonts/font = SubResource( 33 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Player Status"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="press_P" type="Label" parent="menu_buttons/player_detail"]
+margin_left = -24.0
+margin_right = 24.0
+margin_bottom = 25.0
+custom_styles/normal = SubResource( 34 )
+custom_fonts/font = SubResource( 35 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "P"
+align = 1
+valign = 1
+
+[node name="Tween" type="Tween" parent="."]
+
+[node name="open_gui_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+bus = "SFX"
+[connection signal="pressed" from="menu_buttons/inventory_button" to="." method="_on_inventory_button_pressed"]
+[connection signal="pressed" from="menu_buttons/quest_button" to="." method="_on_quest_button_pressed"]
+[connection signal="pressed" from="menu_buttons/perk_button" to="." method="_on_perk_button_pressed"]
+[connection signal="pressed" from="menu_buttons/manage_equ_button" to="." method="_on_manage_equ_button_pressed"]
+[connection signal="pressed" from="menu_buttons/player_detail" to="." method="_on_player_detail_pressed"]
+[connection signal="tween_all_completed" from="Tween" to="." method="_on_Tween_tween_all_completed"]

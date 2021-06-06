@@ -1,0 +1,204 @@
+[gd_scene load_steps=19 format=2]
+
+[ext_resource path="res://gui/inventory/inventory.gd" type="Script" id=1]
+[ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://assets/fonts/supermarket.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://assets/icons/white-cancel-icon_24x24.png" type="Texture" id=4]
+[ext_resource path="res://assets/other/white_circle_64x64.png" type="Texture" id=5]
+[ext_resource path="res://assets/fonts/FC Galaxy Italic.ttf" type="DynamicFontData" id=6]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0, 0, 0, 0.784314 )
+border_width_top = 40
+border_color = Color( 0.945098, 0.819608, 0.266667, 1 )
+shadow_size = 32
+
+[sub_resource type="StyleBoxEmpty" id=2]
+
+[sub_resource type="StyleBoxEmpty" id=3]
+
+[sub_resource type="StyleBoxEmpty" id=4]
+
+[sub_resource type="StyleBoxEmpty" id=5]
+
+[sub_resource type="StyleBoxEmpty" id=6]
+
+[sub_resource type="DynamicFont" id=7]
+size = 18
+extra_spacing_top = 4
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=8]
+size = 28
+extra_spacing_top = 8
+extra_spacing_char = 4
+font_data = ExtResource( 3 )
+
+[sub_resource type="Gradient" id=9]
+offsets = PoolRealArray( 0, 0.3, 1 )
+colors = PoolColorArray( 0.945098, 0.819608, 0.266667, 1, 0.223529, 0.215686, 0.121569, 1, 0, 0, 0, 1 )
+
+[sub_resource type="GradientTexture" id=10]
+gradient = SubResource( 9 )
+
+[sub_resource type="StyleBoxTexture" id=11]
+texture = SubResource( 10 )
+region_rect = Rect2( 0, 0, 2048, 1 )
+
+[sub_resource type="DynamicFont" id=12]
+size = 52
+outline_size = 1
+extra_spacing_char = 4
+font_data = ExtResource( 6 )
+
+[node name="inventory" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -496.0
+margin_top = -284.0
+margin_right = 496.0
+margin_bottom = 212.0
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite_DraggedItem" type="Sprite" parent="Panel"]
+visible = false
+z_index = 1
+
+[node name="ItemList" type="ItemList" parent="Panel"]
+margin_left = 80.0
+margin_top = 64.0
+margin_right = 912.0
+margin_bottom = 454.0
+custom_styles/selected_focus = SubResource( 2 )
+custom_styles/bg_focus = SubResource( 3 )
+custom_styles/cursor_unfocused = SubResource( 4 )
+custom_styles/selected = SubResource( 5 )
+custom_styles/bg = SubResource( 6 )
+custom_colors/guide_color = Color( 0, 0, 0, 0 )
+custom_constants/vseparation = 10
+custom_constants/hseparation = 15
+auto_height = true
+max_columns = 0
+same_column_width = true
+icon_mode = 0
+fixed_icon_size = Vector2( 64, 64 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WindowDialog_ItemMenu" type="WindowDialog" parent="Panel"]
+margin_left = 488.0
+margin_top = 276.0
+margin_right = 778.0
+margin_bottom = 516.0
+
+[node name="ItemMenu_TextureFrame_Icon" type="TextureRect" parent="Panel/WindowDialog_ItemMenu"]
+margin_left = 128.0
+margin_top = 14.0
+margin_right = 168.0
+margin_bottom = 54.0
+texture = ExtResource( 2 )
+expand = true
+
+[node name="ItemMenu_RichTextLabel_ItemInfo" type="RichTextLabel" parent="Panel/WindowDialog_ItemMenu"]
+margin_left = 8.0
+margin_top = 62.0
+margin_right = 282.0
+margin_bottom = 178.0
+custom_fonts/normal_font = SubResource( 7 )
+bbcode_enabled = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ItemMenu_Button_DropItem" type="Button" parent="Panel/WindowDialog_ItemMenu"]
+margin_left = 128.0
+margin_top = 212.0
+margin_right = 171.0
+margin_bottom = 232.0
+text = "Drop"
+
+[node name="ItemMenu_Button_Use" type="Button" parent="Panel/WindowDialog_ItemMenu"]
+margin_left = 22.0
+margin_top = 212.0
+margin_right = 64.0
+margin_bottom = 232.0
+text = "Use"
+
+[node name="Label" type="Label" parent="Panel"]
+margin_left = 16.0
+margin_right = 184.0
+margin_bottom = 40.0
+custom_fonts/font = SubResource( 8 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "INVENTORY"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="close_button" type="TextureButton" parent="Panel"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -40.0
+margin_top = 4.0
+margin_right = 24.0
+margin_bottom = 68.0
+rect_scale = Vector2( 0.5, 0.5 )
+texture_normal = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="Panel/close_button"]
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = 12.0
+margin_top = 12.0
+margin_right = 52.0
+margin_bottom = 52.0
+texture = ExtResource( 4 )
+expand = true
+
+[node name="bottom_bar" type="Panel" parent="."]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -64.0
+custom_styles/panel = SubResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="bottom_bar"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -304.0
+margin_top = -32.0
+margin_right = -17.0
+margin_bottom = 32.0
+custom_fonts/font = SubResource( 12 )
+text = "Press B to close"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="item_rmb_selected" from="Panel/ItemList" to="." method="_on_ItemList_item_rmb_selected"]
+[connection signal="mouse_entered" from="Panel/ItemList" to="." method="_on_ItemList_mouse_entered"]
+[connection signal="mouse_exited" from="Panel/ItemList" to="." method="_on_ItemList_mouse_exited"]
+[connection signal="pressed" from="Panel/WindowDialog_ItemMenu/ItemMenu_Button_DropItem" to="." method="_on_ItemMenu_Button_DropItem_pressed"]
+[connection signal="pressed" from="Panel/WindowDialog_ItemMenu/ItemMenu_Button_Use" to="." method="_on_ItemMenu_Button_Use_pressed"]
+[connection signal="pressed" from="Panel/close_button" to="." method="_on_close_button_pressed"]

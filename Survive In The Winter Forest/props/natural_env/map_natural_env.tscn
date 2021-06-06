@@ -1,0 +1,2320 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://assets/other/white-64x64.png" type="Texture" id=1]
+[ext_resource path="res://props/bush/bush_1_1/bush_1.tscn" type="PackedScene" id=2]
+[ext_resource path="res://props/trees/tree/tree_2_1.tscn" type="PackedScene" id=3]
+[ext_resource path="res://props/trees/tree/tree_3_1_1.tscn" type="PackedScene" id=4]
+[ext_resource path="res://props/bush/bush_2_1/bush_2.tscn" type="PackedScene" id=5]
+[ext_resource path="res://props/grass/grass_1/grass_1.tscn" type="PackedScene" id=6]
+
+[node name="map_natural_env" type="YSort"]
+
+[node name="Sprite" type="Sprite" parent="."]
+visible = false
+self_modulate = Color( 1, 0.819608, 0, 0.133333 )
+scale = Vector2( 312.5, 312.5 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="A" type="YSort" parent="."]
+
+[node name="big_bush_1" type="YSort" parent="A"]
+
+[node name="bush_1_1" parent="A/big_bush_1" instance=ExtResource( 2 )]
+position = Vector2( -8192, -8176 )
+
+[node name="bush_1_2" parent="A/big_bush_1" instance=ExtResource( 2 )]
+position = Vector2( -3960, -8816 )
+
+[node name="bush_1_3" parent="A/big_bush_1" instance=ExtResource( 2 )]
+position = Vector2( -8088, -5832 )
+
+[node name="bush_1_4" parent="A/big_bush_1" instance=ExtResource( 2 )]
+position = Vector2( -4344, -5544 )
+
+[node name="bush_1_13" parent="A/big_bush_1" instance=ExtResource( 2 )]
+position = Vector2( -3760, -4984 )
+
+[node name="bush_1_5" parent="A/big_bush_1" instance=ExtResource( 2 )]
+position = Vector2( -1720, -7056 )
+
+[node name="bush_1_11" parent="A/big_bush_1" instance=ExtResource( 2 )]
+position = Vector2( -568, -7560 )
+
+[node name="bush_1_6" parent="A/big_bush_1" instance=ExtResource( 2 )]
+position = Vector2( -6744, -3800 )
+
+[node name="bush_1_12" parent="A/big_bush_1" instance=ExtResource( 2 )]
+position = Vector2( -7432, -2968 )
+
+[node name="bush_1_7" parent="A/big_bush_1" instance=ExtResource( 2 )]
+position = Vector2( -1592, -4072 )
+
+[node name="bush_1_8" parent="A/big_bush_1" instance=ExtResource( 2 )]
+position = Vector2( -7784, -744 )
+
+[node name="bush_1_9" parent="A/big_bush_1" instance=ExtResource( 2 )]
+position = Vector2( -4656, -2384 )
+
+[node name="bush_1_10" parent="A/big_bush_1" instance=ExtResource( 2 )]
+position = Vector2( -2056, -2024 )
+
+[node name="big_bush_2" type="YSort" parent="A"]
+
+[node name="bush_2_1" parent="A/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( -1552, -1488 )
+
+[node name="bush_2_2" parent="A/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( -3472, -704 )
+
+[node name="bush_2_23" parent="A/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( -4256, -136 )
+
+[node name="bush_2_3" parent="A/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( -5280, -1560 )
+
+[node name="bush_2_4" parent="A/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( -3568, -2480 )
+
+[node name="bush_2_22" parent="A/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( -5440, -3888 )
+
+[node name="bush_2_5" parent="A/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( -3248, -4224 )
+
+[node name="bush_2_6" parent="A/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( -1984, -5208 )
+
+[node name="bush_2_7" parent="A/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( -3560, -6552 )
+
+[node name="bush_2_8" parent="A/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( -5568, -5488 )
+
+[node name="bush_2_9" parent="A/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( -7416, -4616 )
+
+[node name="bush_2_10" parent="A/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( -9112, -3472 )
+
+[node name="bush_2_11" parent="A/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( -7384, -7136 )
+
+[node name="bush_2_12" parent="A/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( -5480, -8152 )
+
+[node name="bush_2_13" parent="A/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( -3016, -9440 )
+
+[node name="bush_2_14" parent="A/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( -6552, -8928 )
+
+[node name="bush_2_15" parent="A/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( -8712, -9224 )
+
+[node name="bush_2_16" parent="A/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( -9320, -8536 )
+
+[node name="bush_2_17" parent="A/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( -3280, -7792 )
+
+[node name="bush_2_18" parent="A/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( -1016, -8728 )
+
+[node name="bush_2_19" parent="A/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( -936, -6224 )
+
+[node name="bush_2_20" parent="A/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( -864, -3336 )
+
+[node name="bush_2_21" parent="A/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( -2048, -2944 )
+
+[node name="tree_2" type="YSort" parent="A"]
+
+[node name="tree_2_1" parent="A/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -7464, -9224 )
+
+[node name="tree_2_2" parent="A/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -9008, -7672 )
+
+[node name="tree_2_3" parent="A/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -5392, -8856 )
+
+[node name="tree_2_13" parent="A/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -6504, -7656 )
+
+[node name="tree_2_24" parent="A/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -6912, -7872 )
+
+[node name="tree_2_25" parent="A/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -7424, -7768 )
+
+[node name="tree_2_4" parent="A/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -624, -8280 )
+
+[node name="tree_2_11" parent="A/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -1496, -9288 )
+
+[node name="tree_2_12" parent="A/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -2968, -8424 )
+
+[node name="tree_2_5" parent="A/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -4864, -6496 )
+
+[node name="tree_2_20" parent="A/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -2624, -7024 )
+
+[node name="tree_2_14" parent="A/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -2960, -5280 )
+
+[node name="tree_2_6" parent="A/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -9032, -4272 )
+
+[node name="tree_2_19" parent="A/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -6392, -4944 )
+
+[node name="tree_2_18" parent="A/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -9464, -6232 )
+
+[node name="tree_2_7" parent="A/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -4320, -3832 )
+
+[node name="tree_2_8" parent="A/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -3768, -1304 )
+
+[node name="tree_2_15" parent="A/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -2568, -888 )
+
+[node name="tree_2_16" parent="A/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -2816, -2824 )
+
+[node name="tree_2_9" parent="A/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -872, -5008 )
+
+[node name="tree_2_10" parent="A/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -7200, -1984 )
+
+[node name="tree_2_21" parent="A/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -6920, -2168 )
+
+[node name="tree_2_22" parent="A/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -6824, -1472 )
+
+[node name="tree_2_23" parent="A/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -6280, -1856 )
+
+[node name="tree_2_17" parent="A/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -9120, -1568 )
+
+[node name="tree_3_1" type="YSort" parent="A"]
+
+[node name="tree_3_1_1" parent="A/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -1120, -2528 )
+
+[node name="tree_3_1_3" parent="A/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -2432, -3952 )
+
+[node name="tree_3_1_4" parent="A/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -5712, -3288 )
+
+[node name="tree_3_1_11" parent="A/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -5472, -2880 )
+
+[node name="tree_3_1_5" parent="A/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -6088, -2832 )
+
+[node name="tree_3_1_6" parent="A/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -8168, -3048 )
+
+[node name="tree_3_1_7" parent="A/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -7424, -6352 )
+
+[node name="tree_3_1_8" parent="A/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -6808, -6312 )
+
+[node name="tree_3_1_9" parent="A/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -4840, -7328 )
+
+[node name="tree_3_1_12" parent="A/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -4368, -7032 )
+
+[node name="tree_3_1_23" parent="A/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -4376, -7664 )
+
+[node name="tree_3_1_24" parent="A/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -4080, -7792 )
+
+[node name="tree_3_1_13" parent="A/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -3216, -6008 )
+
+[node name="tree_3_1_14" parent="A/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -1632, -5856 )
+
+[node name="tree_3_1_15" parent="A/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -816, -6752 )
+
+[node name="tree_3_1_16" parent="A/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -416, -6264 )
+
+[node name="tree_3_1_17" parent="A/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -8120, -4496 )
+
+[node name="tree_3_1_18" parent="A/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -5936, -824 )
+
+[node name="tree_3_1_19" parent="A/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -5072, -488 )
+
+[node name="tree_3_1_20" parent="A/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -4784, -4520 )
+
+[node name="tree_3_1_21" parent="A/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -5200, -4688 )
+
+[node name="tree_3_1_22" parent="A/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -5560, -4624 )
+
+[node name="tree_3_1_10" parent="A/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -1728, -8048 )
+
+[node name="tree_3_1_2" parent="A/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -648, -2448 )
+
+[node name="grass_1" type="YSort" parent="A"]
+
+[node name="grass_1_set_1" type="YSort" parent="A/grass_1"]
+position = Vector2( -1120, -2056 )
+
+[node name="grass_1_1" parent="A/grass_1/grass_1_set_1" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="A/grass_1/grass_1_set_1" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="A/grass_1/grass_1_set_1" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="A/grass_1/grass_1_set_1" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="A/grass_1/grass_1_set_1" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_12" type="YSort" parent="A/grass_1"]
+position = Vector2( -104, -2784 )
+
+[node name="grass_1_1" parent="A/grass_1/grass_1_set_12" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="A/grass_1/grass_1_set_12" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="A/grass_1/grass_1_set_12" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="A/grass_1/grass_1_set_12" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="A/grass_1/grass_1_set_12" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_13" type="YSort" parent="A/grass_1"]
+position = Vector2( -32, -1776 )
+
+[node name="grass_1_1" parent="A/grass_1/grass_1_set_13" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="A/grass_1/grass_1_set_13" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="A/grass_1/grass_1_set_13" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="A/grass_1/grass_1_set_13" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="A/grass_1/grass_1_set_13" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_2" type="YSort" parent="A/grass_1"]
+position = Vector2( -3816, -3360 )
+
+[node name="grass_1_1" parent="A/grass_1/grass_1_set_2" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="A/grass_1/grass_1_set_2" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="A/grass_1/grass_1_set_2" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="A/grass_1/grass_1_set_2" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="A/grass_1/grass_1_set_2" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_3" type="YSort" parent="A/grass_1"]
+position = Vector2( -8160, -1880 )
+
+[node name="grass_1_1" parent="A/grass_1/grass_1_set_3" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="A/grass_1/grass_1_set_3" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="A/grass_1/grass_1_set_3" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="A/grass_1/grass_1_set_3" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="A/grass_1/grass_1_set_3" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_4" type="YSort" parent="A/grass_1"]
+position = Vector2( -7072, -5536 )
+
+[node name="grass_1_1" parent="A/grass_1/grass_1_set_4" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="A/grass_1/grass_1_set_4" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="A/grass_1/grass_1_set_4" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="A/grass_1/grass_1_set_4" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="A/grass_1/grass_1_set_4" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_16" type="YSort" parent="A/grass_1"]
+position = Vector2( -7752, -3752 )
+
+[node name="grass_1_1" parent="A/grass_1/grass_1_set_16" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="A/grass_1/grass_1_set_16" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="A/grass_1/grass_1_set_16" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="A/grass_1/grass_1_set_16" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="A/grass_1/grass_1_set_16" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_5" type="YSort" parent="A/grass_1"]
+position = Vector2( -5872, -6952 )
+
+[node name="grass_1_1" parent="A/grass_1/grass_1_set_5" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="A/grass_1/grass_1_set_5" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="A/grass_1/grass_1_set_5" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="A/grass_1/grass_1_set_5" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="A/grass_1/grass_1_set_5" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_18" type="YSort" parent="A/grass_1"]
+position = Vector2( -4664, -8448 )
+
+[node name="grass_1_1" parent="A/grass_1/grass_1_set_18" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="A/grass_1/grass_1_set_18" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="A/grass_1/grass_1_set_18" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="A/grass_1/grass_1_set_18" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="A/grass_1/grass_1_set_18" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_11" type="YSort" parent="A/grass_1"]
+position = Vector2( -5104, -6016 )
+
+[node name="grass_1_1" parent="A/grass_1/grass_1_set_11" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="A/grass_1/grass_1_set_11" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="A/grass_1/grass_1_set_11" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="A/grass_1/grass_1_set_11" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="A/grass_1/grass_1_set_11" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_6" type="YSort" parent="A/grass_1"]
+position = Vector2( -2368, -6440 )
+
+[node name="grass_1_1" parent="A/grass_1/grass_1_set_6" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="A/grass_1/grass_1_set_6" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="A/grass_1/grass_1_set_6" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="A/grass_1/grass_1_set_6" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="A/grass_1/grass_1_set_6" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_17" type="YSort" parent="A/grass_1"]
+position = Vector2( -2672, -4768 )
+
+[node name="grass_1_1" parent="A/grass_1/grass_1_set_17" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="A/grass_1/grass_1_set_17" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="A/grass_1/grass_1_set_17" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="A/grass_1/grass_1_set_17" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="A/grass_1/grass_1_set_17" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_7" type="YSort" parent="A/grass_1"]
+position = Vector2( -8672, -6664 )
+
+[node name="grass_1_1" parent="A/grass_1/grass_1_set_7" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="A/grass_1/grass_1_set_7" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="A/grass_1/grass_1_set_7" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="A/grass_1/grass_1_set_7" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="A/grass_1/grass_1_set_7" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_8" type="YSort" parent="A/grass_1"]
+position = Vector2( -4952, -9392 )
+
+[node name="grass_1_1" parent="A/grass_1/grass_1_set_8" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="A/grass_1/grass_1_set_8" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="A/grass_1/grass_1_set_8" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="A/grass_1/grass_1_set_8" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="A/grass_1/grass_1_set_8" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_9" type="YSort" parent="A/grass_1"]
+position = Vector2( -2080, -8976 )
+
+[node name="grass_1_1" parent="A/grass_1/grass_1_set_9" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="A/grass_1/grass_1_set_9" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="A/grass_1/grass_1_set_9" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="A/grass_1/grass_1_set_9" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="A/grass_1/grass_1_set_9" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_10" type="YSort" parent="A/grass_1"]
+position = Vector2( -792, -4328 )
+
+[node name="grass_1_1" parent="A/grass_1/grass_1_set_10" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="A/grass_1/grass_1_set_10" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="A/grass_1/grass_1_set_10" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="A/grass_1/grass_1_set_10" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="A/grass_1/grass_1_set_10" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_14" type="YSort" parent="A/grass_1"]
+position = Vector2( 248, -6248 )
+
+[node name="grass_1_1" parent="A/grass_1/grass_1_set_14" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="A/grass_1/grass_1_set_14" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="A/grass_1/grass_1_set_14" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="A/grass_1/grass_1_set_14" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="A/grass_1/grass_1_set_14" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_15" type="YSort" parent="A/grass_1"]
+position = Vector2( 136, -7696 )
+
+[node name="grass_1_1" parent="A/grass_1/grass_1_set_15" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="A/grass_1/grass_1_set_15" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="A/grass_1/grass_1_set_15" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="A/grass_1/grass_1_set_15" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="A/grass_1/grass_1_set_15" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="B" type="YSort" parent="."]
+
+[node name="big_bush_1" type="YSort" parent="B"]
+
+[node name="bush_1_1" parent="B/big_bush_1" instance=ExtResource( 2 )]
+position = Vector2( 2152, -2336 )
+
+[node name="bush_1_2" parent="B/big_bush_1" instance=ExtResource( 2 )]
+position = Vector2( 2640, -4056 )
+
+[node name="bush_1_3" parent="B/big_bush_1" instance=ExtResource( 2 )]
+position = Vector2( 4800, -2152 )
+
+[node name="bush_1_11" parent="B/big_bush_1" instance=ExtResource( 2 )]
+position = Vector2( 5168, -2856 )
+
+[node name="bush_1_12" parent="B/big_bush_1" instance=ExtResource( 2 )]
+position = Vector2( 4176, -3528 )
+
+[node name="bush_1_4" parent="B/big_bush_1" instance=ExtResource( 2 )]
+position = Vector2( 8200, -3776 )
+
+[node name="bush_1_5" parent="B/big_bush_1" instance=ExtResource( 2 )]
+position = Vector2( 2616, -6928 )
+
+[node name="bush_1_6" parent="B/big_bush_1" instance=ExtResource( 2 )]
+position = Vector2( 7368, -7688 )
+
+[node name="bush_1_7" parent="B/big_bush_1" instance=ExtResource( 2 )]
+position = Vector2( 4552, -9368 )
+
+[node name="bush_1_8" parent="B/big_bush_1" instance=ExtResource( 2 )]
+position = Vector2( 5264, -5456 )
+
+[node name="bush_1_13" parent="B/big_bush_1" instance=ExtResource( 2 )]
+position = Vector2( 5576, -4768 )
+
+[node name="bush_1_14" parent="B/big_bush_1" instance=ExtResource( 2 )]
+position = Vector2( 6736, -3632 )
+
+[node name="bush_1_9" parent="B/big_bush_1" instance=ExtResource( 2 )]
+position = Vector2( 9280, -1520 )
+
+[node name="bush_1_10" parent="B/big_bush_1" instance=ExtResource( 2 )]
+position = Vector2( 9256, -8680 )
+
+[node name="big_bush_2" type="YSort" parent="B"]
+
+[node name="bush_2_1" parent="B/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( 1256, -2024 )
+
+[node name="bush_2_2" parent="B/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( 1488, -3328 )
+
+[node name="bush_2_3" parent="B/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( 3752, -1776 )
+
+[node name="bush_2_4" parent="B/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( 4336, -592 )
+
+[node name="bush_2_5" parent="B/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( 6624, -872 )
+
+[node name="bush_2_6" parent="B/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( 7464, -2856 )
+
+[node name="bush_2_7" parent="B/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( 6720, -5320 )
+
+[node name="bush_2_8" parent="B/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( 8496, -6408 )
+
+[node name="bush_2_9" parent="B/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( 3880, -5824 )
+
+[node name="bush_2_22" parent="B/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( 5176, -6776 )
+
+[node name="bush_2_21" parent="B/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( 1992, -4888 )
+
+[node name="bush_2_23" parent="B/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( 600, -5424 )
+
+[node name="bush_2_10" parent="B/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( 1800, -6440 )
+
+[node name="bush_2_11" parent="B/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( 1856, -8536 )
+
+[node name="bush_2_12" parent="B/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( 3656, -8160 )
+
+[node name="bush_2_13" parent="B/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( 7704, -9504 )
+
+[node name="bush_2_14" parent="B/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( 9312, -7872 )
+
+[node name="bush_2_15" parent="B/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( 3312, -9568 )
+
+[node name="bush_2_16" parent="B/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( 176, -9568 )
+
+[node name="bush_2_17" parent="B/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( 5864, -8144 )
+
+[node name="bush_2_18" parent="B/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( 5416, -4136 )
+
+[node name="bush_2_19" parent="B/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( 8928, -616 )
+
+[node name="bush_2_20" parent="B/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( 9472, -4072 )
+
+[node name="tree_2" type="YSort" parent="B"]
+
+[node name="tree_2_1" parent="B/tree_2" instance=ExtResource( 3 )]
+position = Vector2( 3272, -8912 )
+
+[node name="tree_2_2" parent="B/tree_2" instance=ExtResource( 3 )]
+position = Vector2( 960, -9128 )
+
+[node name="tree_2_17" parent="B/tree_2" instance=ExtResource( 3 )]
+position = Vector2( 712, -6728 )
+
+[node name="tree_2_3" parent="B/tree_2" instance=ExtResource( 3 )]
+position = Vector2( 5096, -8248 )
+
+[node name="tree_2_15" parent="B/tree_2" instance=ExtResource( 3 )]
+position = Vector2( 6688, -9136 )
+
+[node name="tree_2_16" parent="B/tree_2" instance=ExtResource( 3 )]
+position = Vector2( 8384, -8880 )
+
+[node name="tree_2_4" parent="B/tree_2" instance=ExtResource( 3 )]
+position = Vector2( 8448, -7152 )
+
+[node name="tree_2_20" parent="B/tree_2" instance=ExtResource( 3 )]
+position = Vector2( 7512, -8240 )
+
+[node name="tree_2_13" parent="B/tree_2" instance=ExtResource( 3 )]
+position = Vector2( 9224, -5120 )
+
+[node name="tree_2_14" parent="B/tree_2" instance=ExtResource( 3 )]
+position = Vector2( 7712, -5280 )
+
+[node name="tree_2_5" parent="B/tree_2" instance=ExtResource( 3 )]
+position = Vector2( 5880, -6512 )
+
+[node name="tree_2_19" parent="B/tree_2" instance=ExtResource( 3 )]
+position = Vector2( 4432, -6408 )
+
+[node name="tree_2_21" parent="B/tree_2" instance=ExtResource( 3 )]
+position = Vector2( 4016, -6440 )
+
+[node name="tree_2_22" parent="B/tree_2" instance=ExtResource( 3 )]
+position = Vector2( 3096, -6256 )
+
+[node name="tree_2_6" parent="B/tree_2" instance=ExtResource( 3 )]
+position = Vector2( 2624, -5208 )
+
+[node name="tree_2_18" parent="B/tree_2" instance=ExtResource( 3 )]
+position = Vector2( 1080, -4576 )
+
+[node name="tree_2_7" parent="B/tree_2" instance=ExtResource( 3 )]
+position = Vector2( 4952, -3552 )
+
+[node name="tree_2_12" parent="B/tree_2" instance=ExtResource( 3 )]
+position = Vector2( 6328, -3064 )
+
+[node name="tree_2_8" parent="B/tree_2" instance=ExtResource( 3 )]
+position = Vector2( 7184, -1856 )
+
+[node name="tree_2_9" parent="B/tree_2" instance=ExtResource( 3 )]
+position = Vector2( 9248, -3112 )
+
+[node name="tree_2_10" parent="B/tree_2" instance=ExtResource( 3 )]
+position = Vector2( 3336, -1040 )
+
+[node name="tree_2_11" parent="B/tree_2" instance=ExtResource( 3 )]
+position = Vector2( 2304, -1240 )
+
+[node name="tree_2_23" parent="B/tree_2" instance=ExtResource( 3 )]
+position = Vector2( 2768, -504 )
+
+[node name="tree_3_1" type="YSort" parent="B"]
+
+[node name="tree_3_1_1" parent="B/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 960, -2688 )
+
+[node name="tree_3_1_2" parent="B/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 3288, -3104 )
+
+[node name="tree_3_1_21" parent="B/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 2848, -3080 )
+
+[node name="tree_3_1_22" parent="B/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 2488, -2952 )
+
+[node name="tree_3_1_23" parent="B/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 3040, -3448 )
+
+[node name="tree_3_1_3" parent="B/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 3608, -2904 )
+
+[node name="tree_3_1_4" parent="B/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 5096, -528 )
+
+[node name="tree_3_1_5" parent="B/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 5704, -1512 )
+
+[node name="tree_3_1_6" parent="B/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 6160, -4904 )
+
+[node name="tree_3_1_7" parent="B/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 3904, -7448 )
+
+[node name="tree_3_1_8" parent="B/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 2400, -7792 )
+
+[node name="tree_3_1_9" parent="B/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 7240, -6248 )
+
+[node name="tree_3_1_24" parent="B/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 7072, -6120 )
+
+[node name="tree_3_1_25" parent="B/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 6704, -5992 )
+
+[node name="tree_3_1_26" parent="B/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 6072, -5984 )
+
+[node name="tree_3_1_10" parent="B/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 7152, -4168 )
+
+[node name="tree_3_1_11" parent="B/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 4320, -4688 )
+
+[node name="tree_3_1_12" parent="B/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 3984, -4792 )
+
+[node name="tree_3_1_13" parent="B/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 4224, -5016 )
+
+[node name="tree_3_1_14" parent="B/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 688, -8096 )
+
+[node name="tree_3_1_15" parent="B/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 1464, -5688 )
+
+[node name="tree_3_1_16" parent="B/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 568, -3520 )
+
+[node name="tree_3_1_17" parent="B/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 7560, -1064 )
+
+[node name="tree_3_1_18" parent="B/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 8312, -2080 )
+
+[node name="tree_3_1_19" parent="B/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 9208, -6352 )
+
+[node name="tree_3_1_20" parent="B/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 6008, -7512 )
+
+[node name="grass_1" type="YSort" parent="B"]
+
+[node name="grass_1_set_1" type="YSort" parent="B/grass_1"]
+position = Vector2( 2928, -2392 )
+
+[node name="grass_1_1" parent="B/grass_1/grass_1_set_1" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="B/grass_1/grass_1_set_1" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="B/grass_1/grass_1_set_1" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="B/grass_1/grass_1_set_1" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="B/grass_1/grass_1_set_1" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_11" type="YSort" parent="B/grass_1"]
+position = Vector2( 1424, -1392 )
+
+[node name="grass_1_1" parent="B/grass_1/grass_1_set_11" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="B/grass_1/grass_1_set_11" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="B/grass_1/grass_1_set_11" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="B/grass_1/grass_1_set_11" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="B/grass_1/grass_1_set_11" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_12" type="YSort" parent="B/grass_1"]
+position = Vector2( 4712, -1368 )
+
+[node name="grass_1_1" parent="B/grass_1/grass_1_set_12" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="B/grass_1/grass_1_set_12" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="B/grass_1/grass_1_set_12" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="B/grass_1/grass_1_set_12" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="B/grass_1/grass_1_set_12" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_2" type="YSort" parent="B/grass_1"]
+position = Vector2( 5824, -2424 )
+
+[node name="grass_1_1" parent="B/grass_1/grass_1_set_2" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="B/grass_1/grass_1_set_2" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="B/grass_1/grass_1_set_2" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="B/grass_1/grass_1_set_2" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="B/grass_1/grass_1_set_2" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_3" type="YSort" parent="B/grass_1"]
+position = Vector2( 3184, -4568 )
+
+[node name="grass_1_1" parent="B/grass_1/grass_1_set_3" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="B/grass_1/grass_1_set_3" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="B/grass_1/grass_1_set_3" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="B/grass_1/grass_1_set_3" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="B/grass_1/grass_1_set_3" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_13" type="YSort" parent="B/grass_1"]
+position = Vector2( 1560, -4104 )
+
+[node name="grass_1_1" parent="B/grass_1/grass_1_set_13" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="B/grass_1/grass_1_set_13" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="B/grass_1/grass_1_set_13" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="B/grass_1/grass_1_set_13" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="B/grass_1/grass_1_set_13" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_4" type="YSort" parent="B/grass_1"]
+position = Vector2( 1536, -7312 )
+
+[node name="grass_1_1" parent="B/grass_1/grass_1_set_4" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="B/grass_1/grass_1_set_4" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="B/grass_1/grass_1_set_4" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="B/grass_1/grass_1_set_4" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="B/grass_1/grass_1_set_4" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_5" type="YSort" parent="B/grass_1"]
+position = Vector2( 6896, -7032 )
+
+[node name="grass_1_1" parent="B/grass_1/grass_1_set_5" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="B/grass_1/grass_1_set_5" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="B/grass_1/grass_1_set_5" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="B/grass_1/grass_1_set_5" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="B/grass_1/grass_1_set_5" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_6" type="YSort" parent="B/grass_1"]
+position = Vector2( 8328, -4568 )
+
+[node name="grass_1_1" parent="B/grass_1/grass_1_set_6" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="B/grass_1/grass_1_set_6" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="B/grass_1/grass_1_set_6" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="B/grass_1/grass_1_set_6" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="B/grass_1/grass_1_set_6" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_7" type="YSort" parent="B/grass_1"]
+position = Vector2( 5720, -9112 )
+
+[node name="grass_1_1" parent="B/grass_1/grass_1_set_7" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="B/grass_1/grass_1_set_7" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="B/grass_1/grass_1_set_7" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="B/grass_1/grass_1_set_7" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="B/grass_1/grass_1_set_7" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_8" type="YSort" parent="B/grass_1"]
+position = Vector2( 1976, -9336 )
+
+[node name="grass_1_1" parent="B/grass_1/grass_1_set_8" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="B/grass_1/grass_1_set_8" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="B/grass_1/grass_1_set_8" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="B/grass_1/grass_1_set_8" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="B/grass_1/grass_1_set_8" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_9" type="YSort" parent="B/grass_1"]
+position = Vector2( 4584, -7592 )
+
+[node name="grass_1_1" parent="B/grass_1/grass_1_set_9" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="B/grass_1/grass_1_set_9" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="B/grass_1/grass_1_set_9" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="B/grass_1/grass_1_set_9" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="B/grass_1/grass_1_set_9" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_14" type="YSort" parent="B/grass_1"]
+position = Vector2( 3216, -7344 )
+
+[node name="grass_1_1" parent="B/grass_1/grass_1_set_14" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="B/grass_1/grass_1_set_14" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="B/grass_1/grass_1_set_14" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="B/grass_1/grass_1_set_14" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="B/grass_1/grass_1_set_14" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_10" type="YSort" parent="B/grass_1"]
+position = Vector2( 8248, -1304 )
+
+[node name="grass_1_1" parent="B/grass_1/grass_1_set_10" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="B/grass_1/grass_1_set_10" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="B/grass_1/grass_1_set_10" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="B/grass_1/grass_1_set_10" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="B/grass_1/grass_1_set_10" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="C" type="YSort" parent="."]
+
+[node name="big_bush_1" type="YSort" parent="C"]
+
+[node name="bush_1_1" parent="C/big_bush_1" instance=ExtResource( 2 )]
+position = Vector2( -2816, 1904 )
+
+[node name="bush_1_2" parent="C/big_bush_1" instance=ExtResource( 2 )]
+position = Vector2( -5928, 2240 )
+
+[node name="bush_1_11" parent="C/big_bush_1" instance=ExtResource( 2 )]
+position = Vector2( -4808, 1992 )
+
+[node name="bush_1_3" parent="C/big_bush_1" instance=ExtResource( 2 )]
+position = Vector2( -3656, 4824 )
+
+[node name="bush_1_4" parent="C/big_bush_1" instance=ExtResource( 2 )]
+position = Vector2( -8352, 2808 )
+
+[node name="bush_1_12" parent="C/big_bush_1" instance=ExtResource( 2 )]
+position = Vector2( -7368, 2376 )
+
+[node name="bush_1_5" parent="C/big_bush_1" instance=ExtResource( 2 )]
+position = Vector2( -7824, 5816 )
+
+[node name="bush_1_6" parent="C/big_bush_1" instance=ExtResource( 2 )]
+position = Vector2( -8272, 9000 )
+
+[node name="bush_1_7" parent="C/big_bush_1" instance=ExtResource( 2 )]
+position = Vector2( -2896, 7312 )
+
+[node name="bush_1_8" parent="C/big_bush_1" instance=ExtResource( 2 )]
+position = Vector2( -1272, 4416 )
+
+[node name="bush_1_9" parent="C/big_bush_1" instance=ExtResource( 2 )]
+position = Vector2( -2264, 9448 )
+
+[node name="bush_1_10" parent="C/big_bush_1" instance=ExtResource( 2 )]
+position = Vector2( -5704, 8128 )
+
+[node name="big_bush_2" type="YSort" parent="C"]
+
+[node name="bush_2_1" parent="C/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( -2392, 1256 )
+
+[node name="bush_2_21" parent="C/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( -3912, 1928 )
+
+[node name="bush_2_2" parent="C/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( -1664, 3152 )
+
+[node name="bush_2_3" parent="C/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( -5952, 1456 )
+
+[node name="bush_2_4" parent="C/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( -6832, 152 )
+
+[node name="bush_2_5" parent="C/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( -8144, 1880 )
+
+[node name="bush_2_6" parent="C/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( -7576, 3848 )
+
+[node name="bush_2_7" parent="C/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( -4840, 4968 )
+
+[node name="bush_2_8" parent="C/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( -6416, 6448 )
+
+[node name="bush_2_9" parent="C/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( -7568, 8064 )
+
+[node name="bush_2_10" parent="C/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( -5088, 9136 )
+
+[node name="bush_2_11" parent="C/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( -2032, 7904 )
+
+[node name="bush_2_12" parent="C/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( -960, 6616 )
+
+[node name="bush_2_13" parent="C/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( -1784, 5432 )
+
+[node name="bush_2_14" parent="C/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( -3792, 2880 )
+
+[node name="bush_2_15" parent="C/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( -8752, 4832 )
+
+[node name="bush_2_16" parent="C/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( -8952, 7024 )
+
+[node name="bush_2_17" parent="C/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( -4336, 6888 )
+
+[node name="bush_2_18" parent="C/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( -3432, 8552 )
+
+[node name="bush_2_19" parent="C/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( -5520, 3672 )
+
+[node name="bush_2_20" parent="C/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( -416, 4160 )
+
+[node name="tree_2" type="YSort" parent="C"]
+
+[node name="tree_2_1" parent="C/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -7864, 1024 )
+
+[node name="tree_2_28" parent="C/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -7576, 1248 )
+
+[node name="tree_2_19" parent="C/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -5784, 768 )
+
+[node name="tree_2_2" parent="C/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -8944, 1912 )
+
+[node name="tree_2_3" parent="C/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -6824, 2904 )
+
+[node name="tree_2_29" parent="C/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -6280, 2928 )
+
+[node name="tree_2_26" parent="C/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -7264, 3032 )
+
+[node name="tree_2_27" parent="C/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -6496, 3680 )
+
+[node name="tree_2_4" parent="C/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -4160, 3544 )
+
+[node name="tree_2_20" parent="C/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -2584, 3528 )
+
+[node name="tree_2_11" parent="C/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -1616, 2160 )
+
+[node name="tree_2_24" parent="C/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -1944, 2480 )
+
+[node name="tree_2_25" parent="C/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -1344, 2664 )
+
+[node name="tree_2_12" parent="C/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -3552, 1352 )
+
+[node name="tree_2_5" parent="C/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -6664, 4336 )
+
+[node name="tree_2_18" parent="C/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -8464, 4120 )
+
+[node name="tree_2_13" parent="C/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -5800, 5688 )
+
+[node name="tree_2_30" parent="C/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -5440, 5912 )
+
+[node name="tree_2_6" parent="C/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -8984, 6024 )
+
+[node name="tree_2_7" parent="C/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -6624, 7552 )
+
+[node name="tree_2_17" parent="C/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -8376, 7616 )
+
+[node name="tree_2_8" parent="C/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -4592, 8248 )
+
+[node name="tree_2_15" parent="C/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -1184, 8984 )
+
+[node name="tree_2_9" parent="C/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -2064, 6696 )
+
+[node name="tree_2_21" parent="C/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -640, 5176 )
+
+[node name="tree_2_22" parent="C/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -2120, 4400 )
+
+[node name="tree_2_23" parent="C/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -1832, 4168 )
+
+[node name="tree_2_14" parent="C/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -3312, 6328 )
+
+[node name="tree_2_10" parent="C/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -9136, 9336 )
+
+[node name="tree_2_16" parent="C/tree_2" instance=ExtResource( 3 )]
+position = Vector2( -6392, 9640 )
+
+[node name="tree_3_1" type="YSort" parent="C"]
+
+[node name="tree_3_1_1" parent="C/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -600, 2688 )
+
+[node name="tree_3_1_2" parent="C/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -800, 5968 )
+
+[node name="tree_3_1_3" parent="C/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -832, 7784 )
+
+[node name="tree_3_1_4" parent="C/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -2872, 8584 )
+
+[node name="tree_3_1_5" parent="C/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -4008, 7664 )
+
+[node name="tree_3_1_6" parent="C/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -5112, 6800 )
+
+[node name="tree_3_1_7" parent="C/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -5400, 4352 )
+
+[node name="tree_3_1_26" parent="C/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -5112, 4288 )
+
+[node name="tree_3_1_27" parent="C/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -4768, 4096 )
+
+[node name="tree_3_1_8" parent="C/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -5056, 1528 )
+
+[node name="tree_3_1_21" parent="C/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -4800, 1528 )
+
+[node name="tree_3_1_22" parent="C/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -4952, 1408 )
+
+[node name="tree_3_1_23" parent="C/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -5264, 1160 )
+
+[node name="tree_3_1_9" parent="C/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -2864, 584 )
+
+[node name="tree_3_1_10" parent="C/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -9240, 544 )
+
+[node name="tree_3_1_11" parent="C/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -9448, 4200 )
+
+[node name="tree_3_1_12" parent="C/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -7152, 6192 )
+
+[node name="tree_3_1_13" parent="C/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -7392, 8896 )
+
+[node name="tree_3_1_14" parent="C/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -2728, 5032 )
+
+[node name="tree_3_1_15" parent="C/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -4344, 5608 )
+
+[node name="tree_3_1_16" parent="C/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -4040, 5744 )
+
+[node name="tree_3_1_17" parent="C/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -4568, 6224 )
+
+[node name="tree_3_1_18" parent="C/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -4296, 2384 )
+
+[node name="tree_3_1_19" parent="C/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -4664, 2736 )
+
+[node name="tree_3_1_20" parent="C/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -5512, 3280 )
+
+[node name="tree_3_1_24" parent="C/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -5648, 3144 )
+
+[node name="tree_3_1_25" parent="C/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( -5408, 3008 )
+
+[node name="grass_1" type="YSort" parent="C"]
+
+[node name="grass_1_set_1" type="YSort" parent="C/grass_1"]
+position = Vector2( -4512, 736 )
+
+[node name="grass_1_1" parent="C/grass_1/grass_1_set_1" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="C/grass_1/grass_1_set_1" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="C/grass_1/grass_1_set_1" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="C/grass_1/grass_1_set_1" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="C/grass_1/grass_1_set_1" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_11" type="YSort" parent="C/grass_1"]
+position = Vector2( -3304, 888 )
+
+[node name="grass_1_1" parent="C/grass_1/grass_1_set_11" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="C/grass_1/grass_1_set_11" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="C/grass_1/grass_1_set_11" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="C/grass_1/grass_1_set_11" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="C/grass_1/grass_1_set_11" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_12" type="YSort" parent="C/grass_1"]
+position = Vector2( -3136, -72 )
+
+[node name="grass_1_1" parent="C/grass_1/grass_1_set_12" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="C/grass_1/grass_1_set_12" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="C/grass_1/grass_1_set_12" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="C/grass_1/grass_1_set_12" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="C/grass_1/grass_1_set_12" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_13" type="YSort" parent="C/grass_1"]
+position = Vector2( -4840, -1032 )
+
+[node name="grass_1_1" parent="C/grass_1/grass_1_set_13" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="C/grass_1/grass_1_set_13" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="C/grass_1/grass_1_set_13" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="C/grass_1/grass_1_set_13" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="C/grass_1/grass_1_set_13" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_16" type="YSort" parent="C/grass_1"]
+position = Vector2( -5608, -2424 )
+
+[node name="grass_1_1" parent="C/grass_1/grass_1_set_16" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="C/grass_1/grass_1_set_16" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="C/grass_1/grass_1_set_16" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="C/grass_1/grass_1_set_16" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="C/grass_1/grass_1_set_16" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_14" type="YSort" parent="C/grass_1"]
+position = Vector2( -6832, -640 )
+
+[node name="grass_1_1" parent="C/grass_1/grass_1_set_14" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="C/grass_1/grass_1_set_14" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="C/grass_1/grass_1_set_14" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="C/grass_1/grass_1_set_14" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="C/grass_1/grass_1_set_14" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_15" type="YSort" parent="C/grass_1"]
+position = Vector2( -3104, -1872 )
+
+[node name="grass_1_1" parent="C/grass_1/grass_1_set_15" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="C/grass_1/grass_1_set_15" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="C/grass_1/grass_1_set_15" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="C/grass_1/grass_1_set_15" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="C/grass_1/grass_1_set_15" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_2" type="YSort" parent="C/grass_1"]
+position = Vector2( -3472, 4024 )
+
+[node name="grass_1_1" parent="C/grass_1/grass_1_set_2" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="C/grass_1/grass_1_set_2" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="C/grass_1/grass_1_set_2" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="C/grass_1/grass_1_set_2" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="C/grass_1/grass_1_set_2" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_17" type="YSort" parent="C/grass_1"]
+position = Vector2( -2784, 2696 )
+
+[node name="grass_1_1" parent="C/grass_1/grass_1_set_17" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="C/grass_1/grass_1_set_17" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="C/grass_1/grass_1_set_17" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="C/grass_1/grass_1_set_17" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="C/grass_1/grass_1_set_17" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_3" type="YSort" parent="C/grass_1"]
+position = Vector2( -7120, 1544 )
+
+[node name="grass_1_1" parent="C/grass_1/grass_1_set_3" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="C/grass_1/grass_1_set_3" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="C/grass_1/grass_1_set_3" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="C/grass_1/grass_1_set_3" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="C/grass_1/grass_1_set_3" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_4" type="YSort" parent="C/grass_1"]
+position = Vector2( -8576, 392 )
+
+[node name="grass_1_1" parent="C/grass_1/grass_1_set_4" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="C/grass_1/grass_1_set_4" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="C/grass_1/grass_1_set_4" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="C/grass_1/grass_1_set_4" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="C/grass_1/grass_1_set_4" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_5" type="YSort" parent="C/grass_1"]
+position = Vector2( -7040, 4960 )
+
+[node name="grass_1_1" parent="C/grass_1/grass_1_set_5" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="C/grass_1/grass_1_set_5" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="C/grass_1/grass_1_set_5" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="C/grass_1/grass_1_set_5" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="C/grass_1/grass_1_set_5" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_6" type="YSort" parent="C/grass_1"]
+position = Vector2( -5632, 7360 )
+
+[node name="grass_1_1" parent="C/grass_1/grass_1_set_6" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="C/grass_1/grass_1_set_6" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="C/grass_1/grass_1_set_6" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="C/grass_1/grass_1_set_6" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="C/grass_1/grass_1_set_6" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_7" type="YSort" parent="C/grass_1"]
+position = Vector2( -8960, 8112 )
+
+[node name="grass_1_1" parent="C/grass_1/grass_1_set_7" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="C/grass_1/grass_1_set_7" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="C/grass_1/grass_1_set_7" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="C/grass_1/grass_1_set_7" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="C/grass_1/grass_1_set_7" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_8" type="YSort" parent="C/grass_1"]
+position = Vector2( -2752, 6408 )
+
+[node name="grass_1_1" parent="C/grass_1/grass_1_set_8" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="C/grass_1/grass_1_set_8" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="C/grass_1/grass_1_set_8" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="C/grass_1/grass_1_set_8" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="C/grass_1/grass_1_set_8" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_9" type="YSort" parent="C/grass_1"]
+position = Vector2( -752, 8344 )
+
+[node name="grass_1_1" parent="C/grass_1/grass_1_set_9" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="C/grass_1/grass_1_set_9" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="C/grass_1/grass_1_set_9" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="C/grass_1/grass_1_set_9" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="C/grass_1/grass_1_set_9" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_10" type="YSort" parent="C/grass_1"]
+position = Vector2( -528, 3448 )
+
+[node name="grass_1_1" parent="C/grass_1/grass_1_set_10" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="C/grass_1/grass_1_set_10" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="C/grass_1/grass_1_set_10" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="C/grass_1/grass_1_set_10" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="C/grass_1/grass_1_set_10" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="D" type="YSort" parent="."]
+
+[node name="big_bush_1" type="YSort" parent="D"]
+
+[node name="bush_1_1" parent="D/big_bush_1" instance=ExtResource( 2 )]
+position = Vector2( 1216, 368 )
+
+[node name="bush_1_2" parent="D/big_bush_1" instance=ExtResource( 2 )]
+position = Vector2( 5040, 616 )
+
+[node name="bush_1_3" parent="D/big_bush_1" instance=ExtResource( 2 )]
+position = Vector2( 1320, 2712 )
+
+[node name="bush_1_4" parent="D/big_bush_1" instance=ExtResource( 2 )]
+position = Vector2( 5064, 3000 )
+
+[node name="bush_1_5" parent="D/big_bush_1" instance=ExtResource( 2 )]
+position = Vector2( 8248, 2400 )
+
+[node name="bush_1_6" parent="D/big_bush_1" instance=ExtResource( 2 )]
+position = Vector2( 3168, 5304 )
+
+[node name="bush_1_7" parent="D/big_bush_1" instance=ExtResource( 2 )]
+position = Vector2( 7792, 5008 )
+
+[node name="bush_1_8" parent="D/big_bush_1" instance=ExtResource( 2 )]
+position = Vector2( 1624, 7800 )
+
+[node name="bush_1_9" parent="D/big_bush_1" instance=ExtResource( 2 )]
+position = Vector2( 5512, 6360 )
+
+[node name="bush_1_10" parent="D/big_bush_1" instance=ExtResource( 2 )]
+position = Vector2( 8200, 7816 )
+
+[node name="big_bush_2" type="YSort" parent="D"]
+
+[node name="bush_2_1" parent="D/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( 2760, 1640 )
+
+[node name="bush_2_21" parent="D/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( 1544, 1816 )
+
+[node name="bush_2_2" parent="D/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( 2216, 3208 )
+
+[node name="bush_2_3" parent="D/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( 1640, 4872 )
+
+[node name="bush_2_4" parent="D/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( 2608, 6408 )
+
+[node name="bush_2_5" parent="D/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( 928, 9128 )
+
+[node name="bush_2_6" parent="D/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( 4976, 8456 )
+
+[node name="bush_2_7" parent="D/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( 6944, 5776 )
+
+[node name="bush_2_8" parent="D/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( 8400, 3280 )
+
+[node name="bush_2_9" parent="D/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( 6360, 2480 )
+
+[node name="bush_2_22" parent="D/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( 4784, 2456 )
+
+[node name="bush_2_10" parent="D/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( 7600, 560 )
+
+[node name="bush_2_11" parent="D/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( 8888, 5408 )
+
+[node name="bush_2_12" parent="D/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( 9160, 7576 )
+
+[node name="bush_2_13" parent="D/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( 6904, 7096 )
+
+[node name="bush_2_23" parent="D/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( 4968, 7224 )
+
+[node name="bush_2_14" parent="D/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( 5840, 4808 )
+
+[node name="bush_2_15" parent="D/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( 4600, 3520 )
+
+[node name="bush_2_16" parent="D/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( 4192, 736 )
+
+[node name="bush_2_17" parent="D/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( 3320, 8232 )
+
+[node name="bush_2_18" parent="D/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( 7528, 9488 )
+
+[node name="bush_2_19" parent="D/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( 504, 5872 )
+
+[node name="bush_2_20" parent="D/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( 168, 2368 )
+
+[node name="bush_2_24" parent="D/big_bush_2" instance=ExtResource( 5 )]
+position = Vector2( -736, 1752 )
+
+[node name="tree_2" type="YSort" parent="D"]
+
+[node name="tree_2_1" parent="D/tree_2" instance=ExtResource( 3 )]
+position = Vector2( 2008, 1224 )
+
+[node name="tree_2_2" parent="D/tree_2" instance=ExtResource( 3 )]
+position = Vector2( 1592, 2224 )
+
+[node name="tree_2_23" parent="D/tree_2" instance=ExtResource( 3 )]
+position = Vector2( 744, 1576 )
+
+[node name="tree_2_11" parent="D/tree_2" instance=ExtResource( 3 )]
+position = Vector2( 1992, 2560 )
+
+[node name="tree_2_3" parent="D/tree_2" instance=ExtResource( 3 )]
+position = Vector2( 4120, 1776 )
+
+[node name="tree_2_4" parent="D/tree_2" instance=ExtResource( 3 )]
+position = Vector2( 7176, 3472 )
+
+[node name="tree_2_19" parent="D/tree_2" instance=ExtResource( 3 )]
+position = Vector2( 6792, 1648 )
+
+[node name="tree_2_20" parent="D/tree_2" instance=ExtResource( 3 )]
+position = Vector2( 8640, 760 )
+
+[node name="tree_2_5" parent="D/tree_2" instance=ExtResource( 3 )]
+position = Vector2( 5024, 4608 )
+
+[node name="tree_2_12" parent="D/tree_2" instance=ExtResource( 3 )]
+position = Vector2( 4528, 5088 )
+
+[node name="tree_2_18" parent="D/tree_2" instance=ExtResource( 3 )]
+position = Vector2( 2336, 4216 )
+
+[node name="tree_2_6" parent="D/tree_2" instance=ExtResource( 3 )]
+position = Vector2( 1752, 5896 )
+
+[node name="tree_2_21" parent="D/tree_2" instance=ExtResource( 3 )]
+position = Vector2( 1968, 5744 )
+
+[node name="tree_2_22" parent="D/tree_2" instance=ExtResource( 3 )]
+position = Vector2( 1224, 5608 )
+
+[node name="tree_2_17" parent="D/tree_2" instance=ExtResource( 3 )]
+position = Vector2( 560, 6504 )
+
+[node name="tree_2_7" parent="D/tree_2" instance=ExtResource( 3 )]
+position = Vector2( 3840, 7336 )
+
+[node name="tree_2_8" parent="D/tree_2" instance=ExtResource( 3 )]
+position = Vector2( 6728, 8128 )
+
+[node name="tree_2_13" parent="D/tree_2" instance=ExtResource( 3 )]
+position = Vector2( 6504, 9056 )
+
+[node name="tree_2_9" parent="D/tree_2" instance=ExtResource( 3 )]
+position = Vector2( 9296, 6608 )
+
+[node name="tree_2_15" parent="D/tree_2" instance=ExtResource( 3 )]
+position = Vector2( 7792, 6824 )
+
+[node name="tree_2_16" parent="D/tree_2" instance=ExtResource( 3 )]
+position = Vector2( 9488, 4456 )
+
+[node name="tree_2_10" parent="D/tree_2" instance=ExtResource( 3 )]
+position = Vector2( 1888, 9248 )
+
+[node name="tree_2_14" parent="D/tree_2" instance=ExtResource( 3 )]
+position = Vector2( 3952, 9224 )
+
+[node name="tree_3_1" type="YSort" parent="D"]
+
+[node name="tree_3_1_1" parent="D/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 3368, 3136 )
+
+[node name="tree_3_1_2" parent="D/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 5304, 1904 )
+
+[node name="tree_3_1_3" parent="D/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 3480, 448 )
+
+[node name="tree_3_1_4" parent="D/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 6840, 448 )
+
+[node name="tree_3_1_5" parent="D/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 9000, 1984 )
+
+[node name="tree_3_1_6" parent="D/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 6712, 5056 )
+
+[node name="tree_3_1_7" parent="D/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 6424, 6384 )
+
+[node name="tree_3_1_8" parent="D/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 5208, 7712 )
+
+[node name="tree_3_1_9" parent="D/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 8280, 9040 )
+
+[node name="tree_3_1_10" parent="D/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 648, 8368 )
+
+[node name="tree_3_1_11" parent="D/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 712, 4544 )
+
+[node name="tree_3_1_12" parent="D/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 392, 3168 )
+
+[node name="tree_3_1_13" parent="D/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 5720, 3088 )
+
+[node name="tree_3_1_14" parent="D/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 3672, 6064 )
+
+[node name="tree_3_1_15" parent="D/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 2600, 7392 )
+
+[node name="tree_3_1_16" parent="D/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 2280, 7200 )
+
+[node name="tree_3_1_17" parent="D/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 5016, 5312 )
+
+[node name="tree_3_1_18" parent="D/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 8200, 4464 )
+
+[node name="tree_3_1_19" parent="D/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 3800, 4416 )
+
+[node name="tree_3_1_21" parent="D/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 3616, 4464 )
+
+[node name="tree_3_1_22" parent="D/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 3248, 4472 )
+
+[node name="tree_3_1_23" parent="D/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 2992, 4472 )
+
+[node name="tree_3_1_24" parent="D/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 2752, 4544 )
+
+[node name="tree_3_1_25" parent="D/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 3456, 4880 )
+
+[node name="tree_3_1_20" parent="D/tree_3_1" instance=ExtResource( 4 )]
+position = Vector2( 6072, 4192 )
+
+[node name="grass_1" type="YSort" parent="D"]
+
+[node name="grass_1_set_1" type="YSort" parent="D/grass_1"]
+position = Vector2( 2744, 600 )
+
+[node name="grass_1_1" parent="D/grass_1/grass_1_set_1" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="D/grass_1/grass_1_set_1" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="D/grass_1/grass_1_set_1" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="D/grass_1/grass_1_set_1" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="D/grass_1/grass_1_set_1" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_2" type="YSort" parent="D/grass_1"]
+position = Vector2( 3336, 2560 )
+
+[node name="grass_1_1" parent="D/grass_1/grass_1_set_2" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="D/grass_1/grass_1_set_2" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="D/grass_1/grass_1_set_2" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="D/grass_1/grass_1_set_2" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="D/grass_1/grass_1_set_2" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_11" type="YSort" parent="D/grass_1"]
+position = Vector2( 3464, 3792 )
+
+[node name="grass_1_1" parent="D/grass_1/grass_1_set_11" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="D/grass_1/grass_1_set_11" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="D/grass_1/grass_1_set_11" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="D/grass_1/grass_1_set_11" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="D/grass_1/grass_1_set_11" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_12" type="YSort" parent="D/grass_1"]
+position = Vector2( 608, 1672 )
+
+[node name="grass_1_1" parent="D/grass_1/grass_1_set_12" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="D/grass_1/grass_1_set_12" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="D/grass_1/grass_1_set_12" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="D/grass_1/grass_1_set_12" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="D/grass_1/grass_1_set_12" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_14" type="YSort" parent="D/grass_1"]
+position = Vector2( -632, 1128 )
+
+[node name="grass_1_1" parent="D/grass_1/grass_1_set_14" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="D/grass_1/grass_1_set_14" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="D/grass_1/grass_1_set_14" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="D/grass_1/grass_1_set_14" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="D/grass_1/grass_1_set_14" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_15" type="YSort" parent="D/grass_1"]
+position = Vector2( -1608, 1432 )
+
+[node name="grass_1_1" parent="D/grass_1/grass_1_set_15" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="D/grass_1/grass_1_set_15" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="D/grass_1/grass_1_set_15" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="D/grass_1/grass_1_set_15" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="D/grass_1/grass_1_set_15" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_13" type="YSort" parent="D/grass_1"]
+position = Vector2( 1648, 1208 )
+
+[node name="grass_1_1" parent="D/grass_1/grass_1_set_13" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="D/grass_1/grass_1_set_13" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="D/grass_1/grass_1_set_13" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="D/grass_1/grass_1_set_13" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="D/grass_1/grass_1_set_13" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_3" type="YSort" parent="D/grass_1"]
+position = Vector2( 5952, 960 )
+
+[node name="grass_1_1" parent="D/grass_1/grass_1_set_3" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="D/grass_1/grass_1_set_3" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="D/grass_1/grass_1_set_3" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="D/grass_1/grass_1_set_3" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="D/grass_1/grass_1_set_3" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_16" type="YSort" parent="D/grass_1"]
+position = Vector2( 7784, 1256 )
+
+[node name="grass_1_1" parent="D/grass_1/grass_1_set_16" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="D/grass_1/grass_1_set_16" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="D/grass_1/grass_1_set_16" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="D/grass_1/grass_1_set_16" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="D/grass_1/grass_1_set_16" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_4" type="YSort" parent="D/grass_1"]
+position = Vector2( 7328, 4240 )
+
+[node name="grass_1_1" parent="D/grass_1/grass_1_set_4" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="D/grass_1/grass_1_set_4" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="D/grass_1/grass_1_set_4" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="D/grass_1/grass_1_set_4" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="D/grass_1/grass_1_set_4" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_5" type="YSort" parent="D/grass_1"]
+position = Vector2( 4624, 6192 )
+
+[node name="grass_1_1" parent="D/grass_1/grass_1_set_5" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="D/grass_1/grass_1_set_5" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="D/grass_1/grass_1_set_5" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="D/grass_1/grass_1_set_5" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="D/grass_1/grass_1_set_5" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_19" type="YSort" parent="D/grass_1"]
+position = Vector2( 8024, 5936 )
+
+[node name="grass_1_1" parent="D/grass_1/grass_1_set_19" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="D/grass_1/grass_1_set_19" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="D/grass_1/grass_1_set_19" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="D/grass_1/grass_1_set_19" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="D/grass_1/grass_1_set_19" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_6" type="YSort" parent="D/grass_1"]
+position = Vector2( 1008, 7160 )
+
+[node name="grass_1_1" parent="D/grass_1/grass_1_set_6" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="D/grass_1/grass_1_set_6" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="D/grass_1/grass_1_set_6" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="D/grass_1/grass_1_set_6" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="D/grass_1/grass_1_set_6" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_7" type="YSort" parent="D/grass_1"]
+position = Vector2( 5176, 9408 )
+
+[node name="grass_1_1" parent="D/grass_1/grass_1_set_7" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="D/grass_1/grass_1_set_7" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="D/grass_1/grass_1_set_7" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="D/grass_1/grass_1_set_7" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="D/grass_1/grass_1_set_7" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_17" type="YSort" parent="D/grass_1"]
+position = Vector2( 3000, 8888 )
+
+[node name="grass_1_1" parent="D/grass_1/grass_1_set_17" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="D/grass_1/grass_1_set_17" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="D/grass_1/grass_1_set_17" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="D/grass_1/grass_1_set_17" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="D/grass_1/grass_1_set_17" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_18" type="YSort" parent="D/grass_1"]
+position = Vector2( 5840, 7624 )
+
+[node name="grass_1_1" parent="D/grass_1/grass_1_set_18" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="D/grass_1/grass_1_set_18" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="D/grass_1/grass_1_set_18" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="D/grass_1/grass_1_set_18" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="D/grass_1/grass_1_set_18" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_8" type="YSort" parent="D/grass_1"]
+position = Vector2( 7608, 8400 )
+
+[node name="grass_1_1" parent="D/grass_1/grass_1_set_8" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="D/grass_1/grass_1_set_8" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="D/grass_1/grass_1_set_8" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="D/grass_1/grass_1_set_8" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="D/grass_1/grass_1_set_8" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_9" type="YSort" parent="D/grass_1"]
+position = Vector2( 7304, 2488 )
+
+[node name="grass_1_1" parent="D/grass_1/grass_1_set_9" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="D/grass_1/grass_1_set_9" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="D/grass_1/grass_1_set_9" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="D/grass_1/grass_1_set_9" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="D/grass_1/grass_1_set_9" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
+
+[node name="grass_1_set_10" type="YSort" parent="D/grass_1"]
+position = Vector2( 1112, 3768 )
+
+[node name="grass_1_1" parent="D/grass_1/grass_1_set_10" instance=ExtResource( 6 )]
+position = Vector2( -208, -88 )
+
+[node name="grass_1_2" parent="D/grass_1/grass_1_set_10" instance=ExtResource( 6 )]
+position = Vector2( 72, -96 )
+
+[node name="grass_1_3" parent="D/grass_1/grass_1_set_10" instance=ExtResource( 6 )]
+position = Vector2( -104, 192 )
+
+[node name="grass_1_4" parent="D/grass_1/grass_1_set_10" instance=ExtResource( 6 )]
+position = Vector2( 136, 224 )
+
+[node name="grass_1_5" parent="D/grass_1/grass_1_set_10" instance=ExtResource( 6 )]
+position = Vector2( 416, 64 )
